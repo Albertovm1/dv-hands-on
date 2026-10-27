@@ -1,4 +1,4 @@
 Command Line: /Tools/synopsys/verdi/X-2025.06-SP2/platform/LINUXAMD64/bin/Novas -play minisoc_top.cmd
 uname(Linux srv-microeletronica3 4.18.0-553.132.1.el8_10.x86_64 #1 SMP Thu Jun 11 14:27:43 UTC 2026 x86_64)
-au time 2.204909 -1.838359 -1.909760 delta 128008192 128008192 total 1210269696 1210269696
-KdbImportParallelMixAllLib time 0.013522 0.006327 0.010958 delta 41893888 41893888 total 1284317184 1284317184
+au time 2.729889 -1.864244 -1.884331 delta 137355264 137355264 total 1219633152 1219633152
+KdbImportParallelMixAllLib time 0.012280 0.004258 0.012022 delta 41914368 41914368 total 1283063808 1283063808
