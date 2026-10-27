@@ -2,6 +2,7 @@
 #include <iomanip>           // Text/hexadecimal formatting in the console (std::setw, std::setfill, std::hex, std::dec)
 #include "svdpi.h"           // SystemVerilog DPI-C interface (svBitVecVal definitions, etc.)
 #include "cryptopp/modes.h"
+
 #include "cryptopp/aes.h"
 
 using CryptoPP::byte;

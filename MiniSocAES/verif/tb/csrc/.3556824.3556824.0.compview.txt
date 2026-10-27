@@ -1,0 +1,11 @@
+{"vcs1":{"timestamp_begin":1793128785.591676072, "rt":11.51, "ut":12.23, "st":0.80}}
+{"vcselab":{"timestamp_begin":1793128797.287637032, "rt":0.53, "ut":0.32, "st":0.15}}
+{"link":{"timestamp_begin":1793128797.947996916, "rt":1.57, "ut":1.13, "st":0.42}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1793128784.120260447}
+{"VCS_COMP_START_TIME": 1793128784.120260447}
+{"VCS_COMP_END_TIME": 1793128799.895496290}
+{"elabcom":{"timestamp_begin":1793128788.282316104,"rt":0.63, "ut":0.60, "st":0.15}}
+{"VCS_USER_OPTIONS": "-sverilog -full64 -l build/vcs/logs/vcs_comp.log -kdb -debug_access+all +incdir+agents/clock_agent +incdir+agents/rst_agent +incdir+agents/spi_agent +incdir+agents/mem_agent +incdir+tests -timescale=1ns/1ps -ntb_opts uvm-1.2 ../../frontend/rtl/minisoc_aes/minisoc_aes_key_exp.sv ../../frontend/rtl/minisoc_aes/minisoc_aes_dp.sv ../../frontend/rtl/minisoc_aes/minisoc_aes_top.sv ../../frontend/rtl/minisoc_mem/minisoc_memory.sv ../../frontend/rtl/minisoc_pll/minisoc_pll_mock.sv ../../frontend/rtl/minisoc_spi/minisoc_spi.sv ../../frontend/rtl/minisoc_top.sv top_assertions.sv top_tb.sv -o build/vcs/minisoc_top_sim"}
+{"kdb": {"elabcom_name":"<Kdbresolver>", "log_dir":"build/vcs/minisoc_top_sim.daidir/kdbresolverLog"}}
+{"vcs1": {"peak_mem": 580212}}
+{"vcselab": {"peak_mem": 267528}}
