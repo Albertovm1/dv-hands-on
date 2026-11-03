@@ -1,0 +1,11 @@
+{"vcs1":{"timestamp_begin":1793654673.452847844, "rt":12.35, "ut":13.05, "st":0.76}}
+{"vcselab":{"timestamp_begin":1793654685.984647761, "rt":0.59, "ut":0.38, "st":0.16}}
+{"link":{"timestamp_begin":1793654686.713209027, "rt":1.68, "ut":1.15, "st":0.49}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1793654671.696612807}
+{"VCS_COMP_START_TIME": 1793654671.696612807}
+{"VCS_COMP_END_TIME": 1793654688.774694172}
+{"elabcom":{"timestamp_begin":1793654676.092730069,"rt":0.62, "ut":0.62, "st":0.15}}
+{"VCS_USER_OPTIONS": "-sverilog -full64 -l build/vcs/logs/vcs_comp.log -kdb -debug_access+all +incdir+../tb/interfaces +incdir+../tb/agents/minisoc_clk_agent +incdir+../tb/agents/minisoc_rst_agent +incdir+../tb/sequences/clk +incdir+../tb/sequences/rst +incdir+../tb/env +incdir+../tb/env/scoreboard +incdir+../tb/env/coverage +incdir+../tb/tests -timescale=1ns/1ps -ntb_opts uvm-1.2 ../../rtl/rtl/minisoc_aes/minisoc_aes_key_exp.sv ../../rtl/rtl/minisoc_aes/minisoc_aes_dp.sv ../../rtl/rtl/minisoc_aes/minisoc_aes_top.sv ../../rtl/rtl/minisoc_mem/minisoc_memory.sv ../../rtl/rtl/minisoc_pll/minisoc_pll_mock.sv ../../rtl/rtl/minisoc_spi/minisoc_spi.sv ../../rtl/rtl/minisoc_top.sv ../tb/interfaces/clk_if.sv ../tb/interfaces/rst_if.sv ../tb/agents/minisoc_clk_agent/clk_agent_pkg.sv ../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv ../tb/env/scoreboard/minisoc_scoreboard_pkg.sv ../tb/env/coverage/minisoc_coverage_pkg.sv ../tb/env/minisoc_env_pkg.sv ../tb/tests/minisoc_test_pkg.sv ../tb/top_assertions.sv ../tb/minisoc_top_tb.sv -o build/vcs/minisoc_top_sim"}
+{"kdb": {"elabcom_name":"<Kdbresolver>", "log_dir":"build/vcs/minisoc_top_sim.daidir/kdbresolverLog"}}
+{"vcs1": {"peak_mem": 587784}}
+{"vcselab": {"peak_mem": 267704}}
