@@ -11,7 +11,7 @@ class minisoc_scoreboard extends uvm_scoreboard;
 
     function new(string name = "minisoc_scoreboard",uvm_component parent = null);
         super.new(name, parent);
-    endfunction: new
+    endfunction
 
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);

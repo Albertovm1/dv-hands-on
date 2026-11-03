@@ -3,6 +3,9 @@
 
 package minisoc_env_pkg;
 
+    timeunit 1ps;
+    timeprecision 1ps;
+
     import uvm_pkg::*;
     `include "uvm_macros.svh"
 

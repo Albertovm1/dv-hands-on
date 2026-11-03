@@ -32,11 +32,29 @@ class clk_driver extends uvm_driver #(clk_seq_item);
 
     endtask
 
+    task process_clock_requests();
+
+        forever begin
+            seq_item_port.get_next_item(req);
+
+            if (req.clk_period == 0)
+                `uvm_fatal("CLK_DRIVER", "Clock period must be greater than zero")
+
+            cfg.clk_period = req.clk_period;
+            seq_item_port.item_done();
+        end
+
+    endtask
+
     task run_phase(uvm_phase phase);
         super.run_phase(phase);
 
         vif.clk = 0;
-        clk_always_on();
+
+        fork
+            clk_always_on();
+            process_clock_requests();
+        join
         
     endtask
 

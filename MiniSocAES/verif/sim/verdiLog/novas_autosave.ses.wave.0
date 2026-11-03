@@ -15,9 +15,11 @@ openDirFile -d / "" "/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSoc
 signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
+windowTimeUnit 1ns
+
 ; waveform viewport range
-zoom 0.000000 4797.500000
-cursor 0.000000
+zoom 0.000000 359.307500 1n
+cursor 100.750000
 marker 0.000000
 
 ; user define markers
@@ -48,7 +50,7 @@ curSTATUS ByChange
 addGroup "G1"
 activeDirFile "" "/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/dump.fsdb"
 addSignal -h 16 /minisoc_top_tb/clk_vif/clk
-addSignal -h 16 /minisoc_top_tb/rst_n
+addSignal -h 16 /minisoc_top_tb/rst_vif/rst_n
 addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status

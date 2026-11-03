@@ -30,7 +30,7 @@ class rst_sequence extends uvm_sequence #(rst_seq_item);
 
         start_item(tr);
         tr.rst_cmd = rst_seq_item::DEASSERT_RESET;
-        tr.duration = 0;
+        tr.duration = 10ns;
         finish_item(tr);
 
 
@@ -50,7 +50,7 @@ class rst_sequence extends uvm_sequence #(rst_seq_item);
 
         start_item(tr);
         tr.rst_cmd = rst_seq_item::DEASSERT_RESET;
-        tr.duration = 0;
+        tr.duration = 10ns;
         finish_item(tr);
 
 
@@ -70,7 +70,7 @@ class rst_sequence extends uvm_sequence #(rst_seq_item);
 
         start_item(tr);
         tr.rst_cmd = rst_seq_item::DEASSERT_RESET;
-        tr.duration = 0;
+        tr.duration = 10ns;
         finish_item(tr);
 
     endtask

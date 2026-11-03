@@ -3,7 +3,7 @@
 
 interface clk_if;
 
-    timeunit 1ns;
+    timeunit 1ps;
     timeprecision 1ps;
 
     logic clk; // clock do sistema (2 GHz)

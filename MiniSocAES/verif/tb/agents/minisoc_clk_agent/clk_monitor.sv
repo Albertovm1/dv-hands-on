@@ -9,9 +9,9 @@ class clk_monitor extends uvm_monitor;
 
     clk_monitor_item item;
 
-    realtime last_rising_edge; //última borda de subida. 
-    realtime current_rising_edge; // borda de subida atual.
-    int measured_period; // período medido entre as bordas de subida.
+    time last_rising_edge; //última borda de subida. 
+    time current_rising_edge; // borda de subida atual.
+    time measured_period; // período medido entre as bordas de subida.
 
     bit first_edge = 1; // Flag para indicar se é a primeira borda de subida.
 
@@ -34,9 +34,9 @@ class clk_monitor extends uvm_monitor;
 
         forever begin
             @(posedge vif.clk);
-            `uvm_info("CLK_MONITOR", $sformatf("Clock rising edge detected at realtime %0t", $realtime), UVM_HIGH)
+            `uvm_info("CLK_MONITOR", $sformatf("Clock rising edge detected at realtime %0t", $time), UVM_HIGH)
             
-            current_rising_edge = $realtime;
+            current_rising_edge = $time;
 
             if (first_edge) begin
                 last_rising_edge = current_rising_edge;

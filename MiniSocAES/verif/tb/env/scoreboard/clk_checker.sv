@@ -7,7 +7,7 @@ class clk_checker extends uvm_component;
 
     uvm_analysis_imp #(clk_monitor_item, clk_checker) analysis_imp;
 
-    int expected_period;
+    time expected_period;
 
     int total_checks;
     int passed_checks;
@@ -19,7 +19,7 @@ class clk_checker extends uvm_component;
 
         analysis_imp = new("analysis_imp", this);
 
-        expected_period = 500;
+        expected_period = 500ps;
 
         total_checks  = 0;
         passed_checks = 0;

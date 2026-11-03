@@ -20,7 +20,6 @@ module minisoc_top_tb;
     rst_config rst_cfg;
 
     // Temporary signals for DUT inputs
-    logic rst_n;
     logic spi_sclk;
     logic spi_cs_n;
     logic spi_mosi;
@@ -52,7 +51,6 @@ module minisoc_top_tb;
     initial begin
 
         // Initial values
-        rst_n      = 0;
         spi_sclk   = 0;
         spi_cs_n   = 1;
         spi_mosi   = 0;
@@ -76,8 +74,6 @@ module minisoc_top_tb;
         // Reset Monitor Virtual Interface
         uvm_config_db #(virtual rst_if.monitor)::set(null,"uvm_test_top.env.rst_agent.monitor","vif",rst_vif);
 
-        rst_n = 1;
-
         // Create clock configuration
         clk_cfg = clk_config::type_id::create("clk_cfg");
 
@@ -92,6 +88,7 @@ module minisoc_top_tb;
     initial begin
         $fsdbDumpfile("dump.fsdb");
         $fsdbDumpvars(0, minisoc_top_tb);
+        $fsdbDumpMDA();
     end 
 
 endmodule

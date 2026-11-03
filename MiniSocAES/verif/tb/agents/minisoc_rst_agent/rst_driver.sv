@@ -35,11 +35,14 @@ class rst_driver extends uvm_driver #(rst_seq_item);
     endtask
 
 
-    virtual task do_deassert_reset();
+    virtual task do_deassert_reset(time duration);
 
         vif.rst_n <= 1'b1;
 
         `uvm_info("RST_DRV", "Reset deasserted", UVM_MEDIUM)
+
+        if (duration > 0)
+            #(duration);
 
     endtask
 
@@ -52,7 +55,7 @@ class rst_driver extends uvm_driver #(rst_seq_item);
             end
 
             rst_seq_item::DEASSERT_RESET: begin
-                do_deassert_reset();
+                do_deassert_reset(tr.duration);
             end
 
             default: begin

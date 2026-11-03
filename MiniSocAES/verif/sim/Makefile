@@ -1,4 +1,3 @@
-
 BLOCKNAME = minisoc_top
 
 #

@@ -605,10 +605,10 @@ TclAutoSource =
 cmd_enter_form = FALSE
 SyncBrowserDir = TRUE
 FindBarVisible = 
-recent_commands_nWave = zoomIn,zoomOut,getSignal,editCut,getAllSignals
-SignalCaseInSensitive = FALSE
 ScaleFactor = 100%
 ToolbarIconSize = Medium
+recent_commands_nWave = windowTimeUnit,windowTimeUnit_2,zoomAll,deltaMenu_delta,getSignal,editCut,zoomIn,zoomOut,getAllSignals
+SignalCaseInSensitive = FALSE
 ColorThemeModern = bright
 prevColorThemeModern = bright
 version = Verdi_X-2025.06-SP2
@@ -770,9 +770,11 @@ savePropDtl = TRUE
 QwWarnMsgDlg = 462,361,600,250
 unknownSave_SaveSignal(s)NotFound = 471,210,590,340
 QwQuestionMsgDlg = 564,292,406,101
-qWaveSignalDialog = 366,110,800,479
 unknownSave = 536,259,461,245
-QwUserAskDlg = 596,290,324,122
+qWaveSignalDialog = 368,174,800,479
+QwInfoMsgDlg = 395,337,750,250
+SetWindowTimeUnitDialog = 550,338,433,87
+QwUserAskDlg = 605,290,324,128
 [Safety]
 RegisterObject = ID_RED4
 CoreObject = ID_ORANGE5
@@ -1067,45 +1069,45 @@ isOneSearchVisible = TRUE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = "Severity"
-width = 60
-visualIndex = 2
-isHidden = FALSE
+name = "Block's First Line"
+width = 120
+visualIndex = 1
+isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = "Time"
-width = 60
-visualIndex = 0
-isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = "Type"
 width = 60
 visualIndex = 4
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
-name = "Message"
-width = 2000
-visualIndex = 5
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
+name = "Time"
+width = 60
+visualIndex = 0
 isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
 name = "Code"
 width = 60
 visualIndex = 3
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = "Message"
+width = 2000
+visualIndex = 5
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+isColFilterColorCoding = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
-name = "Block's First Line"
-width = 120
-visualIndex = 1
-isHidden = TRUE
+name = "Severity"
+width = 60
+visualIndex = 2
+isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.ruleHistory]
@@ -1184,7 +1186,7 @@ AutoApplySeverityColor = TRUE
 scope_to_save_with_macro = 
 open_file_dir = 
 open_rc_file_dir = 
-getSignalForm = 366 110 800 479 362 383 194 90
+getSignalForm = 367 142 800 479 165 383 391 90
 viewPort = 0 11 1534 323 305 65
 legendBackground = -c ID_BLACK
 valueBackground = -c ID_BLACK
