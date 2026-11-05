@@ -1,7 +1,7 @@
 Command: /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/./build/vcs/minisoc_top_sim +ntb_random_seed=random +UVM_TESTNAME=minisoc_smoke_test -l build/vcs/logs/vcs_run.log
 Chronologic VCS simulator copyright 1991-2025
 Contains Synopsys proprietary information.
-Compiler version X-2025.06-SP2_Full64; Runtime version X-2025.06-SP2_Full64;  Nov  3 14:55 2026
+Compiler version X-2025.06-SP2_Full64; Runtime version X-2025.06-SP2_Full64;  Nov  5 16:21 2026
 
 Warning-[INV-RANDSEED-VAL] Invalid random seed value
   Invalid random seed value passed through command line or environment 
@@ -49,12 +49,11 @@ UVM_INFO ../tb/tests/minisoc_smoke_test.sv(64) @ 0: uvm_test_top [SMOKE_TEST] Cl
 UVM_INFO ../tb/tests/minisoc_smoke_test.sv(66) @ 0: uvm_test_top [SMOKE_TEST] Starting Reset sequence
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(30) @ 0: uvm_test_top.env.rst_agent.driver [RST_DRV] Reset asserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_monitor.sv(44) @ 0: uvm_test_top.env.rst_agent.monitor [RST_MON] Reset asserted
-UVM_INFO ../tb/env/scoreboard/rst_checker.sv(53) @ 0: uvm_test_top.env.scoreboard.rst_checker [RST_CHECKER] Reset asserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(75) @ 100000: uvm_test_top.env.rst_agent.driver [RST_RUN] 
 -----------------------------------------------------------------------------------------------
 Name                           Type          Size  Value                                       
 -----------------------------------------------------------------------------------------------
-rst_initial                    rst_seq_item  -     @939                                        
+rst_initial                    rst_seq_item  -     @875                                        
   begin_time                   time          64    0                                           
   depth                        int           32    'd2                                         
   parent sequence (name)       string        7     rst_seq                                     
@@ -64,12 +63,11 @@ rst_initial                    rst_seq_item  -     @939
 
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(42) @ 100000: uvm_test_top.env.rst_agent.driver [RST_DRV] Reset deasserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_monitor.sv(49) @ 100000: uvm_test_top.env.rst_agent.monitor [RST_MON] Reset deasserted
-UVM_INFO ../tb/env/scoreboard/rst_checker.sv(68) @ 100000: uvm_test_top.env.scoreboard.rst_checker [RST_CHECKER] Reset deasserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(75) @ 110000: uvm_test_top.env.rst_agent.driver [RST_RUN] 
 -----------------------------------------------------------------------------------------------
 Name                           Type          Size  Value                                       
 -----------------------------------------------------------------------------------------------
-rst_initial_release            rst_seq_item  -     @1785                                       
+rst_initial_release            rst_seq_item  -     @1715                                       
   begin_time                   time          64    100000                                      
   depth                        int           32    'd2                                         
   parent sequence (name)       string        7     rst_seq                                     
@@ -79,12 +77,11 @@ rst_initial_release            rst_seq_item  -     @1785
 
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(30) @ 110000: uvm_test_top.env.rst_agent.driver [RST_DRV] Reset asserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_monitor.sv(44) @ 110000: uvm_test_top.env.rst_agent.monitor [RST_MON] Reset asserted
-UVM_INFO ../tb/env/scoreboard/rst_checker.sv(53) @ 110000: uvm_test_top.env.scoreboard.rst_checker [RST_CHECKER] Reset asserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(75) @ 135000: uvm_test_top.env.rst_agent.driver [RST_RUN] 
 -----------------------------------------------------------------------------------------------
 Name                           Type          Size  Value                                       
 -----------------------------------------------------------------------------------------------
-rst_short                      rst_seq_item  -     @1881                                       
+rst_short                      rst_seq_item  -     @1809                                       
   begin_time                   time          64    110000                                      
   depth                        int           32    'd2                                         
   parent sequence (name)       string        7     rst_seq                                     
@@ -94,12 +91,11 @@ rst_short                      rst_seq_item  -     @1881
 
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(42) @ 135000: uvm_test_top.env.rst_agent.driver [RST_DRV] Reset deasserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_monitor.sv(49) @ 135000: uvm_test_top.env.rst_agent.monitor [RST_MON] Reset deasserted
-UVM_INFO ../tb/env/scoreboard/rst_checker.sv(68) @ 135000: uvm_test_top.env.scoreboard.rst_checker [RST_CHECKER] Reset deasserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(75) @ 145000: uvm_test_top.env.rst_agent.driver [RST_RUN] 
 -----------------------------------------------------------------------------------------------
 Name                           Type          Size  Value                                       
 -----------------------------------------------------------------------------------------------
-rst_short_release              rst_seq_item  -     @2097                                       
+rst_short_release              rst_seq_item  -     @2023                                       
   begin_time                   time          64    135000                                      
   depth                        int           32    'd2                                         
   parent sequence (name)       string        7     rst_seq                                     
@@ -109,12 +105,11 @@ rst_short_release              rst_seq_item  -     @2097
 
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(30) @ 145000: uvm_test_top.env.rst_agent.driver [RST_DRV] Reset asserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_monitor.sv(44) @ 145000: uvm_test_top.env.rst_agent.monitor [RST_MON] Reset asserted
-UVM_INFO ../tb/env/scoreboard/rst_checker.sv(53) @ 145000: uvm_test_top.env.scoreboard.rst_checker [RST_CHECKER] Reset asserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(75) @ 345000: uvm_test_top.env.rst_agent.driver [RST_RUN] 
 -----------------------------------------------------------------------------------------------
 Name                           Type          Size  Value                                       
 -----------------------------------------------------------------------------------------------
-rst_long                       rst_seq_item  -     @2193                                       
+rst_long                       rst_seq_item  -     @2117                                       
   begin_time                   time          64    145000                                      
   depth                        int           32    'd2                                         
   parent sequence (name)       string        7     rst_seq                                     
@@ -124,12 +119,11 @@ rst_long                       rst_seq_item  -     @2193
 
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(42) @ 345000: uvm_test_top.env.rst_agent.driver [RST_DRV] Reset deasserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_monitor.sv(49) @ 345000: uvm_test_top.env.rst_agent.monitor [RST_MON] Reset deasserted
-UVM_INFO ../tb/env/scoreboard/rst_checker.sv(68) @ 345000: uvm_test_top.env.scoreboard.rst_checker [RST_CHECKER] Reset deasserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(75) @ 355000: uvm_test_top.env.rst_agent.driver [RST_RUN] 
 -----------------------------------------------------------------------------------------------
 Name                           Type          Size  Value                                       
 -----------------------------------------------------------------------------------------------
-rst_long_release               rst_seq_item  -     @3809                                       
+rst_long_release               rst_seq_item  -     @3731                                       
   begin_time                   time          64    345000                                      
   depth                        int           32    'd2                                         
   parent sequence (name)       string        7     rst_seq                                     
@@ -140,12 +134,12 @@ rst_long_release               rst_seq_item  -     @3809
 UVM_INFO ../tb/tests/minisoc_smoke_test.sv(72) @ 355000: uvm_test_top [SMOKE_TEST] Reset sequence completed
 UVM_INFO ../tb/tests/minisoc_smoke_test.sv(74) @ 355000: uvm_test_top [SMOKE_TEST] MiniSoC smoke test completed
 UVM_INFO /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 355000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO ../tb/env/coverage/clk_coverage.sv(36) @ 355000: uvm_test_top.env.coverage.clk_cov [CLK_COV] Clock Coverage: 100.00%
-UVM_INFO ../tb/env/coverage/rst_coverage.sv(76) @ 355000: uvm_test_top.env.coverage.rst_cov [RST_COV] Reset Coverage: 100.00%
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(29) @ 355000: uvm_test_top.env.scoreboard [MINISOC_SB] ========== MINISOC SCOREBOARD REPORT ==========
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(33) @ 355000: uvm_test_top.env.scoreboard [MINISOC_SB] CLOCK: Total = 709 | Passed = 709 | Failed = 0
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(41) @ 355000: uvm_test_top.env.scoreboard [MINISOC_SB] RESET: Events = 6 | Assert = 3 | Deassert = 3 | Failed = 0
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(50) @ 355000: uvm_test_top.env.scoreboard [MINISOC_SB] ================================================
+UVM_INFO ../tb/env/coverage/minisoc_coverage.sv(47) @ 355000: uvm_test_top.env.coverage [MINISOC_COVERAGE] Clock Coverage: 100.00%
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(44) @ 355000: uvm_test_top.env.scoreboard [MINISOC_SCOREBOARD] ============== SCOREBOARD ==============
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(46) @ 355000: uvm_test_top.env.scoreboard [MINISOC_SCOREBOARD] Total checks: 709
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(48) @ 355000: uvm_test_top.env.scoreboard [MINISOC_SCOREBOARD] PASS: 709
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(50) @ 355000: uvm_test_top.env.scoreboard [MINISOC_SCOREBOARD] FAIL: 0
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(52) @ 355000: uvm_test_top.env.scoreboard [MINISOC_SCOREBOARD] ========================================
 UVM_INFO /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 355000: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
 
@@ -161,17 +155,15 @@ UVM_INFO /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/base/uvm_report_server.sv
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :   44
+UVM_INFO :   38
 UVM_WARNING :    0
 UVM_ERROR :    0
 UVM_FATAL :    0
 ** Report counts by id
-[CLK_COV]     1
 [CLK_MONITOR]     1
-[MINISOC_SB]     4
+[MINISOC_COVERAGE]     1
+[MINISOC_SCOREBOARD]     5
 [RNTST]     1
-[RST_CHECKER]     6
-[RST_COV]     1
 [RST_DRV]     6
 [RST_MON]     7
 [RST_RUN]     6
@@ -184,5 +176,5 @@ $finish called from file "/Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/base/uvm
 $finish at simulation time               355000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 355000 ps
-CPU Time:      0.700 seconds;       Data structure size:   0.7Mb
-Tue Nov  3 14:55:33 2026
+CPU Time:      0.720 seconds;       Data structure size:   0.7Mb
+Thu Nov  5 16:21:26 2026

@@ -12,9 +12,6 @@ package minisoc_scoreboard_pkg;
     import clk_agent_pkg::*;
     import rst_agent_pkg::*;
 
-    `include "clk_checker.sv"
-    `include "rst_checker.sv"
-
     `include "minisoc_scoreboard.sv"
 
 endpackage

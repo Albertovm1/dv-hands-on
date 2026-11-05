@@ -607,11 +607,12 @@ SyncBrowserDir = TRUE
 FindBarVisible = 
 ScaleFactor = 100%
 ToolbarIconSize = Medium
-recent_commands_nWave = windowTimeUnit,windowTimeUnit_2,zoomAll,deltaMenu_delta,getSignal,editCut,zoomIn,zoomOut,getAllSignals
+recent_commands_nWave = zoomIn,windowTimeUnit,windowTimeUnit_2,zoomAll,deltaMenu_delta,getSignal,editCut,zoomOut,getAllSignals
+recent_commands_Verdi = verdiInvokeCoverage
 SignalCaseInSensitive = FALSE
 ColorThemeModern = bright
-prevColorThemeModern = bright
 version = Verdi_X-2025.06-SP2
+prevColorThemeModern = bright
 [GlobalProp]
 ErrWindow_Font = Helvetica_M_R_12
 [Globals]
@@ -767,14 +768,14 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-QwWarnMsgDlg = 462,361,600,250
 unknownSave_SaveSignal(s)NotFound = 471,210,590,340
 QwQuestionMsgDlg = 564,292,406,101
 unknownSave = 536,259,461,245
 qWaveSignalDialog = 368,174,800,479
 QwInfoMsgDlg = 395,337,750,250
 SetWindowTimeUnitDialog = 550,338,433,87
-QwUserAskDlg = 605,290,324,128
+QwWarnMsgDlg = 424,425,600,250
+QwUserAskDlg = 596,290,324,122
 [Safety]
 RegisterObject = ID_RED4
 CoreObject = ID_ORANGE5
@@ -978,7 +979,7 @@ pdmlMacro = ID_BLACK
 font = COURIER12
 annotFont = FIXED12
 [Text.1]
-viewport = 0 29 1534 706 45
+viewport = 0 29 1536 707 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -1069,16 +1070,16 @@ isOneSearchVisible = TRUE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = "Block's First Line"
-width = 120
-visualIndex = 1
-isHidden = TRUE
+name = "Severity"
+width = 60
+visualIndex = 2
+isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = "Type"
-width = 60
-visualIndex = 4
+name = "Block's First Line"
+width = 120
+visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
@@ -1104,10 +1105,10 @@ isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
-name = "Severity"
+name = "Type"
 width = 60
-visualIndex = 2
-isHidden = FALSE
+visualIndex = 4
+isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.ruleHistory]
@@ -1187,7 +1188,7 @@ scope_to_save_with_macro =
 open_file_dir = 
 open_rc_file_dir = 
 getSignalForm = 367 142 800 479 165 383 391 90
-viewPort = 0 11 1534 323 305 65
+viewPort = 0 11 1536 323 305 65
 legendBackground = -c ID_BLACK
 valueBackground = -c ID_BLACK
 curveBackground = -c ID_BLACK
@@ -1777,7 +1778,7 @@ AddImportArgument = FALSE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -s
 [wave.0]
-viewPort = 0 11 1534 323 305 65
+viewPort = 0 11 1536 323 305 65
 [wave.1]
 viewPort = 127 219 960 332 100 65
 [wave.2]

@@ -30,7 +30,7 @@ class rst_driver extends uvm_driver #(rst_seq_item);
         `uvm_info("RST_DRV", "Reset asserted", UVM_MEDIUM)
 
         if (duration > 0)
-            #(duration);
+            #(duration*1ns);
 
     endtask
 

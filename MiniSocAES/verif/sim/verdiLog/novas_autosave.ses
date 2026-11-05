@@ -27,8 +27,8 @@ fdb_campaign =
 fdb_tool = 
 [hb]
 postSimFile = /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/dump.fsdb
-syncTime = 100.75
-viewport = 0 29 1534 706 0 0 296 1532
+syncTime = 0
+viewport = 0 29 1536 707 0 0 296 1020
 activeNode = "minisoc_top_tb"
 activeScope = "minisoc_top_tb"
 activeFile = "../tb/minisoc_top_tb.sv"
@@ -68,7 +68,7 @@ WaveformFile = /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/ve
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 11 1534 323 305 65
+viewPort = 0 11 1536 323 305 65
 primaryWindow = TRUE
 SessionFile = /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

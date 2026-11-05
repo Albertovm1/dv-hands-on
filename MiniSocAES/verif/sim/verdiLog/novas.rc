@@ -607,9 +607,9 @@ SyncBrowserDir = TRUE
 FindBarVisible = 
 ScaleFactor = 100%
 ToolbarIconSize = Medium
+recent_commands_nWave = windowTimeUnit,windowTimeUnit_2,zoomAll,deltaMenu_delta,getSignal,editCut,zoomIn,zoomOut,getAllSignals
 ColorThemeModern = bright
 version = Verdi_X-2025.06-SP2
-recent_commands_nWave = getSignal,editCut,zoomAll,zoomIn,zoomOut,windowTimeUnit,windowTimeUnit_2,getAllSignals
 prevColorThemeModern = bright
 SignalCaseInSensitive = FALSE
 [GlobalProp]
@@ -767,14 +767,14 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-QwWarnMsgDlg = 462,361,600,250
 unknownSave_SaveSignal(s)NotFound = 471,210,590,340
 QwQuestionMsgDlg = 564,292,406,101
-SetWindowTimeUnitDialog = 550,338,433,87
 unknownSave = 536,259,461,245
-QwInfoMsgDlg = 394,305,750,250
 qWaveSignalDialog = 368,174,800,479
-QwUserAskDlg = 605,290,324,128
+QwInfoMsgDlg = 395,337,750,250
+SetWindowTimeUnitDialog = 550,338,433,87
+QwWarnMsgDlg = 424,425,600,250
+QwUserAskDlg = 349,292,324,122
 [Safety]
 RegisterObject = ID_RED4
 CoreObject = ID_ORANGE5
@@ -978,7 +978,7 @@ pdmlMacro = ID_BLACK
 font = COURIER12
 annotFont = FIXED12
 [Text.1]
-viewport = 0 29 1534 706 45
+viewport = 0 29 1022 681 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -1069,24 +1069,24 @@ isOneSearchVisible = TRUE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = "Block's First Line"
-width = 120
-visualIndex = 1
+name = "Code"
+width = 60
+visualIndex = 3
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = "Severity"
-width = 60
-visualIndex = 2
-isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = "Message"
 width = 2000
 visualIndex = 5
 isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+isColFilterColorCoding = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
+name = "Type"
+width = 60
+visualIndex = 4
+isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
@@ -1097,17 +1097,17 @@ isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
-name = "Code"
-width = 60
-visualIndex = 3
+name = "Block's First Line"
+width = 120
+visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
-name = "Type"
+name = "Severity"
 width = 60
-visualIndex = 4
-isHidden = TRUE
+visualIndex = 2
+isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.ruleHistory]
@@ -1765,7 +1765,7 @@ StopAfterCompileOption = -tcl
 [turboSchema_Printer_Options]
 Orientation = Landscape
 [turbo_library]
-bdb_load_scope
+bdb_load_scope = 
 [vdCovFilteringSearchesStrings]
 keepLastUsedFiltersMaxNum = 10
 [verisity]

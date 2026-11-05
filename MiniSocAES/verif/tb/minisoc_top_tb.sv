@@ -7,17 +7,14 @@ module minisoc_top_tb;
     import clk_agent_pkg::*;
     import rst_agent_pkg::*;
 
-
     import minisoc_scoreboard_pkg::*;
     import minisoc_env_pkg::*;
 
     // Clock Interface
     clk_if clk_vif();
-    clk_config clk_cfg;
 
     //Reset Interface
     rst_if rst_vif();
-    rst_config rst_cfg;
 
     // Temporary signals for DUT inputs
     logic spi_sclk;
@@ -48,37 +45,49 @@ module minisoc_top_tb;
         .mem_o_data (mem_o_data)
     );
 
+    
     initial begin
 
         // Initial values
-        spi_sclk   = 0;
-        spi_cs_n   = 1;
-        spi_mosi   = 0;
-        mem_clk    = 0;
-        mem_i_data = '0;
+        spi_sclk    = 0;
+        spi_cs_n    = 1;
+        spi_mosi    = 0;
+        mem_clk     = 0;
+        mem_i_data  = '0;
         mem_i_wr_en = 0;
-        mem_i_addr = '0;
+        mem_i_addr  = '0;
 
-        // Configure Driver Virtual Interface
-        uvm_config_db #(virtual clk_if.driver)::set(null,"uvm_test_top.env.clk_agent.driver","vif",clk_vif);
+        // Configure Clock Driver Virtual Interface
+        uvm_config_db #(virtual clk_if.driver)::set(
+            null,
+            "uvm_test_top.env.clk_agent.driver",
+            "vif",
+            clk_vif
+        );
 
-        // Configure Monitor Virtual Interface
-        uvm_config_db #(virtual clk_if.monitor)::set(null,"uvm_test_top.env.clk_agent.monitor","vif",clk_vif);
+        // Configure Clock Monitor Virtual Interface
+        uvm_config_db #(virtual clk_if.monitor)::set(
+            null,
+            "uvm_test_top.env.clk_agent.monitor",
+            "vif",
+            clk_vif
+        );
 
-        // Configure Sequence Virtual Interface
-        uvm_config_db #(virtual clk_if.monitor)::set(null,"uvm_test_top.env.clk_agent.sequencer","vif",clk_vif);
+        // Configure Reset Driver Virtual Interface
+        uvm_config_db #(virtual rst_if.driver)::set(
+            null,
+            "uvm_test_top.env.rst_agent.driver",
+            "vif",
+            rst_vif
+        );
 
-        // Reset Driver Virtual Interface
-        uvm_config_db #(virtual rst_if.driver)::set(null,"uvm_test_top.env.rst_agent.driver","vif",rst_vif);
-
-        // Reset Monitor Virtual Interface
-        uvm_config_db #(virtual rst_if.monitor)::set(null,"uvm_test_top.env.rst_agent.monitor","vif",rst_vif);
-
-        // Create clock configuration
-        clk_cfg = clk_config::type_id::create("clk_cfg");
-
-        // Configure Clock Driver
-        uvm_config_db #(clk_config)::set(null,"uvm_test_top.env.clk_agent.driver","cfg",clk_cfg);
+        // Configure Reset Monitor Virtual Interface
+        uvm_config_db #(virtual rst_if.monitor)::set(
+            null,
+            "uvm_test_top.env.rst_agent.monitor",
+            "vif",
+            rst_vif
+        );
 
         // Start UVM Test
         run_test("minisoc_smoke_test");

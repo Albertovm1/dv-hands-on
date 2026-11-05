@@ -10,17 +10,12 @@ class clk_sequence extends uvm_sequence #(clk_seq_item);
     endfunction
 
     task body();
-
         clk_seq_item req;
 
         req = clk_seq_item::type_id::create("req");
-
+        
         start_item(req);
-
-        req.clk_period = 500ps;
-
         finish_item(req);
-
     endtask
 
 endclass
