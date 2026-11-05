@@ -49,3 +49,5 @@
   CREATE_STREAM @0 {NAME:rst_seq T:Transactions SCOPE:uvm_test_top.env.rst_agent.sequencer STREAM:872}
   CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.clk_agent.sequencer STREAM:848}
   CREATE_STREAM @0 {NAME:rst_seq T:Transactions SCOPE:uvm_test_top.env.rst_agent.sequencer STREAM:872}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.clk_agent.sequencer STREAM:866}
+  CREATE_STREAM @0 {NAME:rst_seq T:Transactions SCOPE:uvm_test_top.env.rst_agent.sequencer STREAM:898}

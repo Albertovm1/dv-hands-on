@@ -1,4 +1,4 @@
-746      
+778      
 0 uvm_macros.svh
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/uvm_macros.svh
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/uvm_macros.svh
@@ -659,12 +659,12 @@
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/clk_agent.sv
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/clk_agent.sv
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/clk_agent.sv
-0 rst_config.sv
-0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/rst_config.sv
-0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/rst_config.sv
-0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/rst_config.sv
-0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/rst_config.sv
-0 ../tb/agents/minisoc_clk_agent/rst_config.sv
+0 rst_if.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/rst_if.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/rst_if.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/rst_if.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/rst_if.sv
+0 ../tb/agents/minisoc_clk_agent/rst_if.sv
 0 rst_seq_item.sv
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/rst_seq_item.sv
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/rst_seq_item.sv
@@ -695,14 +695,46 @@
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/rst_agent.sv
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/rst_agent.sv
 0 ../tb/agents/minisoc_clk_agent/rst_agent.sv
-0 rst_sequence.sv
-0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/rst_sequence.sv
-0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/rst_sequence.sv
-0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/rst_sequence.sv
-0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/rst_sequence.sv
-0 ../tb/agents/minisoc_clk_agent/rst_sequence.sv
-0 ../tb/agents/minisoc_rst_agent/rst_sequence.sv
-0 ../tb/sequences/clk/rst_sequence.sv
+0 rst_sequence_base.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/rst_sequence_base.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/rst_sequence_base.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/rst_sequence_base.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/rst_sequence_base.sv
+0 ../tb/agents/minisoc_clk_agent/rst_sequence_base.sv
+0 ../tb/agents/minisoc_rst_agent/rst_sequence_base.sv
+0 ../tb/sequences/clk/rst_sequence_base.sv
+0 rst_sequence_short.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/rst_sequence_short.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/rst_sequence_short.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/rst_sequence_short.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/rst_sequence_short.sv
+0 ../tb/agents/minisoc_clk_agent/rst_sequence_short.sv
+0 ../tb/agents/minisoc_rst_agent/rst_sequence_short.sv
+0 ../tb/sequences/clk/rst_sequence_short.sv
+0 rst_sequence_medium.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/rst_sequence_medium.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/rst_sequence_medium.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/rst_sequence_medium.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/rst_sequence_medium.sv
+0 ../tb/agents/minisoc_clk_agent/rst_sequence_medium.sv
+0 ../tb/agents/minisoc_rst_agent/rst_sequence_medium.sv
+0 ../tb/sequences/clk/rst_sequence_medium.sv
+0 rst_sequence_long.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/rst_sequence_long.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/rst_sequence_long.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/rst_sequence_long.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/rst_sequence_long.sv
+0 ../tb/agents/minisoc_clk_agent/rst_sequence_long.sv
+0 ../tb/agents/minisoc_rst_agent/rst_sequence_long.sv
+0 ../tb/sequences/clk/rst_sequence_long.sv
+0 rst_sequence_multiple.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/rst_sequence_multiple.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/rst_sequence_multiple.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/rst_sequence_multiple.sv
+0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/rst_sequence_multiple.sv
+0 ../tb/agents/minisoc_clk_agent/rst_sequence_multiple.sv
+0 ../tb/agents/minisoc_rst_agent/rst_sequence_multiple.sv
+0 ../tb/sequences/clk/rst_sequence_multiple.sv
 0 minisoc_scoreboard.sv
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/systemverilog/minisoc_scoreboard.sv
 0 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/vcs/minisoc_scoreboard.sv
@@ -818,19 +850,19 @@ build/vcs/minisoc_top_sim
 ../tb/tests/minisoc_test_pkg.sv
 ../tb/top_assertions.sv
 ../tb/minisoc_top_tb.sv
-105
+98
 which_declare=declare -f
-XSESSION_EXEC=mate-session
-XDG_SESSION_ID=5977
+XDG_SESSION_ID=5978
 XDG_RUNTIME_DIR=/run/user/1029
 XDG_DATA_DIRS=/home/alberto.mamede/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-XDG_CURRENT_DESKTOP=MATE
 XA_HOMEDIR=/Tools/synopsys/xa/X-2025.06-SP2
-XAUTHORITY=/home/alberto.mamede/.Xauthority
-X2GO_SESSION=alberto.mamede-1527-1793905211_stDMATE_dp32
-X2GO_AGENT_PID=3230898
 WV_HOMEDIR=/Tools/synopsys/wv/X-2025.06-SP2
-VTE_VERSION=5204
+VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+VSCODE_IPC_HOOK_CLI=/run/user/1029/vscode-ipc-b6c4e6f2-58ce-43b6-b951-12dcf991742e.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1029/vscode-git-8382a83002.sock
+VSCODE_GIT_ASKPASS_NODE=/home/alberto.mamede/.vscode-server/cli/servers/Stable-a717861c07586a53d83b80d742cd3f59b20a6273/server/node
+VSCODE_GIT_ASKPASS_MAIN=/home/alberto.mamede/.vscode-server/cli/servers/Stable-a717861c07586a53d83b80d742cd3f59b20a6273/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
 VMR_MODE_FLAG=64
 VERDI_HOME=/Tools/synopsys/verdi/X-2025.06-SP2
 VC_STATIC_HOME=/Tools/synopsys/vc_static/X-2025.06-SP2
@@ -850,23 +882,21 @@ UVM_HOME=/Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm
 UNAME=/bin/uname
 TOOL_HOME=/Tools/synopsys/vcs/X-2025.06-SP2/linux64
 TESTMAX_HOMEDIR=/Tools/synopsys/testmax/X-2025.06-SP2
+TERM_PROGRAM_VERSION=1.145.0
+TERM_PROGRAM=vscode
 SYN_HOMEDIR=/Tools/synopsys/syn/X-2025.06-SP2
 SYNOPSYS_LC_ROOT=/Tools/synopsys/lc/X-2025.06-SP2
 SYNOPSYS=/Tools/synopsys
-STARTUP=/usr/bin/env LD_LIBRARY_PATH= mate-session
 STARRC_HOMEDIR=/Tools/synopsys/starrc/X-2025.06-SP3
-SSH_CONNECTION=177.37.144.16 57349 192.168.13.69 22
-SSH_CLIENT=177.37.144.16 57349 22
-SSH_AUTH_SOCK=/run/user/1029/keyring/ssh
+SSH_CONNECTION=177.37.144.16 57539 192.168.13.69 22
+SSH_CLIENT=177.37.144.16 57539 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-SSH_AGENT_PID=3236533
 SPYGLASS_HOME=/Tools/synopsys/spyglass/X-2025.06-SP2/SPYGLASS_HOME
 SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
 SNPS_VCS_VHDL_WRAPPER_KDB=1
 SNPS_VCS_PYTHON3=/Tools/synopsys/vcs/X-2025.06-SP2/linux64/bin/Python3/bin/python3
 SNPS_VCS_CLANG_PATH=/Tools/synopsys/vcs/X-2025.06-SP2/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3236260,unix/unix:/tmp/.ICE-unix/3236260
 SELINUX_USE_CURRENT_RANGE=
 SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
@@ -874,10 +904,6 @@ SCRNAME=vcs
 SCRIPT_NAME=vcs
 SAED90_PDK=/Tools/PDK/SAED90/PDK_Analog
 SAED32_28_PDK=/Tools/PDK/SAED32/PDK_Analog
-QT_SCALE_FACTOR=1
-QT_GRAPHICSSYSTEM=native
-QT_FONT_DPI=120
-PULSE_CLIENTCONFIG=/home/alberto.mamede/.x2go/C-alberto.mamede-1527-1793905211_stDMATE_dp32/.pulse-client.conf
 PRIMEWAVERELIABILITY_HOMEDIR=/Tools/synopsys/primewavereliability/X-2025.06-SP2-2
 PRIMETIME_HOMEDIR=/Tools/synopsys/prime/X-2025.06-SP2
 PRIMESIM_HOMEDIR=/Tools/synopsys/primesim/X-2025.06-SP2-3
@@ -889,16 +915,14 @@ MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
 MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
 MODULESHOME=/usr/share/Modules
 MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
-MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
 MILK_HOME=/Tools/synopsys/mw/X-2025.06
 MFLAGS=
-MATE_DESKTOP_SESSION_ID=this-is-deprecated
-MAKE_TERMOUT=/dev/pts/27
-MAKE_TERMERR=/dev/pts/27
+MAKE_TERMOUT=/dev/pts/35
+MAKE_TERMERR=/dev/pts/35
 MAKELEVEL=1
 MAKEFLAGS=
 LOADEDMODULES=
-LIBGL_ALWAYS_SOFTWARE=1
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_HOME=/Tools/synopsys/lc/X-2025.06-SP2
 LC_ALL=C
@@ -909,14 +933,15 @@ ICVALIDATOR_HOME=/Tools/synopsys/icvalidator/X-2025.06-SP2
 ICC2_HOME=/Tools/synopsys/icc2/X-2025.06-SP2
 HSP_HOME=/Tools/synopsys/hspice/X-2025.06-SP2-2/hspice
 HISTCONTROL=ignoredups
-GTK_OVERLAY_SCROLLING=0
+GIT_ASKPASS=/home/alberto.mamede/.vscode-server/cli/servers/Stable-a717861c07586a53d83b80d742cd3f59b20a6273/server/extensions/git/dist/askpass.sh
 FUSION_HOMEDIR=/Tools/synopsys/fusioncompiler/X-2025.06-SP3
 FPGA_HOMEDIR=/Tools/synopsys/fpga/W-2025.03
 FM_HOME=/Tools/synopsys/fm/X-2025.06-SP3
 EXECMAN_HOMEDIR=/Tools/synopsys/execman/X-2025.06-SP2/VMS
 DEBUGINFOD_URLS=https://debuginfod.centos.org/ 
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-0fc32PHmNx,guid=f695fcdbb7866d9e278d2d976aecd250
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1029/bus
 CUSTOM_HOMEDIR=/Tools/synopsys/customcompiler/X-2025.06-SP2-2
+COPILOT_DEBUG_NONCE=88d68895e8efa24b7944d383c579eae5
 COLORTERM=truecolor
 BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
 BASH_FUNC_switchml%%=() {  typeset swfound=1;_ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then_ typeset swname='main';_ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then_ typeset swfound=0;_ unset MODULES_USE_COMPAT_VERSION;_ fi;_ else_ typeset swname='compatibility';_ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then_ typeset swfound=0;_ MODULES_USE_COMPAT_VERSION=1;_ export MODULES_USE_COMPAT_VERSION;_ fi;_ fi;_ if [ $swfound -eq 0 ]; then_ echo "Switching to Modules $swname version";_ source /usr/share/Modules/init/bash;_ else_ echo "Cannot switch to Modules $swname version, command not found";_ return 1;_ fi_}
@@ -926,18 +951,21 @@ BASH_FUNC_ml%%=() {  module ml "$@"_}
 BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
 0
 0
-203
-1793666467 ../tb/tests/minisoc_smoke_test.sv
-1793903249 ../tb/env/minisoc_env.sv
-1793906457 ../tb/env/coverage/minisoc_coverage.sv
-1793904885 ../tb/env/scoreboard/minisoc_scoreboard.sv
-1793676495 ../tb/sequences/rst/rst_sequence.sv
-1793678384 ../tb/agents/minisoc_rst_agent/rst_agent.sv
-1793666467 ../tb/agents/minisoc_rst_agent/rst_monitor.sv
-1793830087 ../tb/agents/minisoc_rst_agent/rst_driver.sv
-1793666467 ../tb/agents/minisoc_rst_agent/rst_sequencer.sv
-1793666467 ../tb/agents/minisoc_rst_agent/rst_seq_item.sv
-1793666467 ../tb/agents/minisoc_rst_agent/rst_config.sv
+206
+1793913464 ../tb/tests/minisoc_smoke_test.sv
+1793913909 ../tb/env/minisoc_env.sv
+1793913951 ../tb/env/coverage/minisoc_coverage.sv
+1793911690 ../tb/env/scoreboard/minisoc_scoreboard.sv
+1793910778 ../tb/sequences/rst/rst_sequence_multiple.sv
+1793910753 ../tb/sequences/rst/rst_sequence_long.sv
+1793910734 ../tb/sequences/rst/rst_sequence_medium.sv
+1793910718 ../tb/sequences/rst/rst_sequence_short.sv
+1793913227 ../tb/sequences/rst/rst_sequence_base.sv
+1793907143 ../tb/agents/minisoc_rst_agent/rst_agent.sv
+1793913613 ../tb/agents/minisoc_rst_agent/rst_monitor.sv
+1793908970 ../tb/agents/minisoc_rst_agent/rst_driver.sv
+1793907286 ../tb/agents/minisoc_rst_agent/rst_sequencer.sv
+1793908016 ../tb/agents/minisoc_rst_agent/rst_seq_item.sv
 1793667120 ../tb/agents/minisoc_clk_agent/clk_agent.sv
 1793906325 ../tb/agents/minisoc_clk_agent/clk_monitor.sv
 1793904200 ../tb/agents/minisoc_clk_agent/clk_driver.sv
@@ -1113,7 +1141,7 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 1793901514 ../tb/env/minisoc_env_pkg.sv
 1793898870 ../tb/env/coverage/minisoc_coverage_pkg.sv
 1793903563 ../tb/env/scoreboard/minisoc_scoreboard_pkg.sv
-1793666467 ../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv
+1793910831 ../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv
 1793902491 ../tb/agents/minisoc_clk_agent/clk_agent_pkg.sv
 1793666467 ../tb/agents/minisoc_rst_agent/rst_if.sv
 1793901633 ../tb/agents/minisoc_clk_agent/clk_if.sv
@@ -1137,5 +1165,5 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 1764576997 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/liberrorinf.so
 1764576990 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libsnpsmalloc.so
 1764576977 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libvfs.so
-1793906485 build/vcs/minisoc_top_sim.daidir
+1793913977 build/vcs/minisoc_top_sim.daidir
 -1 partitionlib

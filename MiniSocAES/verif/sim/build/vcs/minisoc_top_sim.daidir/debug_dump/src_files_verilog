@@ -179,7 +179,6 @@
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_clk_agent/clk_sequencer.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_agent.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_agent_pkg.sv
-/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_config.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_driver.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_if.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_monitor.sv
@@ -193,7 +192,11 @@
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/env/scoreboard/minisoc_scoreboard_pkg.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/minisoc_top_tb.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/clk/clk_sequence.sv
-/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_base.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_long.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_medium.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_multiple.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_short.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/tests/minisoc_smoke_test.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/tests/minisoc_test_pkg.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/top_assertions.sv

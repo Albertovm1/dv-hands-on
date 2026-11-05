@@ -15,7 +15,6 @@
 ../tb/agents/minisoc_clk_agent/clk_sequencer.sv
 ../tb/agents/minisoc_rst_agent/rst_agent.sv
 ../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv
-../tb/agents/minisoc_rst_agent/rst_config.sv
 ../tb/agents/minisoc_rst_agent/rst_driver.sv
 ../tb/agents/minisoc_rst_agent/rst_if.sv
 ../tb/agents/minisoc_rst_agent/rst_monitor.sv
@@ -29,7 +28,11 @@
 ../tb/env/scoreboard/minisoc_scoreboard_pkg.sv
 ../tb/minisoc_top_tb.sv
 ../tb/sequences/clk/clk_sequence.sv
-../tb/sequences/rst/rst_sequence.sv
+../tb/sequences/rst/rst_sequence_base.sv
+../tb/sequences/rst/rst_sequence_long.sv
+../tb/sequences/rst/rst_sequence_medium.sv
+../tb/sequences/rst/rst_sequence_multiple.sv
+../tb/sequences/rst/rst_sequence_short.sv
 ../tb/tests/minisoc_smoke_test.sv
 ../tb/tests/minisoc_test_pkg.sv
 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/base/uvm_barrier.svh

@@ -31,7 +31,10 @@ class minisoc_env extends uvm_env;
         super.connect_phase(phase);
 
         m_clk_agent.monitor.analysis_port.connect(scoreboard.clk_monitor_export);
-        m_clk_agent.monitor.analysis_port.connect(coverage.analysis_export);
+        m_clk_agent.monitor.analysis_port.connect(coverage.clk_analysis_export);
+
+        m_rst_agent.monitor.analysis_port.connect(scoreboard.rst_monitor_export);
+        m_rst_agent.monitor.analysis_port.connect(coverage.rst_analysis_export);
 
 
     endfunction
