@@ -167,7 +167,7 @@ maxproc		1028315
 (Special)Runtime environment variables:
 
 Runtime environment variables:
-VSCODE_GIT_ASKPASS_MAIN=/home/alberto.mamede/.vscode-server/cli/servers/Stable-a717861c07586a53d83b80d742cd3f59b20a6273/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_MAIN=/home/alberto.mamede/.vscode-server/cli/servers/Stable-dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/server/extensions/git/dist/askpass-main.js
 MILK_HOME=/Tools/synopsys/mw/X-2025.06
 WV_HOMEDIR=/Tools/synopsys/wv/X-2025.06-SP2
 MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
@@ -181,8 +181,8 @@ LESSOPEN=||/usr/bin/lesspipe.sh %s
 FM_HOME=/Tools/synopsys/fm/X-2025.06-SP3
 MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
 PRIMEWAVERELIABILITY_HOMEDIR=/Tools/synopsys/primewavereliability/X-2025.06-SP2-2
-SSH_CONNECTION=177.37.144.16 57539 192.168.13.69 22
-PATH=/Tools/PDK/SAED90/PDK_Analog/scripts:/Tools/PDK/SAED32/PDK_Analog/scripts:/Tools/synopsys/primewavereliability/X-2025.06-SP2-2/bin:/Tools/synopsys/xa/X-2025.06-SP2/bin:/Tools/synopsys/wv/X-2025.06-SP2/bin:/Tools/synopsys/testmax/X-2025.06-SP2/bin:/Tools/synopsys/spyglass/X-2025.06-SP2/SPYGLASS_HOME/bin:/Tools/synopsys/identify/W-2025.03/bin:/Tools/synopsys/fpga/W-2025.03/bin:/Tools/synopsys/execman/X-2025.06-SP2/VMS/bin:/Tools/synopsys/pprtl/X-2025.06-SP2/bin:/Tools/synopsys/primelib/X-2025.06-SP2/bin:/Tools/synopsys/vc_static/X-2025.06-SP2/bin:/Tools/synopsys/hspice/X-2025.06-SP2-2/hspice/bin:/Tools/synopsys/lc/X-2025.06-SP2/bin:/Tools/synopsys/fm/X-2025.06-SP3/bin:/Tools/synopsys/verdi/X-2025.06-SP2/bin:/Tools/synopsys/vcs/X-2025.06-SP2/bin:/Tools/synopsys/syn/X-2025.06-SP2/bin:/Tools/synopsys/fusioncompiler/X-2025.06-SP3/bin:/Tools/synopsys/customcompiler/X-2025.06-SP2-2/bin:/Tools/synopsys/starrc/X-2025.06-SP3/bin:/Tools/synopsys/prime/X-2025.06-SP2/bin:/Tools/synopsys/primesim/X-2025.06-SP2-3/bin:/Tools/synopsys/mw/X-2025.06/bin:/Tools/synopsys/icvalidator/X-2025.06-SP2/bin:/Tools/synopsys/icc2/X-2025.06-SP2/bin:/home/alberto.mamede/.vscode-server/cli/servers/Stable-a717861c07586a53d83b80d742cd3f59b20a6273/server/bin/remote-cli:/home/alberto.mamede/.local/bin:/home/alberto.mamede/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/alberto.mamede/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/alberto.mamede/.vscode-server/cli/servers/Stable-a717861c07586a53d83b80d742cd3f59b20a6273/server/bin/copilot-shim
+SSH_CONNECTION=177.37.144.208 28036 192.168.13.69 22
+PATH=/Tools/PDK/SAED90/PDK_Analog/scripts:/Tools/PDK/SAED32/PDK_Analog/scripts:/Tools/synopsys/primewavereliability/X-2025.06-SP2-2/bin:/Tools/synopsys/xa/X-2025.06-SP2/bin:/Tools/synopsys/wv/X-2025.06-SP2/bin:/Tools/synopsys/testmax/X-2025.06-SP2/bin:/Tools/synopsys/spyglass/X-2025.06-SP2/SPYGLASS_HOME/bin:/Tools/synopsys/identify/W-2025.03/bin:/Tools/synopsys/fpga/W-2025.03/bin:/Tools/synopsys/execman/X-2025.06-SP2/VMS/bin:/Tools/synopsys/pprtl/X-2025.06-SP2/bin:/Tools/synopsys/primelib/X-2025.06-SP2/bin:/Tools/synopsys/vc_static/X-2025.06-SP2/bin:/Tools/synopsys/hspice/X-2025.06-SP2-2/hspice/bin:/Tools/synopsys/lc/X-2025.06-SP2/bin:/Tools/synopsys/fm/X-2025.06-SP3/bin:/Tools/synopsys/verdi/X-2025.06-SP2/bin:/Tools/synopsys/vcs/X-2025.06-SP2/bin:/Tools/synopsys/syn/X-2025.06-SP2/bin:/Tools/synopsys/fusioncompiler/X-2025.06-SP3/bin:/Tools/synopsys/customcompiler/X-2025.06-SP2-2/bin:/Tools/synopsys/starrc/X-2025.06-SP3/bin:/Tools/synopsys/prime/X-2025.06-SP2/bin:/Tools/synopsys/primesim/X-2025.06-SP2-3/bin:/Tools/synopsys/mw/X-2025.06/bin:/Tools/synopsys/icvalidator/X-2025.06-SP2/bin:/Tools/synopsys/icc2/X-2025.06-SP2/bin:/home/alberto.mamede/.vscode-server/cli/servers/Stable-dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/server/bin/remote-cli:/home/alberto.mamede/.local/bin:/home/alberto.mamede/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/alberto.mamede/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/alberto.mamede/.vscode-server/cli/servers/Stable-dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/server/bin/copilot-shim
 LM_LICENSE_FILE=27020@melicense.embedded.ufcg.edu.br
 PPRTL_HOMEDIR=/Tools/synopsys/pprtl/X-2025.06-SP2
 STARRC_HOMEDIR=/Tools/synopsys/starrc/X-2025.06-SP3
@@ -203,7 +203,7 @@ which_declare=declare -f
 HOME=/home/alberto.mamede
 VCS_HOME=/Tools/synopsys/vcs/X-2025.06-SP2
 PWD=/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim
-VSCODE_IPC_HOOK_CLI=/run/user/1029/vscode-ipc-b6c4e6f2-58ce-43b6-b951-12dcf991742e.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1029/vscode-ipc-f0a31e80-1e38-4595-aa09-9a8ca787736f.sock
 TESTMAX_HOMEDIR=/Tools/synopsys/testmax/X-2025.06-SP2
 VERDI_HOME=/Tools/synopsys/verdi/X-2025.06-SP2
 MANPATH=:
@@ -244,7 +244,7 @@ BASH_FUNC_switchml%%=() {  typeset swfound=1;
  fi
 }
 PRIMELIB_HOMEDIR=/Tools/synopsys/primelib/X-2025.06-SP2
-XDG_SESSION_ID=5978
+XDG_SESSION_ID=99
 USER=alberto.mamede
 IDENTIFY_HOMEDIR=/Tools/synopsys/identify/W-2025.03
 COPILOT_DEBUG_NONCE=88d68895e8efa24b7944d383c579eae5
@@ -252,32 +252,32 @@ VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
 CUSTOM_HOMEDIR=/Tools/synopsys/customcompiler/X-2025.06-SP2-2
 DEBUGINFOD_URLS=https://debuginfod.centos.org/ 
 SYNOPSYS_LC_ROOT=/Tools/synopsys/lc/X-2025.06-SP2
-OLDPWD=/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on
+OLDPWD=/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
 VC_STATIC_HOME=/Tools/synopsys/vc_static/X-2025.06-SP2
 TERM_PROGRAM=vscode
 BASH_FUNC_ml%%=() {  module ml "$@"
 }
-VSCODE_GIT_ASKPASS_NODE=/home/alberto.mamede/.vscode-server/cli/servers/Stable-a717861c07586a53d83b80d742cd3f59b20a6273/server/node
+VSCODE_GIT_ASKPASS_NODE=/home/alberto.mamede/.vscode-server/cli/servers/Stable-dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/server/node
 BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1
 }
 MAKEFLAGS=
 MFLAGS=
-SSH_CLIENT=177.37.144.16 57539 22
-TERM_PROGRAM_VERSION=1.145.0
+SSH_CLIENT=177.37.144.208 28036 22
+TERM_PROGRAM_VERSION=1.145.3
 MAIL=/var/spool/mail/alberto.mamede
 LOADEDMODULES=
 SPYGLASS_HOME=/Tools/synopsys/spyglass/X-2025.06-SP2/SPYGLASS_HOME
 SAED90_PDK=/Tools/PDK/SAED90/PDK_Analog
 ICVALIDATOR_HOME=/Tools/synopsys/icvalidator/X-2025.06-SP2
-MAKE_TERMOUT=/dev/pts/35
-BROWSER=/home/alberto.mamede/.vscode-server/cli/servers/Stable-a717861c07586a53d83b80d742cd3f59b20a6273/server/bin/helpers/browser.sh
+MAKE_TERMOUT=/dev/pts/5
+BROWSER=/home/alberto.mamede/.vscode-server/cli/servers/Stable-dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/server/bin/helpers/browser.sh
 BASH_FUNC_which%%=() {  ( alias;
  eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
 }
 ICV_HOME_DIR=/Tools/synopsys/icvalidator/X-2025.06-SP2
 XA_HOMEDIR=/Tools/synopsys/xa/X-2025.06-SP2
-GIT_ASKPASS=/home/alberto.mamede/.vscode-server/cli/servers/Stable-a717861c07586a53d83b80d742cd3f59b20a6273/server/extensions/git/dist/askpass.sh
+GIT_ASKPASS=/home/alberto.mamede/.vscode-server/cli/servers/Stable-dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/server/extensions/git/dist/askpass.sh
 PRIMETIME_HOMEDIR=/Tools/synopsys/prime/X-2025.06-SP2
 FPGA_HOMEDIR=/Tools/synopsys/fpga/W-2025.03
 LC_HOME=/Tools/synopsys/lc/X-2025.06-SP2
@@ -285,7 +285,7 @@ HSP_HOME=/Tools/synopsys/hspice/X-2025.06-SP2-2/hspice
 SELINUX_ROLE_REQUESTED=
 HISTSIZE=1000
 SAED32_28_PDK=/Tools/PDK/SAED32/PDK_Analog
-MAKE_TERMERR=/dev/pts/35
+MAKE_TERMERR=/dev/pts/5
 FUSION_HOMEDIR=/Tools/synopsys/fusioncompiler/X-2025.06-SP3
 LANG=pt_BR.UTF-8
 TERM=xterm-256color
@@ -359,8 +359,8 @@ argv[3]=-l
 argv[4]=build/vcs/logs/vcs_run.log
 **********Message Rewind**************
 276 profile - 100
-          CPU/Mem usage: 0.110 sys,  0.430 user,  468.44M mem
-277 Elapsed time:    0:00:00    Thu Nov  5 18:26:17 2026
+          CPU/Mem usage: 0.090 sys,  0.440 user,  468.43M mem
+277 Elapsed time:    0:00:01    Tue Nov 10 23:30:14 2026
 278 User CPU time used: 0 seconds
 279 System CPU time used: 0 seconds
 280 pliAppInit
@@ -395,23 +395,23 @@ argv[4]=build/vcs/logs/vcs_run.log
 309 *Verdi* : Begin traversing the scope (minisoc_top_tb), layer (0).
 310 *Verdi* : End of traversing.
 311 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.120 sys,  0.440 user,  570.26M mem
-                   incr: 0.000 sys,  0.010 user,  11.39M mem
-                   accu: 0.000 sys,  0.010 user,  11.39M mem
-              accu incr: 0.000 sys,  0.010 user,  11.39M mem
+          CPU/Mem usage: 0.090 sys,  0.450 user,  570.25M mem
+                   incr: 0.000 sys,  0.000 user,  11.39M mem
+                   accu: 0.000 sys,  0.000 user,  11.39M mem
+              accu incr: 0.000 sys,  0.000 user,  11.39M mem
 
           Count usage: 196 var,  192 idcode,  86 callback
                  incr: 196 var,  192 idcode,  86 callback
                  accu: 196 var,  192 idcode,  86 callback
             accu incr: 196 var,  192 idcode,  86 callback
 312 Idcode  0 - bc1:0  mda:0
-313 Elapsed time:    0:00:00    Thu Nov  5 18:26:17 2026
+313 Elapsed time:    0:00:01    Tue Nov 10 23:30:14 2026
 314 User CPU time used: 0 seconds
 315 System CPU time used: 0 seconds
 316 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.120 sys,  0.440 user,  570.26M mem
+          CPU/Mem usage: 0.090 sys,  0.450 user,  570.25M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.010 user,  11.39M mem
+                   accu: 0.000 sys,  0.000 user,  11.39M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
           Count usage: 196 var,  192 idcode,  86 callback
@@ -419,7 +419,7 @@ argv[4]=build/vcs/logs/vcs_run.log
                  accu: 196 var,  192 idcode,  86 callback
             accu incr: 0 var,  0 idcode,  0 callback
 317 Idcode  0 - bc1:0  mda:0
-318 Elapsed time:    0:00:00    Thu Nov  5 18:26:17 2026
+318 Elapsed time:    0:00:01    Tue Nov 10 23:30:14 2026
 319 User CPU time used: 0 seconds
 320 System CPU time used: 0 seconds
 321 sps_call_fsdbDumpMDA_vd_main at 0 : ../tb/minisoc_top_tb.sv(100)
@@ -427,23 +427,23 @@ argv[4]=build/vcs/logs/vcs_run.log
 323 *Verdi* : Enable +mda and +packedmda dumping.
 324 *Verdi* : End of traversing the MDAs.
 325 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.120 sys,  0.490 user,  570.26M mem
-                   incr: 0.000 sys,  0.050 user,  0.00M mem
-                   accu: 0.000 sys,  0.050 user,  0.00M mem
-              accu incr: 0.000 sys,  0.050 user,  0.00M mem
+          CPU/Mem usage: 0.100 sys,  0.520 user,  570.25M mem
+                   incr: 0.010 sys,  0.070 user,  0.00M mem
+                   accu: 0.010 sys,  0.070 user,  0.00M mem
+              accu incr: 0.010 sys,  0.070 user,  0.00M mem
 
           Count usage: 1696 var,  192 idcode,  93 callback
                  incr: 1500 var,  0 idcode,  7 callback
                  accu: 1500 var,  0 idcode,  7 callback
             accu incr: 1500 var,  0 idcode,  7 callback
 326 Idcode  0 - bc1:0  mda:1507
-327 Elapsed time:    0:00:00    Thu Nov  5 18:26:17 2026
+327 Elapsed time:    0:00:01    Tue Nov 10 23:30:14 2026
 328 User CPU time used: 0 seconds
 329 System CPU time used: 0 seconds
 330 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.120 sys,  0.490 user,  570.26M mem
+          CPU/Mem usage: 0.100 sys,  0.520 user,  570.25M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.050 user,  0.00M mem
+                   accu: 0.010 sys,  0.070 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
           Count usage: 1696 var,  192 idcode,  93 callback
@@ -451,33 +451,33 @@ argv[4]=build/vcs/logs/vcs_run.log
                  accu: 1500 var,  0 idcode,  7 callback
             accu incr: 0 var,  0 idcode,  0 callback
 331 Idcode  0 - bc1:0  mda:1507
-332 Elapsed time:    0:00:00    Thu Nov  5 18:26:17 2026
+332 Elapsed time:    0:00:01    Tue Nov 10 23:30:14 2026
 333 User CPU time used: 0 seconds
 334 System CPU time used: 0 seconds
 335 End of simulation at 20000
-336 Memory usage: 570.274 M
-337 Maximum resident set size: 219 MB
-338 Hard page faults: 0
-339 Soft page faults: 20243
-340 Elapsed time:    0:00:00    Thu Nov  5 18:26:17 2026
+336 Memory usage: 570.262 M
+337 Maximum resident set size: 222 MB
+338 Hard page faults: 3
+339 Soft page faults: 20332
+340 Elapsed time:    0:00:01    Tue Nov 10 23:30:14 2026
 341 User CPU time used: 0 seconds
 342 System CPU time used: 0 seconds
 343 Begin FSDB profile info:
 344 FSDB Writer : bc1(116) bcn(784) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.029179) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer elapsed time : flush(0.031375) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 345 End FSDB profile info
 346 FSDB closed. Name: dump.fsdb Size: 20504
 347 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
 348                      - BlockUsed:1 Acquire:0 BufferUsed:16571
 349                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:0
-350                      - MainProducerTime:0.698176132 TotalConsumerTime:0.000000000
-351                      - ElapsedTime:0.212691000
+350                      - MainProducerTime:0.699836055 TotalConsumerTime:0.000000000
+351                      - ElapsedTime:0.213543000
 352 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:16571
 353 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
 354                      - BlockUsed:2 Acquire:0 BufferUsed:16571
 355 SimExit
-356 Elapsed time:    0:00:00    Thu Nov  5 18:26:17 2026
+356 Elapsed time:    0:00:01    Tue Nov 10 23:30:14 2026
 357 User CPU time used: 0 seconds
 358 System CPU time used: 0 seconds
 359 Sim process exit

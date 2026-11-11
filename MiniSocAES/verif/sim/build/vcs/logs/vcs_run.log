@@ -1,7 +1,7 @@
 Command: /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/./build/vcs/minisoc_top_sim +ntb_random_seed=random +UVM_TESTNAME=minisoc_smoke_test -l build/vcs/logs/vcs_run.log
 Chronologic VCS simulator copyright 1991-2025
 Contains Synopsys proprietary information.
-Compiler version X-2025.06-SP2_Full64; Runtime version X-2025.06-SP2_Full64;  Nov  5 18:26 2026
+Compiler version X-2025.06-SP2_Full64; Runtime version X-2025.06-SP2_Full64;  Nov 10 23:30 2026
 
 Warning-[INV-RANDSEED-VAL] Invalid random seed value
   Invalid random seed value passed through command line or environment 
@@ -43,11 +43,8 @@ UVM_INFO ../tb/tests/minisoc_smoke_test.sv(21) @ 0: uvm_test_top [SMOKE_TEST] Bu
 UVM_INFO ../tb/agents/minisoc_clk_agent/clk_agent.sv(28) @ 0: uvm_test_top.env.clk_agent [CLK_MONITOR] Clock Monitor connected!
 UVM_INFO ../tb/tests/minisoc_smoke_test.sv(45) @ 0: uvm_test_top [SMOKE_TEST] Environment, Clock Agent and Reset Agent created successfully
 UVM_INFO ../tb/tests/minisoc_smoke_test.sv(54) @ 0: uvm_test_top [SMOKE_TEST] Starting MiniSoC smoke test
-UVM_INFO ../tb/tests/minisoc_smoke_test.sv(57) @ 0: uvm_test_top [SMOKE_TEST] Starting Clock sequence
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_monitor.sv(41) @ 0: uvm_test_top.env.rst_agent.monitor [RST_MON] Reset deasserted
 UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(58) @ 0: uvm_test_top.env.scoreboard [SCOREBOARD] Reset DEASSERTED: rst_n = 1
-UVM_INFO ../tb/tests/minisoc_smoke_test.sv(63) @ 0: uvm_test_top [SMOKE_TEST] Clock sequence completed
-UVM_INFO ../tb/tests/minisoc_smoke_test.sv(66) @ 0: uvm_test_top [SMOKE_TEST] Starting Reset sequence
 UVM_INFO ../tb/sequences/rst/rst_sequence_short.sv(14) @ 0: uvm_test_top.env.rst_agent.sequencer@@rst_seq [RST_SHORT] Starting short reset sequence
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(26) @ 0: uvm_test_top.env.rst_agent.driver [RST_DRV] Reset asserted
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_monitor.sv(37) @ 0: uvm_test_top.env.rst_agent.monitor [RST_MON] Reset asserted
@@ -56,8 +53,6 @@ UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(36) @ 10000: uvm_test_top.
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_monitor.sv(41) @ 10000: uvm_test_top.env.rst_agent.monitor [RST_MON] Reset deasserted
 UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(58) @ 10000: uvm_test_top.env.scoreboard [SCOREBOARD] Reset DEASSERTED: rst_n = 1
 UVM_INFO ../tb/sequences/rst/rst_sequence_short.sv(18) @ 20000: uvm_test_top.env.rst_agent.sequencer@@rst_seq [RST_SHORT] Short reset sequence completed
-UVM_INFO ../tb/tests/minisoc_smoke_test.sv(72) @ 20000: uvm_test_top [SMOKE_TEST] Reset sequence completed
-UVM_INFO ../tb/tests/minisoc_smoke_test.sv(75) @ 20000: uvm_test_top [SMOKE_TEST] MiniSoC smoke test completed
 UVM_INFO /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 20000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 UVM_INFO ../tb/env/coverage/minisoc_coverage.sv(88) @ 20000: uvm_test_top.env.coverage [MINISOC_COVERAGE] Clock Coverage: 100.00%
 UVM_INFO ../tb/env/coverage/minisoc_coverage.sv(90) @ 20000: uvm_test_top.env.coverage [MINISOC_COVERAGE] Reset Coverage: 100.00%
@@ -81,7 +76,7 @@ UVM_INFO /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/base/uvm_report_server.sv
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :   30
+UVM_INFO :   25
 UVM_WARNING :    0
 UVM_ERROR :    0
 UVM_FATAL :    0
@@ -94,7 +89,7 @@ UVM_FATAL :    0
 [RST_MON]     3
 [RST_SHORT]     2
 [SCOREBOARD]     3
-[SMOKE_TEST]     8
+[SMOKE_TEST]     3
 [TEST_DONE]     1
 [UVM/RELNOTES]     1
 [UVM/REPORT/CATCHER]     1
@@ -104,4 +99,4 @@ $finish at simulation time                20000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 20000 ps
 CPU Time:      0.700 seconds;       Data structure size:   0.7Mb
-Thu Nov  5 18:26:17 2026
+Tue Nov 10 23:30:14 2026

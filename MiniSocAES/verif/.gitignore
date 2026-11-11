@@ -1,0 +1,17 @@
+# Arquivos gerados por simuladores
+MiniSocAES/verif/**/build/
+MiniSocAES/verif/**/csrc/
+MiniSocAES/verif/**/simv
+MiniSocAES/verif/**/simv.daidir/
+
+# Dumps e logs de simulacao
+MiniSocAES/verif/**/*.fsdb
+MiniSocAES/verif/**/*.vcd
+MiniSocAES/verif/**/*.vpd
+MiniSocAES/verif/**/*.log
+
+# Arquivos gerados pelo Verdi
+MiniSocAES/verif/**/verdiLog/
+MiniSocAES/verif/**/VerdiLog/
+MiniSocAES/verif/**/vdCovLog/
+MiniSocAES/verif/**/DVEfiles/
