@@ -18,5 +18,4 @@ class rst_seq_item extends uvm_sequence_item;
     endfunction
     
 endclass
-
 `endif

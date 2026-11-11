@@ -7,7 +7,7 @@ class clk_seq_item extends uvm_sequence_item;
 
     time clk_period = 500ps;
 
-    function new(string name = clk_seq_item::get_type_name());
+    function new(string name = "clk_seq_item");
         super.new(name);
     endfunction
     

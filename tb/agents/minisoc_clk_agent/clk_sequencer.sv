@@ -10,5 +10,4 @@ class clk_sequencer extends uvm_sequencer #(clk_seq_item);
     endfunction
 
 endclass
-
 `endif

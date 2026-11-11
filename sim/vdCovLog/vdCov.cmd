@@ -13,8 +13,10 @@ verdiSetActWin -dock widgetDock_<CovDetail>
 gui_covtable_show -show  { Module List } -id  CoverageTable.1  -test  MergedTest
 gui_covtable_show -show  { Function Groups } -id  CoverageTable.1  -test  MergedTest
 verdiSetActWin -dock widgetDock_<Summary>
-gui_list_expand -id  CoverageTable.1   -list {covtblFGroupsList} /minisoc_coverage_pkg::rst_coverage::rst_cg
-gui_list_expand -id  CoverageTable.1   -list {covtblFGroupsList} /minisoc_coverage_pkg::rst_coverage::rst_cg/minisoc_coverage_pkg::rst_coverage::rst_cg.minisoc_top_tb.me.obj.rst_cg
-gui_list_collapse -id  CoverageTable.1   -list {covtblFGroupsList} /minisoc_coverage_pkg::rst_coverage::rst_cg
-gui_list_expand -id  CoverageTable.1   -list {covtblFGroupsList} /minisoc_coverage_pkg::rst_coverage::rst_cg
-gui_list_expand -id  CoverageTable.1   -list {covtblFGroupsList} /minisoc_coverage_pkg::clk_coverage::clk_cg
+gui_list_expand -id  CoverageTable.1   -list {covtblFGroupsList} /minisoc_coverage_pkg::minisoc_coverage::clk_cov
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::clk_cov.period_cov   }
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::clk_cov.period_cov  minisoc_coverage_pkg::minisoc_coverage::clk_cov.duty_cycle_cov   }
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::clk_cov.duty_cycle_cov  minisoc_coverage_pkg::minisoc_coverage::clk_cov.period_cov   }
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::clk_cov.period_cov  minisoc_coverage_pkg::minisoc_coverage::clk_cov.duty_cycle_cov   }
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::clk_cov.duty_cycle_cov  minisoc_coverage_pkg::minisoc_coverage::clk_cov.period_cov   }
+vdCovExit -noprompt

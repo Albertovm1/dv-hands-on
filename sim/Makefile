@@ -1,4 +1,3 @@
-
 BLOCKNAME = minisoc_top
 
 #
@@ -22,8 +21,7 @@ TB_DIR = ../tb
 TB_TOP_FILE = $(TB_DIR)/minisoc_top_tb.sv
 SVA_FILE    = $(TB_DIR)/top_assertions.sv
 
-INC_DIRS = +incdir+$(TB_DIR)/interfaces \
-           +incdir+$(TB_DIR)/agents/minisoc_clk_agent \
+INC_DIRS = +incdir+$(TB_DIR)/agents/minisoc_clk_agent \
            +incdir+$(TB_DIR)/agents/minisoc_rst_agent \
            +incdir+$(TB_DIR)/sequences/clk \
            +incdir+$(TB_DIR)/sequences/rst \
@@ -44,8 +42,8 @@ UVM_TESTNAME = minisoc_smoke_test
 #
 
 TB_FILES = \
-    $(TB_DIR)/interfaces/clk_if.sv \
-    $(TB_DIR)/interfaces/rst_if.sv \
+    $(TB_DIR)/agents/minisoc_clk_agent/clk_if.sv \
+    $(TB_DIR)/agents/minisoc_rst_agent/rst_if.sv \
     $(TB_DIR)/agents/minisoc_clk_agent/clk_agent_pkg.sv \
     $(TB_DIR)/agents/minisoc_rst_agent/rst_agent_pkg.sv \
     $(TB_DIR)/env/scoreboard/minisoc_scoreboard_pkg.sv \
@@ -115,8 +113,8 @@ vcs_clean:
 # Verdi
 #
 verdi_gui:
-	@echo "[VCS] Launching Verdi"
-	verdi -play $(TB_DIR)/minisoc_top.cmd &
+	@echo "[VERDI] Launching Verdi..."
+	verdi -play ./minisoc_top.cmd &
 
 #
 # Coverage GUI

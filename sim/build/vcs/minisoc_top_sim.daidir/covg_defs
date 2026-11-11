@@ -1,9 +1,8 @@
-global coverage_group 0 0 minisoc_coverage_pkg::clk_coverage::clk_cg __coverage_clk_coverage.clk_cg unused_clk_coverage_clk_cg_loop_label minisoc_coverage_pkg 0 1 0 0 0  ( 0 
+global coverage_group 0 0 minisoc_coverage_pkg::minisoc_coverage::clk_cov __coverage_minisoc_coverage.clk_cov unused_minisoc_coverage_clk_cov_loop_label minisoc_coverage_pkg 0 1 0 0 0  ( 0 
 )
- 1 2
- 0 107 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/../tb/env/coverage/clk_coverage.sv
- 107 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/../tb/env/coverage/rst_coverage.sv
- 10 0 0 0 1 0 0 0 0 0  1
+ 1 1
+ 0 111 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/../tb/env/coverage/minisoc_coverage.sv
+ 21 0 0 0 1 0 0 0 0 0  1
 0
 0
 0
@@ -27,7 +26,83 @@ global coverage_group 0 0 minisoc_coverage_pkg::clk_coverage::clk_cg __coverage_
  0
  0
  0
- 129 minisoc_coverage_pkg_clk_coverage_11_0::minisoc_coverage_pkg_clk_coverage_11_0_minisoc_coverage_pkg_clk_coverage_11_0_clk_cg_fn_1
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+0
+ 10 period_cov 23 0 0 0 0 0 0 66 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_clk_cov_fn 66 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_clk_cov_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 64 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 0 0 1 1 12 period_500ps 24 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 68 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_clk_cov_fn_0 0 0 0 0 0 0 0
+ 0
+
+ 14 duty_cycle_cov 27 0 0 0 0 0 0 68 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_clk_cov_fn_1 68 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_clk_cov_fn_1 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 64 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 0 0 1 1 7 duty_50 28 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 68 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_clk_cov_fn_2 0 0 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 0 minisoc_coverage_pkg::minisoc_coverage::rst_cov __coverage_minisoc_coverage.rst_cov unused_minisoc_coverage_rst_cov_loop_label minisoc_coverage_pkg 0 0 0 0 0  ( 0 
+)
+ 0 33 0 0 0 1 0 0 0 0 0  1
+0
+0
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
  0
 0
 0
@@ -40,7 +115,7 @@ global coverage_group 0 0 minisoc_coverage_pkg::clk_coverage::clk_cg __coverage_
 0
 0
 0
- 13 cp_clk_period 12 0 0 0 0 0 0 127 minisoc_coverage_pkg_clk_coverage_11_0::minisoc_coverage_pkg_clk_coverage_11_0_minisoc_coverage_pkg_clk_coverage_11_0_clk_cg_fn 127 minisoc_coverage_pkg_clk_coverage_11_0::minisoc_coverage_pkg_clk_coverage_11_0_minisoc_coverage_pkg_clk_coverage_11_0_clk_cg_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 64 0 0 1 0 0 0 0
+ 13 reset_cmd_cov 35 0 0 0 0 0 0 66 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_rst_cov_fn 66 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_rst_cov_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 7 32 1 24 rst_agent_pkg::rst_cmd_e 1 1 0 1 0 0 0 0
  0
  0
  0
@@ -55,109 +130,17 @@ global coverage_group 0 0 minisoc_coverage_pkg::clk_coverage::clk_cg __coverage_
  0
  0
  0
- 1 1 1 0 0 1 1 15 expected_period 13 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 129 minisoc_coverage_pkg_clk_coverage_11_0::minisoc_coverage_pkg_clk_coverage_11_0_minisoc_coverage_pkg_clk_coverage_11_0_clk_cg_fn_0 0 0 0 0 0 0 0
+ 4 1 1 0 0 1 1 14 reset_asserted 39 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 68 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_rst_cov_fn_0 0 0 0 0 0 0 0
  0
-
-end_coverage_group
-global coverage_group 0 0 minisoc_coverage_pkg::rst_coverage::rst_cg __coverage_rst_coverage.rst_cg unused_rst_coverage_rst_cg_loop_label minisoc_coverage_pkg 0 0 0 0 0  ( 0 
-)
- 0 8 1 0 0 1 0 0 0 0 0  1
-0
-0
-0
-0 0
+ 1 1 0 0 1 1 16 reset_deasserted 43 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 68 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_rst_cov_fn_1 0 0 0 0 0 0 0
  0
+ 1 4 0 0 1 1 18 assert_to_deassert 48 0 0 4 0 -1 0 0 0 0 0 0 1 2 0 1 0 0 -1 0 4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 68 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_rst_cov_fn_0 0 0 0 0 0 0 0
  0
+ 1 0 0 -1 0 4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 68 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_rst_cov_fn_1 0 0 0 0 0 0 0
  0
+ 1 4 0 0 1 1 18 deassert_to_assert 53 0 0 4 0 -1 0 0 0 0 0 0 1 2 0 1 0 0 -1 0 4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 68 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_rst_cov_fn_1 0 0 0 0 0 0 0
  0
- 0
- 0
- 0
- 0 0
- 0
- 0 0
- 0 0
- 0
- 0
- 0
- 0
- 0
- 0
- 0
- 0
- 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_a
- 0
-0
-0
-0
-64
-0
- 0
-
-3
-0
-0
-0
- 14 cp_reset_event 12 1 0 0 0 0 0 127 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn 127 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 7 32 1 24 rst_agent_pkg::rst_cmd_e 1 1 0 1 0 0 0 0
- 0
- 0
- 0
- 0
- 0
- 0
- 0 0
- 0
- 0
- 0
- 0
- 0
- 0
- 0
- 2 1 1 0 0 1 1 14 reset_asserted 16 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_0 0 0 0 0 0 0 0
- 0
- 1 1 0 0 1 1 16 reset_deasserted 20 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_1 0 0 0 0 0 0 0
- 0
-
- 19 cp_reset_transition 24 1 0 0 0 0 0 127 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn 127 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 7 32 1 24 rst_agent_pkg::rst_cmd_e 1 1 0 1 0 0 0 0
- 0
- 0
- 0
- 0
- 0
- 0
- 0 0
- 0
- 0
- 0
- 0
- 0
- 0
- 0
- 1 1 4 0 0 1 1 20 assert_then_deassert 29 1 0 4 0 -1 0 0 0 0 0 0 1 2 0 1 0 0 -1 0 4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_0 0 0 0 0 0 0 0
- 0
- 1 0 0 -1 0 4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_1 0 0 0 0 0 0 0
- 0
-
- 17 cp_reset_duration 33 1 0 0 0 0 0 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_2 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_2 0 0 0 0 0 0 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_3 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 64 0 0 1 0 0 0 0
- 0
- 0
- 0
- 0
- 0
- 0
- 0 0
- 0
- 0
- 0
- 0
- 0
- 0
- 0
- 3 1 1 0 0 1 1 11 short_reset 36 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_4 0 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_5 0 0 0 0 0
- 0
- 1 1 0 0 1 1 12 medium_reset 37 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_6 0 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_7 0 0 0 0 0
- 0
- 1 1 0 0 1 1 10 long_reset 38 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_8 0 129 minisoc_coverage_pkg_rst_coverage_11_0::minisoc_coverage_pkg_rst_coverage_11_0_minisoc_coverage_pkg_rst_coverage_11_0_rst_cg_fn_9 0 0 0 0 0
+ 1 0 0 -1 0 4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 68 minisoc_coverage::minisoc_coverage_pkg_minisoc_coverage_rst_cov_fn_0 0 0 0 0 0 0 0
  0
 
 end_coverage_group

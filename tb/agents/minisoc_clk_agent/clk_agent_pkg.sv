@@ -9,9 +9,9 @@ package clk_agent_pkg;
     import uvm_pkg::*;
     `include "uvm_macros.svh"
 
-    `include "clk_config.sv"
+    `include "clk_if.sv"
     `include "clk_seq_item.sv"
-    `include "clk_monitor_item.sv"
+    `include "clk_mon_item.sv"
     `include "clk_sequencer.sv"
     `include "clk_sequence.sv"
     `include "clk_driver.sv"

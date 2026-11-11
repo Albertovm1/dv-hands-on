@@ -10,5 +10,4 @@ class rst_sequencer extends uvm_sequencer #(rst_seq_item);
     endfunction
 
 endclass
-
 `endif

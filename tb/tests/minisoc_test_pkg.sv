@@ -12,6 +12,6 @@ package minisoc_test_pkg;
     `include "uvm_macros.svh"
     `include "minisoc_smoke_test.sv"
 
-endpackage : minisoc_test_pkg
+endpackage
 
 `endif
