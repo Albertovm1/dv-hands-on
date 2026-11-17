@@ -23,8 +23,10 @@ SVA_FILE    = $(TB_DIR)/top_assertions.sv
 
 INC_DIRS = +incdir+$(TB_DIR)/agents/minisoc_clk_agent \
            +incdir+$(TB_DIR)/agents/minisoc_rst_agent \
+           +incdir+$(TB_DIR)/agents/minisoc_mem_agent \
            +incdir+$(TB_DIR)/sequences/clk \
            +incdir+$(TB_DIR)/sequences/rst \
+           +incdir+$(TB_DIR)/sequences/mem \
            +incdir+$(TB_DIR)/env \
            +incdir+$(TB_DIR)/env/scoreboard \
            +incdir+$(TB_DIR)/env/coverage \
@@ -44,8 +46,10 @@ UVM_TESTNAME = minisoc_smoke_test
 TB_FILES = \
     $(TB_DIR)/agents/minisoc_clk_agent/clk_if.sv \
     $(TB_DIR)/agents/minisoc_rst_agent/rst_if.sv \
+    $(TB_DIR)/agents/minisoc_mem_agent/mem_if.sv \
     $(TB_DIR)/agents/minisoc_clk_agent/clk_agent_pkg.sv \
     $(TB_DIR)/agents/minisoc_rst_agent/rst_agent_pkg.sv \
+    $(TB_DIR)/agents/minisoc_mem_agent/mem_agent_pkg.sv \
     $(TB_DIR)/env/scoreboard/minisoc_scoreboard_pkg.sv \
     $(TB_DIR)/env/coverage/minisoc_coverage_pkg.sv \
     $(TB_DIR)/env/minisoc_env_pkg.sv \
