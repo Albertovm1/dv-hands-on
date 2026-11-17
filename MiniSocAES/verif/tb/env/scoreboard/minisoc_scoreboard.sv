@@ -3,6 +3,7 @@
 
 `uvm_analysis_imp_decl(_clk)
 `uvm_analysis_imp_decl(_rst)
+`uvm_analysis_imp_decl(_mem)
 
 class minisoc_scoreboard extends uvm_scoreboard;
 
@@ -10,6 +11,7 @@ class minisoc_scoreboard extends uvm_scoreboard;
 
     uvm_analysis_imp_clk #(clk_mon_item, minisoc_scoreboard) clk_monitor_export;
     uvm_analysis_imp_rst #(rst_seq_item, minisoc_scoreboard) rst_monitor_export;
+    uvm_analysis_imp_mem #(mem_seq_item, minisoc_scoreboard) mem_monitor_export;
 
     time expected_period = 500ps;
 
@@ -17,15 +19,25 @@ class minisoc_scoreboard extends uvm_scoreboard;
     int unsigned fail_count;
     int unsigned total_count;
 
+     // Reference Model
+    logic [31:0] ref_mem [0:1023];
+    bit ref_mem_valid [0:1023];
+
     function new(string name = "minisoc_scoreboard",uvm_component parent = null);
         super.new(name, parent);
 
         clk_monitor_export = new("clk_monitor_export", this);
         rst_monitor_export = new("rst_monitor_export", this);
+        mem_monitor_export = new("mem_monitor_export", this);
 
         pass_count = 0;
         fail_count = 0;
 
+    endfunction
+
+    function void start_of_simulation_phase(uvm_phase phase);
+        super.start_of_simulation_phase(phase);
+        mem_refmod_init();
     endfunction
 
     //scoreboard CLK
@@ -41,6 +53,7 @@ class minisoc_scoreboard extends uvm_scoreboard;
         end
     endfunction
 
+    //scoreboard RST
     function void write_rst(rst_seq_item item);
 
         case (item.rst_cmd)
@@ -59,6 +72,44 @@ class minisoc_scoreboard extends uvm_scoreboard;
                     "Reset DEASSERTED: rst_n = 1",
                     UVM_MEDIUM)
 
+            end
+        endcase
+    endfunction
+
+    //scoreboard Memory
+
+    function void mem_refmod_init();
+
+    foreach (ref_mem[i]) begin
+        ref_mem[i] = '0;
+        ref_mem_valid[i] = 1'b0;
+    end
+    endfunction
+
+    function void write_mem(mem_seq_item item);
+
+        case (item.op)
+            mem_seq_item::MEM_WRITE: begin
+                ref_mem[item.addr] = item.wdata;
+                ref_mem_valid[item.addr] = 1'b1;
+
+                `uvm_info("MEM_SCOREBOARD",$sformatf("WRITE: addr=0x%0h data=0x%0h", item.addr, item.wdata),UVM_MEDIUM)
+            
+            end
+
+            mem_seq_item::MEM_READ: begin
+                if (!ref_mem_valid[item.addr]) begin
+                    `uvm_error("MEM_SCOREBOARD",$sformatf("READ: endereco 0x%0h nao inicializado", item.addr))
+                end
+
+                else if (ref_mem[item.addr] === item.rdata) begin
+                    pass_count++;
+                    `uvm_info("MEM_SCOREBOARD",$sformatf("READ PASS: addr=0x%0h expected=0x%0h actual=0x%0h",item.addr, ref_mem[item.addr], item.rdata),UVM_HIGH)
+                end
+                else begin
+                    fail_count++;
+                    `uvm_error("MEM_SCOREBOARD", $sformatf("READ FAIL: addr=0x%0h expected=0x%0h actual=0x%0h", item.addr, ref_mem[item.addr], item.rdata))
+                end
             end
         endcase
     endfunction

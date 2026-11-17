@@ -7,11 +7,11 @@ class minisoc_smoke_test extends uvm_test;
 
     minisoc_env env;
 
-    clk_sequence seq;
+    clk_sequence clk_seq;
     rst_sequence_short rst_seq;
+    mem_sequence_basic mem_seq;
 
-    function new(string name = "minisoc_smoke_test",
-                 uvm_component parent = null);
+    function new(string name = "minisoc_smoke_test", uvm_component parent = null);
         super.new(name, parent);
     endfunction
 
@@ -41,10 +41,14 @@ class minisoc_smoke_test extends uvm_test;
 
         if (env.m_rst_agent.sequencer == null)
             `uvm_fatal("SMOKE_TEST", "Reset Sequencer was not created!")
+        
+        if (env.m_mem_agent == null)
+            `uvm_fatal("SMOKE_TEST", "Memory Agent was not created!")
 
-        `uvm_info("SMOKE_TEST",
-            "Environment, Clock Agent and Reset Agent created successfully",
-            UVM_LOW)
+        if (env.m_mem_agent.sequencer == null)
+            `uvm_fatal("SMOKE_TEST", "Memory Sequencer was not created!")
+
+        `uvm_info("SMOKE_TEST", "Environment, Clock Agent and Reset Agent created successfully",UVM_LOW)
     endfunction
 
     task run_phase(uvm_phase phase);
@@ -54,11 +58,14 @@ class minisoc_smoke_test extends uvm_test;
         `uvm_info("SMOKE_TEST",
             "Starting MiniSoC smoke test", UVM_LOW)
 
-        seq = clk_sequence::type_id::create("seq");
-        seq.start(env.m_clk_agent.sequencer);
+        clk_seq = clk_sequence::type_id::create("clk_seq");
+        clk_seq.start(env.m_clk_agent.sequencer);
 
         rst_seq = rst_sequence_short::type_id::create("rst_seq");
         rst_seq.start(env.m_rst_agent.sequencer);
+
+        mem_seq = mem_sequence::type_id::create("mem_seq");
+        mem_seq.start(env.m_mem_agent.sequencer);
 
         phase.drop_objection(this);
 

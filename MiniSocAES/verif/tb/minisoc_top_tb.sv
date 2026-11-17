@@ -6,6 +6,7 @@ module minisoc_top_tb;
 
     import clk_agent_pkg::*;
     import rst_agent_pkg::*;
+    import mem_agent_pkg::*;
 
     import minisoc_scoreboard_pkg::*;
     import minisoc_env_pkg::*;
@@ -15,6 +16,9 @@ module minisoc_top_tb;
 
     //Reset Interface
     rst_if rst_vif();
+
+    //Memory Interface
+    mem_if mem_vif();
 
     // Temporary signals for DUT inputs
     logic spi_sclk;
@@ -38,11 +42,11 @@ module minisoc_top_tb;
         .spi_mosi   (spi_mosi),
         .spi_miso   (spi_miso),
 
-        .mem_clk    (mem_clk),
-        .mem_i_data (mem_i_data),
-        .mem_i_wr_en(mem_i_wr_en),
-        .mem_i_addr (mem_i_addr),
-        .mem_o_data (mem_o_data)
+        .mem_clk     (mem_vif.mem_clk),
+        .mem_i_data  (mem_vif.mem_i_data),
+        .mem_i_wr_en (mem_vif.mem_i_wr_en),
+        .mem_i_addr  (mem_vif.mem_i_addr),
+        .mem_o_data  (mem_vif.mem_o_data)
     );
 
     
@@ -87,6 +91,22 @@ module minisoc_top_tb;
             "uvm_test_top.env.rst_agent.monitor",
             "vif",
             rst_vif
+        );
+
+        // Configure Memory Driver Virtual Interface
+        uvm_config_db #(virtual mem_if.driver)::set(
+            null,
+            "uvm_test_top.env.m_mem_agent.driver",
+            "vif",
+            mem_vif
+        );
+
+        // Configure Memory Monitor Virtual Interface
+        uvm_config_db #(virtual mem_if.monitor)::set(
+            null,
+            "uvm_test_top.env.m_mem_agent.monitor",
+            "vif",
+            mem_vif
         );
 
         // Start UVM Test
