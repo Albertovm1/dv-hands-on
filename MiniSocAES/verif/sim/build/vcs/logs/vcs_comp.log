@@ -1,16 +1,18 @@
 Command: vcs -sverilog -full64 -l build/vcs/logs/vcs_comp.log -kdb -debug_access+all \
-+incdir+../tb/agents/minisoc_clk_agent +incdir+../tb/agents/minisoc_rst_agent +incdir+../tb/sequences/clk \
-+incdir+../tb/sequences/rst +incdir+../tb/env +incdir+../tb/env/scoreboard +incdir+../tb/env/coverage \
-+incdir+../tb/tests -timescale=1ns/1ps -ntb_opts uvm-1.2 ../../rtl/rtl/minisoc_aes/minisoc_aes_key_exp.sv \
++incdir+../tb/agents/minisoc_clk_agent +incdir+../tb/agents/minisoc_rst_agent +incdir+../tb/agents/minisoc_mem_agent \
++incdir+../tb/sequences/clk +incdir+../tb/sequences/rst +incdir+../tb/sequences/mem \
++incdir+../tb/env +incdir+../tb/env/scoreboard +incdir+../tb/env/coverage +incdir+../tb/tests \
+-timescale=1ns/1ps -ntb_opts uvm-1.2 ../../rtl/rtl/minisoc_aes/minisoc_aes_key_exp.sv \
 ../../rtl/rtl/minisoc_aes/minisoc_aes_dp.sv ../../rtl/rtl/minisoc_aes/minisoc_aes_top.sv \
 ../../rtl/rtl/minisoc_mem/minisoc_memory.sv ../../rtl/rtl/minisoc_pll/minisoc_pll_mock.sv \
 ../../rtl/rtl/minisoc_spi/minisoc_spi.sv ../../rtl/rtl/minisoc_top.sv ../tb/agents/minisoc_clk_agent/clk_if.sv \
-../tb/agents/minisoc_rst_agent/rst_if.sv ../tb/agents/minisoc_clk_agent/clk_agent_pkg.sv \
-../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv ../tb/env/scoreboard/minisoc_scoreboard_pkg.sv \
+../tb/agents/minisoc_rst_agent/rst_if.sv ../tb/agents/minisoc_mem_agent/mem_if.sv \
+../tb/agents/minisoc_clk_agent/clk_agent_pkg.sv ../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv \
+../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv ../tb/env/scoreboard/minisoc_scoreboard_pkg.sv \
 ../tb/env/coverage/minisoc_coverage_pkg.sv ../tb/env/minisoc_env_pkg.sv ../tb/tests/minisoc_test_pkg.sv \
 ../tb/top_assertions.sv ../tb/minisoc_top_tb.sv -o build/vcs/minisoc_top_sim
                          Chronologic VCS (TM)
-       Version X-2025.06-SP2_Full64 -- Tue Nov 10 23:29:58 2026
+       Version X-2025.06-SP2_Full64 -- Tue Nov 17 16:07:42 2026
 
                     Copyright (c) 1991 - 2025 Synopsys, Inc.
    This software and the associated documentation are proprietary to Synopsys,
@@ -371,6 +373,7 @@ Parsing design file '../../rtl/rtl/minisoc_spi/minisoc_spi.sv'
 Parsing design file '../../rtl/rtl/minisoc_top.sv'
 Parsing design file '../tb/agents/minisoc_clk_agent/clk_if.sv'
 Parsing design file '../tb/agents/minisoc_rst_agent/rst_if.sv'
+Parsing design file '../tb/agents/minisoc_mem_agent/mem_if.sv'
 Parsing design file '../tb/agents/minisoc_clk_agent/clk_agent_pkg.sv'
 Parsing included file '/Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/uvm_macros.svh'.
 Back to file '../tb/agents/minisoc_clk_agent/clk_agent_pkg.sv'.
@@ -415,6 +418,21 @@ Parsing included file '../tb/sequences/rst/rst_sequence_long.sv'.
 Back to file '../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv'.
 Parsing included file '../tb/sequences/rst/rst_sequence_multiple.sv'.
 Back to file '../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv'.
+Parsing design file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'
+Parsing included file '/Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/agents/minisoc_mem_agent/mem_seq_item.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/agents/minisoc_mem_agent/mem_sequencer.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/agents/minisoc_mem_agent/mem_driver.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/agents/minisoc_mem_agent/mem_monitor.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/agents/minisoc_mem_agent/mem_agent.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/sequences/mem/mem_sequence_basic.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
 Parsing design file '../tb/env/scoreboard/minisoc_scoreboard_pkg.sv'
 Parsing included file '/Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/uvm_macros.svh'.
 Back to file '../tb/env/scoreboard/minisoc_scoreboard_pkg.sv'.
@@ -443,7 +461,7 @@ Top Level Modules:
        minisoc_top_tb
 TimeScale is 1 ps / 1 ps
 Starting vcs inline pass...
-18 modules and 0 UDP read.
+20 modules and 0 UDP read.
 recompiling package vcs_paramclassrepository
 recompiling package _vcs_DPI_package
 recompiling package uvm_pkg
@@ -455,14 +473,16 @@ recompiling module minisoc_pll_mock
 recompiling module minisoc_top
 recompiling module clk_if
 recompiling module rst_if
+recompiling module mem_if
 recompiling package clk_agent_pkg
 recompiling package rst_agent_pkg
+recompiling package mem_agent_pkg
 recompiling package minisoc_scoreboard_pkg
 recompiling package minisoc_coverage_pkg
 recompiling package minisoc_env_pkg
 recompiling package minisoc_test_pkg
 recompiling module minisoc_top_tb
-All of 18 modules done
+All of 20 modules done
 make[1]: Entering directory '/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/csrc' \
 
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
@@ -475,7 +495,7 @@ fi
 g++  -o ../build/vcs/minisoc_top_sim      -rdynamic  -Wl,-rpath='$ORIGIN'/minisoc_top_sim.daidir \
 -Wl,-rpath=./minisoc_top_sim.daidir -Wl,-rpath=/Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib \
 -L/Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1 \
-uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o   _314105_archive_1.so   SIM_l.o      \
+uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o   _4090952_archive_1.so   SIM_l.o     \
 rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o        \
 -lvirsim -lerrorinf -lsnpsmalloc -lvfs      -lvcsnew -ldistsimclient -lsimprofile \
 -luclinative /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
@@ -486,5 +506,5 @@ _vcs_pli_stub_.o   /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/vcs_save_restor
 ../build/vcs/minisoc_top_sim up to date
 make[1]: Leaving directory '/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/csrc' \
 
-CPU time: 13.919 seconds to compile + .578 seconds to elab + 1.790 seconds to link
+CPU time: 14.210 seconds to compile + .557 seconds to elab + 1.724 seconds to link
 Verdi KDB elaboration done and the database successfully generated

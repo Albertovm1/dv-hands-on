@@ -610,8 +610,8 @@ ToolbarIconSize = Medium
 recent_commands_nWave = zoomIn,windowTimeUnit,windowTimeUnit_2,zoomAll,deltaMenu_delta,getSignal,editCut,zoomOut,getAllSignals
 recent_commands_Verdi = verdiInvokeCoverage
 SignalCaseInSensitive = FALSE
-ColorThemeModern = bright
 version = Verdi_X-2025.06-SP2
+ColorThemeModern = bright
 prevColorThemeModern = bright
 [GlobalProp]
 ErrWindow_Font = Helvetica_M_R_12
@@ -1063,9 +1063,9 @@ Button1 = "Dump All Signals" "$fsdbDumpvars;\n"
 [VIA]
 viaLogViewerDefaultRuleOneSearchForm = "share/VIA/Apps/PredefinedRules/Misc/Onesearch_rule.rc"
 [VIA.oneSearch.preference]
+isOneSearchVisible = TRUE
 DefaultDisplayTimeUnit = "1.000000ns"
 DefaultLogTimeUnit = "1.000000ns"
-isOneSearchVisible = TRUE
 [VIA.oneSearch.preference.vgifColumnSettingRC]
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""

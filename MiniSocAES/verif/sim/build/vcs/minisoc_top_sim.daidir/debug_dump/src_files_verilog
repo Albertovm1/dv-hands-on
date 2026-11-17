@@ -177,6 +177,13 @@
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_clk_agent/clk_monitor.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_clk_agent/clk_seq_item.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_clk_agent/clk_sequencer.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_mem_agent/mem_agent.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_mem_agent/mem_agent_pkg.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_mem_agent/mem_driver.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_mem_agent/mem_if.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_mem_agent/mem_monitor.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_mem_agent/mem_seq_item.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_mem_agent/mem_sequencer.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_agent.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_agent_pkg.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_driver.sv
@@ -192,6 +199,7 @@
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/env/scoreboard/minisoc_scoreboard_pkg.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/minisoc_top_tb.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/clk/clk_sequence.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/mem/mem_sequence_basic.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_base.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_long.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_medium.sv

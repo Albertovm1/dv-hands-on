@@ -64,7 +64,7 @@ class minisoc_smoke_test extends uvm_test;
         rst_seq = rst_sequence_short::type_id::create("rst_seq");
         rst_seq.start(env.m_rst_agent.sequencer);
 
-        mem_seq = mem_sequence::type_id::create("mem_seq");
+        mem_seq = mem_sequence_basic::type_id::create("mem_seq");
         mem_seq.start(env.m_mem_agent.sequencer);
 
         phase.drop_objection(this);

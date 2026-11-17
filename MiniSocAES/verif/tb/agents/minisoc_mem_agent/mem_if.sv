@@ -3,14 +3,14 @@
 
 interface mem_if;
 
-    logic        mem_clk
+    logic        mem_clk;
     logic [31:0] mem_i_data;
     logic        mem_i_wr_en;
     logic [9:0]  mem_i_addr;
     logic [31:0] mem_o_data;
 
     modport driver (
-        input  mem_clk,
+        output mem_clk,
         output mem_i_data,
         output mem_i_wr_en,
         output mem_i_addr,

@@ -13,6 +13,13 @@
 ../tb/agents/minisoc_clk_agent/clk_monitor.sv
 ../tb/agents/minisoc_clk_agent/clk_seq_item.sv
 ../tb/agents/minisoc_clk_agent/clk_sequencer.sv
+../tb/agents/minisoc_mem_agent/mem_agent.sv
+../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv
+../tb/agents/minisoc_mem_agent/mem_driver.sv
+../tb/agents/minisoc_mem_agent/mem_if.sv
+../tb/agents/minisoc_mem_agent/mem_monitor.sv
+../tb/agents/minisoc_mem_agent/mem_seq_item.sv
+../tb/agents/minisoc_mem_agent/mem_sequencer.sv
 ../tb/agents/minisoc_rst_agent/rst_agent.sv
 ../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv
 ../tb/agents/minisoc_rst_agent/rst_driver.sv
@@ -28,6 +35,7 @@
 ../tb/env/scoreboard/minisoc_scoreboard_pkg.sv
 ../tb/minisoc_top_tb.sv
 ../tb/sequences/clk/clk_sequence.sv
+../tb/sequences/mem/mem_sequence_basic.sv
 ../tb/sequences/rst/rst_sequence_base.sv
 ../tb/sequences/rst/rst_sequence_long.sv
 ../tb/sequences/rst/rst_sequence_medium.sv

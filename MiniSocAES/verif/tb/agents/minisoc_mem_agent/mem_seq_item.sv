@@ -18,7 +18,7 @@ class mem_seq_item extends uvm_sequence_item;
 
     // Clock da interface externa de memória até 200MHz
     constraint c_mem_clk_period {
-        mem_clk_period inside {[5ns:20ns]};
+        mem_clk_period inside {[5000:20000]};
     }
 
     `uvm_object_utils(mem_seq_item)

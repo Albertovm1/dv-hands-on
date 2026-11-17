@@ -96,7 +96,7 @@ module minisoc_top_tb;
         // Configure Memory Driver Virtual Interface
         uvm_config_db #(virtual mem_if.driver)::set(
             null,
-            "uvm_test_top.env.m_mem_agent.driver",
+            "uvm_test_top.env.mem_agent.driver",
             "vif",
             mem_vif
         );
@@ -104,7 +104,7 @@ module minisoc_top_tb;
         // Configure Memory Monitor Virtual Interface
         uvm_config_db #(virtual mem_if.monitor)::set(
             null,
-            "uvm_test_top.env.m_mem_agent.monitor",
+            "uvm_test_top.env.mem_agent.monitor",
             "vif",
             mem_vif
         );

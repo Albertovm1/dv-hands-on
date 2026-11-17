@@ -22,8 +22,8 @@ class mem_sequence_basic extends uvm_sequence #(mem_seq_item);
         req.op         = mem_seq_item::MEM_WRITE;
         req.addr       = test_addr;
         req.wdata      = 120;
-        mem_clk_period = 10ns;
-        
+        req.mem_clk_period = 10ns;
+
         finish_item(req);
 
         //-------------------------------------------------
@@ -32,6 +32,7 @@ class mem_sequence_basic extends uvm_sequence #(mem_seq_item);
 
         req.op   = mem_seq_item::MEM_READ;
         req.addr = test_addr;
+        req.mem_clk_period = 10ns;
 
         finish_item(req);
 
