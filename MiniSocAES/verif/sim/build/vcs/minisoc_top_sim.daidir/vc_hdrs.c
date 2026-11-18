@@ -1623,6 +1623,70 @@ __attribute__((weak)) SV_STRING fsdbTransDPI_get_class_str(/* OUTPUT */int *A_1,
 }
 #endif /* __VCS_IMPORT_DPI_STUB_fsdbTransDPI_get_class_str */
 
+#ifndef __VCS_IMPORT_DPI_STUB_mem_refmod_init
+#define __VCS_IMPORT_DPI_STUB_mem_refmod_init
+__attribute__((weak)) void mem_refmod_init()
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static void (*_vcs_dpi_fp_)() = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (void (*)()) dlsym(RTLD_NEXT, "mem_refmod_init");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        _vcs_dpi_fp_();
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "mem_refmod_init");
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_mem_refmod_init */
+
+#ifndef __VCS_IMPORT_DPI_STUB_mem_refmod_write
+#define __VCS_IMPORT_DPI_STUB_mem_refmod_write
+__attribute__((weak)) void mem_refmod_write(/* INPUT */unsigned int A_1, /* INPUT */unsigned int A_2)
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static void (*_vcs_dpi_fp_)(/* INPUT */unsigned int A_1, /* INPUT */unsigned int A_2) = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (void (*)(unsigned int A_1, unsigned int A_2)) dlsym(RTLD_NEXT, "mem_refmod_write");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        _vcs_dpi_fp_(A_1, A_2);
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "mem_refmod_write");
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_mem_refmod_write */
+
+#ifndef __VCS_IMPORT_DPI_STUB_mem_refmod_read
+#define __VCS_IMPORT_DPI_STUB_mem_refmod_read
+__attribute__((weak)) int mem_refmod_read(/* INPUT */unsigned int A_1, /* OUTPUT */unsigned int *A_2)
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static int (*_vcs_dpi_fp_)(/* INPUT */unsigned int A_1, /* OUTPUT */unsigned int *A_2) = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (int (*)(unsigned int A_1, unsigned int* A_2)) dlsym(RTLD_NEXT, "mem_refmod_read");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        return _vcs_dpi_fp_(A_1, A_2);
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "mem_refmod_read");
+        return 0;
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_mem_refmod_read */
+
 #ifndef __VCS_EXPORT_DPI_DUMMY_REFERENCES__
 #define __VCS_EXPORT_DPI_DUMMY_REFERENCES__
 /* Dummy references to those export DPI routines.

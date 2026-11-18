@@ -8,6 +8,8 @@ package minisoc_scoreboard_pkg;
 
     import uvm_pkg::*;
     `include "uvm_macros.svh"
+    
+    import mem_refmod_dpi_pkg::*;
 
     import clk_agent_pkg::*;
     import rst_agent_pkg::*;

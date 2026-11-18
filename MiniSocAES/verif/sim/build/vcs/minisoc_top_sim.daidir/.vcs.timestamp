@@ -836,7 +836,7 @@
 0 ../tb/env/minisoc_smoke_test.sv
 0 ../tb/env/scoreboard/minisoc_smoke_test.sv
 0 ../tb/env/coverage/minisoc_smoke_test.sv
-76
+77
 +define+UVM_VCS_RECORD
 +define+UVM_VERDI_VIF_RECORD
 +incdir+../tb/agents/minisoc_clk_agent
@@ -862,7 +862,7 @@
 -Mcplusplus=g++
 -Mcrt0=
 -Mcrtn=
--Mcsrc=/Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/dpi/uvm_dpi.cc /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/dpi/uvm_verdi_dpi.cpp
+-Mcsrc=../tb/env/refmods/mem_refmod/mem_refmod.c /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/dpi/uvm_dpi.cc /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/dpi/uvm_verdi_dpi.cpp
 -Mexternalobj=
 -Mldflags= -rdynamic
 -Mobjects= /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libvirsim.so /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/liberrorinf.so /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libsnpsmalloc.so /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libvfs.so
@@ -907,6 +907,7 @@ build/vcs/minisoc_top_sim
 ../tb/agents/minisoc_clk_agent/clk_agent_pkg.sv
 ../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv
 ../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv
+../tb/env/refmods/mem_refmod/mem_refmod_dpi.sv
 ../tb/env/scoreboard/minisoc_scoreboard_pkg.sv
 ../tb/env/coverage/minisoc_coverage_pkg.sv
 ../tb/env/minisoc_env_pkg.sv
@@ -921,7 +922,7 @@ XDG_DATA_DIRS=/home/alberto.mamede/.local/share/flatpak/exports/share:/var/lib/f
 XA_HOMEDIR=/Tools/synopsys/xa/X-2025.06-SP2
 WV_HOMEDIR=/Tools/synopsys/wv/X-2025.06-SP2
 VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
-VSCODE_IPC_HOOK_CLI=/run/user/1029/vscode-ipc-cc3ce7b5-084b-43d2-919b-45c89a60ee8f.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1029/vscode-ipc-92220dbd-4f55-4fa4-ba40-7eeba937eeb9.sock
 VSCODE_GIT_IPC_HANDLE=/run/user/1029/vscode-git-8382a83002.sock
 VSCODE_GIT_ASKPASS_NODE=/home/alberto.mamede/.vscode-server/cli/servers/Stable-69047191fc427f2f92828279aae1d90d8eeda7ab/server/node
 VSCODE_GIT_ASKPASS_MAIN=/home/alberto.mamede/.vscode-server/cli/servers/Stable-69047191fc427f2f92828279aae1d90d8eeda7ab/server/extensions/git/dist/askpass-main.js
@@ -981,8 +982,8 @@ MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/sha
 MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
 MILK_HOME=/Tools/synopsys/mw/X-2025.06
 MFLAGS=
-MAKE_TERMOUT=/dev/pts/8
-MAKE_TERMERR=/dev/pts/8
+MAKE_TERMOUT=/dev/pts/2
+MAKE_TERMERR=/dev/pts/2
 MAKELEVEL=1
 MAKEFLAGS=
 LOADEDMODULES=
@@ -1014,11 +1015,11 @@ BASH_FUNC_ml%%=() {  module ml "$@"_}
 BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
 0
 0
-214
+215
 1794941711 ../tb/tests/minisoc_smoke_test.sv
 1794940999 ../tb/env/minisoc_env.sv
 1794940999 ../tb/env/coverage/minisoc_coverage.sv
-1794940999 ../tb/env/scoreboard/minisoc_scoreboard.sv
+1794963393 ../tb/env/scoreboard/minisoc_scoreboard.sv
 1794942217 ../tb/sequences/mem/mem_sequence_basic.sv
 1794940999 ../tb/agents/minisoc_mem_agent/mem_agent.sv
 1794940999 ../tb/agents/minisoc_mem_agent/mem_monitor.sv
@@ -1209,7 +1210,8 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 1794940999 ../tb/tests/minisoc_test_pkg.sv
 1794940999 ../tb/env/minisoc_env_pkg.sv
 1794940999 ../tb/env/coverage/minisoc_coverage_pkg.sv
-1794940999 ../tb/env/scoreboard/minisoc_scoreboard_pkg.sv
+1794963483 ../tb/env/scoreboard/minisoc_scoreboard_pkg.sv
+1794963465 ../tb/env/refmods/mem_refmod/mem_refmod_dpi.sv
 1794940999 ../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv
 1793910831 ../tb/agents/minisoc_rst_agent/rst_agent_pkg.sv
 1793902491 ../tb/agents/minisoc_clk_agent/clk_agent_pkg.sv
@@ -1229,12 +1231,13 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 1764580059 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/uvm_pkg.sv
 1764232856 /Tools/synopsys/verdi/X-2025.06-SP2/share/PLI/VCS/LINUX64/verdi.tab
 1764575419 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/vcsdp_lite.tab
-6
+7
+1794962272 ../tb/env/refmods/mem_refmod/mem_refmod.c
 1764580058 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/dpi/uvm_dpi.cc
 1764580058 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/dpi/uvm_verdi_dpi.cpp
 1764579420 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libvirsim.so
 1764576997 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/liberrorinf.so
 1764576990 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libsnpsmalloc.so
 1764576977 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libvfs.so
-1794942477 build/vcs/minisoc_top_sim.daidir
+1794963521 build/vcs/minisoc_top_sim.daidir
 -1 partitionlib

@@ -78,39 +78,57 @@ class minisoc_scoreboard extends uvm_scoreboard;
 
     //scoreboard Memory
 
-    function void mem_refmod_init();
-
-    foreach (ref_mem[i]) begin
-        ref_mem[i] = '0;
-        ref_mem_valid[i] = 1'b0;
-    end
-    endfunction
-
     function void write_mem(mem_seq_item item);
 
-        case (item.op)
-            mem_seq_item::MEM_WRITE: begin
-                ref_mem[item.addr] = item.wdata;
-                ref_mem_valid[item.addr] = 1'b1;
+        int unsigned expected_data;
+        int valid;
 
-                `uvm_info("MEM_SCOREBOARD",$sformatf("WRITE: addr=0x%0h data=0x%0h", item.addr, item.wdata),UVM_MEDIUM)
-            
+        case (item.op)
+
+            mem_seq_item::MEM_WRITE: begin
+
+                mem_refmod_write(item.addr, item.wdata);
+
+                `uvm_info("MEM_SCOREBOARD",
+                    $sformatf("WRITE: addr=0x%0h data=0x%0h",
+                    item.addr, item.wdata), UVM_MEDIUM)
+
             end
 
             mem_seq_item::MEM_READ: begin
-                if (!ref_mem_valid[item.addr]) begin
-                    `uvm_error("MEM_SCOREBOARD",$sformatf("READ: endereco 0x%0h nao inicializado", item.addr))
+
+                valid = mem_refmod_read(item.addr, expected_data);
+
+                if (!valid) begin
+
+                    `uvm_error("MEM_SCOREBOARD",
+                        $sformatf("READ: endereco 0x%0h nao inicializado",
+                        item.addr))
+
                 end
 
-                else if (ref_mem[item.addr] === item.rdata) begin
+                else if (expected_data === item.rdata) begin
+
                     pass_count++;
-                    `uvm_info("MEM_SCOREBOARD",$sformatf("READ PASS: addr=0x%0h expected=0x%0h actual=0x%0h",item.addr, ref_mem[item.addr], item.rdata),UVM_HIGH)
+
+                    `uvm_info("MEM_SCOREBOARD",
+                        $sformatf("READ PASS: addr=0x%0h expected=0x%0h actual=0x%0h",
+                        item.addr, expected_data, item.rdata), UVM_MEDIUM)
+
                 end
+
                 else begin
+
                     fail_count++;
-                    `uvm_error("MEM_SCOREBOARD", $sformatf("READ FAIL: addr=0x%0h expected=0x%0h actual=0x%0h", item.addr, ref_mem[item.addr], item.rdata))
+
+                    `uvm_error("MEM_SCOREBOARD",
+                        $sformatf("READ FAIL: addr=0x%0h expected=0x%0h actual=0x%0h",
+                        item.addr, expected_data, item.rdata))
+
                 end
+
             end
+
         endcase
     endfunction
 

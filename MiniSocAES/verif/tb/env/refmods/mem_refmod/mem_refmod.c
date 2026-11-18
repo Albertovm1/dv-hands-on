@@ -1,4 +1,6 @@
 #include "mem_refmod.h"
+#include <stdio.h>
+
 
 #define MEM_DEPTH 1024
 
@@ -22,6 +24,9 @@ void mem_refmod_write(uint32_t addr, uint32_t data)
 
     reference_memory[addr] = data;
     memory_initialized[addr] = 1;
+
+    printf("[C_REF_MODEL] WRITE: addr=0x%X data=0x%X\n", addr, data);
+    fflush(stdout);
 }
 
 
@@ -34,6 +39,9 @@ int mem_refmod_read(uint32_t addr, uint32_t *expected_data)
         return 0;
 
     *expected_data = reference_memory[addr];
+
+    printf("[C_REF_MODEL] READ: addr=0x%X expected=0x%X\n", addr, *expected_data);
+    fflush(stdout);
 
     return 1;
 }

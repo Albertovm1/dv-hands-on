@@ -18,6 +18,10 @@ DUT_FILES := $(RTL_DIR)/minisoc_aes/minisoc_aes_key_exp.sv \
 #
 TB_DIR = ../tb
 
+REFMOD_DIR = $(TB_DIR)/env/refmods/mem_refmod
+DPI_SV_FILE = $(REFMOD_DIR)/mem_refmod_dpi.sv
+C_FILES     = $(REFMOD_DIR)/mem_refmod.c
+
 TB_TOP_FILE = $(TB_DIR)/minisoc_top_tb.sv
 SVA_FILE    = $(TB_DIR)/top_assertions.sv
 
@@ -50,6 +54,7 @@ TB_FILES = \
     $(TB_DIR)/agents/minisoc_clk_agent/clk_agent_pkg.sv \
     $(TB_DIR)/agents/minisoc_rst_agent/rst_agent_pkg.sv \
     $(TB_DIR)/agents/minisoc_mem_agent/mem_agent_pkg.sv \
+    $(DPI_SV_FILE) \
     $(TB_DIR)/env/scoreboard/minisoc_scoreboard_pkg.sv \
     $(TB_DIR)/env/coverage/minisoc_coverage_pkg.sv \
     $(TB_DIR)/env/minisoc_env_pkg.sv \
@@ -85,7 +90,7 @@ vcs_compil:
 	@echo "[VCS] Compiling $(BLOCKNAME)..."
 	@mkdir -p $(OUT_DIR)
 	@mkdir -p $(LOG_DIR)
-	$(SIM) $(VCS_FLAGS_BASE) $(VCS_UVM_FLAGS) $(SRC_BUNDLE) -o $(SIMV_EXE)
+	$(SIM) $(VCS_FLAGS_BASE) $(VCS_UVM_FLAGS) $(SRC_BUNDLE) $(C_FILES) -o $(SIMV_EXE)
 
 #
 # Run

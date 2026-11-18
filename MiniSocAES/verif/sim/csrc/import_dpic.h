@@ -156,3 +156,9 @@ struct	_vcs_dpi_rsrc_msg_struct	{
  extern unsigned int fsdbTransDPI_get_enum_id(/* OUTPUT */int *state, /* INPUT */const char* enum_var_name);
 
  extern SV_STRING fsdbTransDPI_get_class_str(/* OUTPUT */int *state, /* INPUT */const char* class_var_name, /* INPUT */const char* options);
+
+ extern void mem_refmod_init();
+
+ extern void mem_refmod_write(/* INPUT */unsigned int addr, /* INPUT */unsigned int data);
+
+ extern int mem_refmod_read(/* INPUT */unsigned int addr, /* OUTPUT */unsigned int *expected_data);

@@ -3,6 +3,10 @@
 AR=ar
 DOTLIBS=/Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libvirsim.so /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/liberrorinf.so /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libsnpsmalloc.so /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libvfs.so 
 
+mem_refmod.o : mem_refmod.d $(VSRC)/../tb/env/refmods/mem_refmod/mem_refmod.c $(CFLAGS_FILE)
+	gcc $(CFLAGS)  -c $(VSRC)/../tb/env/refmods/mem_refmod/mem_refmod.c
+mem_refmod.d : $(VSRC)/../tb/env/refmods/mem_refmod/mem_refmod.c $(CFLAGS_FILE)
+	@gcc -MM $(CFLAGS)  -c $(VSRC)/../tb/env/refmods/mem_refmod/mem_refmod.c > mem_refmod.d
 uvm_dpi.o : uvm_dpi.d /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/dpi/uvm_dpi.cc $(CFLAGS_FILE)
 	g++ $(CFLAGS)  -c /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/dpi/uvm_dpi.cc
 uvm_dpi.d : /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/dpi/uvm_dpi.cc $(CFLAGS_FILE)
@@ -15,7 +19,7 @@ uvm_verdi_dpi.d : /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/verdi/dpi/uvm_ve
 # will be overwritten the next time VCS is run
 DPI_ALLOW_MAIN_SO=
 VCS_LIBEXT=
-XTRN_OBJS=/usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o 
+XTRN_OBJS=/usr/lib64/libnuma.so.1 mem_refmod.o uvm_dpi.o uvm_verdi_dpi.o 
 
 DPI_WRAPPER_OBJS = 
 DPI_STUB_OBJS = 
