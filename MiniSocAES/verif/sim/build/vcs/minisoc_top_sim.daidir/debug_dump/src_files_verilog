@@ -201,6 +201,11 @@
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/minisoc_top_tb.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/clk/clk_sequence.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/mem/mem_sequence_basic.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/mem/mem_sequence_boundary.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/mem/mem_sequence_data_patterns.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/mem/mem_sequence_multiple.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/mem/mem_sequence_overwrite.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/mem/mem_sequence_random.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_base.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_long.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_medium.sv

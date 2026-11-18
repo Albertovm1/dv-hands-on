@@ -101,6 +101,8 @@ class minisoc_scoreboard extends uvm_scoreboard;
 
                 if (!valid) begin
 
+                    fail_count++;
+
                     `uvm_error("MEM_SCOREBOARD",
                         $sformatf("READ: endereco 0x%0h nao inicializado",
                         item.addr))

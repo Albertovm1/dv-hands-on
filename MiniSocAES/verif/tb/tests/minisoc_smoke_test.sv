@@ -9,7 +9,7 @@ class minisoc_smoke_test extends uvm_test;
 
     clk_sequence clk_seq;
     rst_sequence_short rst_seq;
-    mem_sequence_basic mem_seq;
+    mem_sequence_random mem_seq;
 
     function new(string name = "minisoc_smoke_test", uvm_component parent = null);
         super.new(name, parent);
@@ -64,7 +64,7 @@ class minisoc_smoke_test extends uvm_test;
         rst_seq = rst_sequence_short::type_id::create("rst_seq");
         rst_seq.start(env.m_rst_agent.sequencer);
 
-        mem_seq = mem_sequence_basic::type_id::create("mem_seq");
+        mem_seq = mem_sequence_random::type_id::create("mem_seq");
         mem_seq.start(env.m_mem_agent.sequencer);
 
         phase.drop_objection(this);

@@ -14,7 +14,7 @@ Command: vcs -sverilog -full64 -l build/vcs/logs/vcs_comp.log -kdb -debug_access
 ../tb/minisoc_top_tb.sv ../tb/env/refmods/mem_refmod/mem_refmod.c -o build/vcs/minisoc_top_sim \
 
                          Chronologic VCS (TM)
-       Version X-2025.06-SP2_Full64 -- Tue Nov 17 21:58:26 2026
+       Version X-2025.06-SP2_Full64 -- Wed Nov 18 12:40:58 2026
 
                     Copyright (c) 1991 - 2025 Synopsys, Inc.
    This software and the associated documentation are proprietary to Synopsys,
@@ -435,6 +435,16 @@ Parsing included file '../tb/agents/minisoc_mem_agent/mem_agent.sv'.
 Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
 Parsing included file '../tb/sequences/mem/mem_sequence_basic.sv'.
 Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/sequences/mem/mem_sequence_boundary.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/sequences/mem/mem_sequence_data_patterns.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/sequences/mem/mem_sequence_multiple.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/sequences/mem/mem_sequence_overwrite.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
+Parsing included file '../tb/sequences/mem/mem_sequence_random.sv'.
+Back to file '../tb/agents/minisoc_mem_agent/mem_agent_pkg.sv'.
 Parsing design file '../tb/env/refmods/mem_refmod/mem_refmod_dpi.sv'
 Parsing design file '../tb/env/scoreboard/minisoc_scoreboard_pkg.sv'
 Parsing included file '/Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/uvm_macros.svh'.
@@ -501,7 +511,7 @@ fi
 g++  -o ../build/vcs/minisoc_top_sim      -rdynamic  -Wl,-rpath='$ORIGIN'/minisoc_top_sim.daidir \
 -Wl,-rpath=./minisoc_top_sim.daidir -Wl,-rpath=/Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib \
 -L/Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1 \
-mem_refmod.o uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o   _517514_archive_1.so   \
+mem_refmod.o uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o   _2172790_archive_1.so  \
 SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
 -lvirsim -lerrorinf -lsnpsmalloc -lvfs      -lvcsnew -ldistsimclient -lsimprofile \
 -luclinative /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
@@ -512,5 +522,5 @@ _vcs_pli_stub_.o   /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/vcs_save_restor
 ../build/vcs/minisoc_top_sim up to date
 make[1]: Leaving directory '/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/csrc' \
 
-CPU time: 14.628 seconds to compile + .549 seconds to elab + 1.814 seconds to link
+CPU time: 14.722 seconds to compile + .573 seconds to elab + 1.939 seconds to link
 Verdi KDB elaboration done and the database successfully generated

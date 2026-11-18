@@ -37,6 +37,11 @@
 ../tb/minisoc_top_tb.sv
 ../tb/sequences/clk/clk_sequence.sv
 ../tb/sequences/mem/mem_sequence_basic.sv
+../tb/sequences/mem/mem_sequence_boundary.sv
+../tb/sequences/mem/mem_sequence_data_patterns.sv
+../tb/sequences/mem/mem_sequence_multiple.sv
+../tb/sequences/mem/mem_sequence_overwrite.sv
+../tb/sequences/mem/mem_sequence_random.sv
 ../tb/sequences/rst/rst_sequence_base.sv
 ../tb/sequences/rst/rst_sequence_long.sv
 ../tb/sequences/rst/rst_sequence_medium.sv
