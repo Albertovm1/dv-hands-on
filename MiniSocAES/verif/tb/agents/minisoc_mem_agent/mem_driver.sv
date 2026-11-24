@@ -38,7 +38,7 @@ class mem_driver extends uvm_driver #(mem_seq_item);
             vif.mem_i_addr = req.addr;
 
             if (req.op == mem_seq_item::MEM_WRITE)begin
-                vif.mem_i_wr_en = 1;
+                vif.mem_i_wr_en = req.op;
                 vif.mem_i_data = req.wdata;
 
                 #(half_period);
@@ -47,13 +47,10 @@ class mem_driver extends uvm_driver #(mem_seq_item);
                 #(half_period);
                 vif.mem_clk = 0;
 
-                vif.mem_i_wr_en = 0;
-                vif.mem_i_data  = 0;
-
             end
 
             else if (req.op == mem_seq_item::MEM_READ)begin
-                vif.mem_i_wr_en = 0;
+                vif.mem_i_wr_en = req.op;
 
                 #(half_period);
                 vif.mem_clk = 1;
@@ -61,7 +58,6 @@ class mem_driver extends uvm_driver #(mem_seq_item);
                 #(half_period);
                 vif.mem_clk = 0;
 
-                vif.mem_i_data  = 0;
 
             end
 

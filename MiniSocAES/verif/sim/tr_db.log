@@ -80,3 +80,12 @@
   CREATE_STREAM @0 {NAME:clk_seq T:Transactions SCOPE:uvm_test_top.env.clk_agent.sequencer STREAM:1095}
   CREATE_STREAM @0 {NAME:rst_seq T:Transactions SCOPE:uvm_test_top.env.rst_agent.sequencer STREAM:1124}
   CREATE_STREAM @20000 {NAME:mem_seq T:Transactions SCOPE:uvm_test_top.env.mem_agent.sequencer STREAM:1368}
+  CREATE_STREAM @0 {NAME:clk_seq T:Transactions SCOPE:uvm_test_top.env.clk_agent.sequencer STREAM:1095}
+  CREATE_STREAM @0 {NAME:rst_seq T:Transactions SCOPE:uvm_test_top.env.rst_agent.sequencer STREAM:1124}
+  CREATE_STREAM @20000 {NAME:mem_seq T:Transactions SCOPE:uvm_test_top.env.mem_agent.sequencer STREAM:1368}
+  CREATE_STREAM @0 {NAME:clk_seq T:Transactions SCOPE:uvm_test_top.env.clk_agent.sequencer STREAM:1095}
+  CREATE_STREAM @0 {NAME:rst_seq T:Transactions SCOPE:uvm_test_top.env.rst_agent.sequencer STREAM:1124}
+  CREATE_STREAM @20000 {NAME:mem_seq T:Transactions SCOPE:uvm_test_top.env.mem_agent.sequencer STREAM:1368}
+  CREATE_STREAM @0 {NAME:clk_seq T:Transactions SCOPE:uvm_test_top.env.clk_agent.sequencer STREAM:1095}
+  CREATE_STREAM @0 {NAME:rst_seq T:Transactions SCOPE:uvm_test_top.env.rst_agent.sequencer STREAM:1124}
+  CREATE_STREAM @20000 {NAME:mem_seq T:Transactions SCOPE:uvm_test_top.env.mem_agent.sequencer STREAM:1368}

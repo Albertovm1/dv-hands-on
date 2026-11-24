@@ -607,10 +607,10 @@ SyncBrowserDir = TRUE
 FindBarVisible = 
 ScaleFactor = 100%
 ToolbarIconSize = Medium
-recent_commands_nWave = zoomIn,windowTimeUnit,windowTimeUnit_2,zoomAll,deltaMenu_delta,getSignal,editCut,zoomOut,getAllSignals
 recent_commands_Verdi = verdiInvokeCoverage
 SignalCaseInSensitive = FALSE
 version = Verdi_X-2025.06-SP2
+recent_commands_nWave = zoomIn,windowTimeUnit,windowTimeUnit_2,editCut,zoomOut,zoomAll,deltaMenu_delta,getSignal,getAllSignals
 ColorThemeModern = bright
 prevColorThemeModern = bright
 [GlobalProp]
@@ -773,9 +773,9 @@ QwQuestionMsgDlg = 564,292,406,101
 unknownSave = 536,259,461,245
 qWaveSignalDialog = 368,174,800,479
 QwInfoMsgDlg = 395,337,750,250
-SetWindowTimeUnitDialog = 550,338,433,87
 QwWarnMsgDlg = 424,425,600,250
 QwUserAskDlg = 596,290,324,122
+SetWindowTimeUnitDialog = 551,339,433,87
 [Safety]
 RegisterObject = ID_RED4
 CoreObject = ID_ORANGE5
@@ -1070,44 +1070,44 @@ DefaultLogTimeUnit = "1.000000ns"
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = "Severity"
+name = "Type"
 width = 60
-visualIndex = 2
-isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = "Block's First Line"
-width = 120
-visualIndex = 1
+visualIndex = 4
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
 name = "Time"
 width = 60
 visualIndex = 0
 isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = "Code"
 width = 60
 visualIndex = 3
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
 name = "Message"
 width = 2000
 visualIndex = 5
 isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
-name = "Type"
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = "Severity"
 width = 60
-visualIndex = 4
+visualIndex = 2
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+isColFilterColorCoding = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
+name = "Block's First Line"
+width = 120
+visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE

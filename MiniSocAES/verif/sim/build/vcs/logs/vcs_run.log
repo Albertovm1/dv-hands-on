@@ -1,7 +1,7 @@
 Command: /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/./build/vcs/minisoc_top_sim +ntb_random_seed=random +UVM_TESTNAME=minisoc_smoke_test -l build/vcs/logs/vcs_run.log
 Chronologic VCS simulator copyright 1991-2025
 Contains Synopsys proprietary information.
-Compiler version X-2025.06-SP2_Full64; Runtime version X-2025.06-SP2_Full64;  Nov 18 12:41 2026
+Compiler version X-2025.06-SP2_Full64; Runtime version X-2025.06-SP2_Full64;  Nov 18 20:06 2026
 
 Warning-[INV-RANDSEED-VAL] Invalid random seed value
   Invalid random seed value passed through command line or environment 
@@ -53,40 +53,40 @@ UVM_INFO ../tb/agents/minisoc_rst_agent/rst_driver.sv(36) @ 10000: uvm_test_top.
 UVM_INFO ../tb/agents/minisoc_rst_agent/rst_monitor.sv(41) @ 10000: uvm_test_top.env.rst_agent.monitor [RST_MON] Reset deasserted
 UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(71) @ 10000: uvm_test_top.env.scoreboard [SCOREBOARD] Reset DEASSERTED: rst_n = 1
 UVM_INFO ../tb/sequences/rst/rst_sequence_short.sv(18) @ 20000: uvm_test_top.env.rst_agent.sequencer@@rst_seq [RST_SHORT] Short reset sequence completed
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 4493000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x2bb data=0xd855d19f
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 17912000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x2bb expected=0xd855d19f actual=0xd855d19f
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 20673000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x130 data=0x1ae03f82
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 28956000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x130 expected=0x1ae03f82 actual=0x1ae03f82
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 31499000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x158 data=0x900f1ddf
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 39128000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x158 expected=0x900f1ddf actual=0x900f1ddf
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 44881000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x142 data=0x6f2d8325
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 62140000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x142 expected=0x6f2d8325 actual=0x6f2d8325
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 65778000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x8e data=0xa28acb50
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 76692000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x8e expected=0xa28acb50 actual=0xa28acb50
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 80062000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x11e data=0xd19825a8
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 90172000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x11e expected=0xd19825a8 actual=0xd19825a8
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 94480000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x392 data=0xe9d72eed
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 107404000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x392 expected=0xe9d72eed actual=0xe9d72eed
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 113011000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x2a1 data=0x67990c3a
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 129832000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x2a1 expected=0x67990c3a actual=0x67990c3a
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 135441000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x172 data=0x49adb87
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 152268000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x172 expected=0x49adb87 actual=0x49adb87
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 157752000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x17f data=0xfe7190d4
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 174204000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x17f expected=0xfe7190d4 actual=0xfe7190d4
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 179530000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x1b3 data=0x9d699fa7
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 195508000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x1b3 expected=0x9d699fa7 actual=0x9d699fa7
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 198097000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0xd5 data=0x618d4e08
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 205864000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0xd5 expected=0x618d4e08 actual=0x618d4e08
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 213026000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0xa8 data=0x1b73a8d5
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 234512000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0xa8 expected=0x1b73a8d5 actual=0x1b73a8d5
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 237340000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x2cd data=0x809224bf
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 245824000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x2cd expected=0x809224bf actual=0x809224bf
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 251418000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x1ca data=0x3a4f97a7
-UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 268200000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x1ca expected=0x3a4f97a7 actual=0x3a4f97a7
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 4493000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x2bb data=0x0
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 17912000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x2bb expected=0x0 actual=0x0
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 20673000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x130 data=0x1
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 28956000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x130 expected=0x1 actual=0x1
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 31499000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x158 data=0x2
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 39128000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x158 expected=0x2 actual=0x2
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 44881000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x142 data=0x3
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 62140000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x142 expected=0x3 actual=0x3
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 65778000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x8e data=0x4
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 76692000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x8e expected=0x4 actual=0x4
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 80062000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x11e data=0x5
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 90172000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x11e expected=0x5 actual=0x5
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 94480000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x392 data=0x6
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 107404000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x392 expected=0x6 actual=0x6
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 113011000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x2a1 data=0x7
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 129832000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x2a1 expected=0x7 actual=0x7
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 135441000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x172 data=0x8
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 152268000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x172 expected=0x8 actual=0x8
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 157752000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x17f data=0x9
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 174204000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x17f expected=0x9 actual=0x9
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 179530000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x1b3 data=0xa
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 195508000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x1b3 expected=0xa actual=0xa
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 198097000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0xd5 data=0xb
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 205864000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0xd5 expected=0xb actual=0xb
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 213026000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0xa8 data=0xc
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 234512000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0xa8 expected=0xc actual=0xc
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 237340000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x2cd data=0xd
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 245824000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x2cd expected=0xd actual=0xd
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(92) @ 251418000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] WRITE: addr=0x1ca data=0xe
+UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(116) @ 268200000: uvm_test_top.env.scoreboard [MEM_SCOREBOARD] READ PASS: addr=0x1ca expected=0xe actual=0xe
 UVM_INFO /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 268200000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 UVM_INFO ../tb/env/coverage/minisoc_coverage.sv(159) @ 268200000: uvm_test_top.env.coverage [MINISOC_COVERAGE] Clock Coverage: 100.00%
 UVM_INFO ../tb/env/coverage/minisoc_coverage.sv(161) @ 268200000: uvm_test_top.env.coverage [MINISOC_COVERAGE] Reset Coverage: 100.00%
-UVM_INFO ../tb/env/coverage/minisoc_coverage.sv(163) @ 268200000: uvm_test_top.env.coverage [MINISOC_COVERAGE] Memory Coverage: 66.67%
+UVM_INFO ../tb/env/coverage/minisoc_coverage.sv(163) @ 268200000: uvm_test_top.env.coverage [MINISOC_COVERAGE] Memory Coverage: 75.00%
 UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(142) @ 268200000: uvm_test_top.env.scoreboard [MINISOC_SCOREBOARD] ============== SCOREBOARD ==============
 UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(144) @ 268200000: uvm_test_top.env.scoreboard [MINISOC_SCOREBOARD] Total checks: 536414
 UVM_INFO ../tb/env/scoreboard/minisoc_scoreboard.sv(146) @ 268200000: uvm_test_top.env.scoreboard [MINISOC_SCOREBOARD] PASS: 536414
@@ -130,5 +130,5 @@ $finish called from file "/Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/base/uvm
 $finish at simulation time            268200000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 268200000 ps
-CPU Time:      8.030 seconds;       Data structure size:   0.7Mb
-Wed Nov 18 12:41:21 2026
+CPU Time:      8.010 seconds;       Data structure size:   0.7Mb
+Wed Nov 18 20:06:45 2026

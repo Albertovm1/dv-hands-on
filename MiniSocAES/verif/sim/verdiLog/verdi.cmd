@@ -36,37 +36,73 @@
     # ==========================================
 
     wvZoomAll -win $_nWave2
-wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 7 )} 
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "G1" 6 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 7 )} 
+wvExpandBus -win $_nWave2
 wvScrollDown -win $_nWave2 0
 wvScrollDown -win $_nWave2 0
-wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
-wvSetWindowTimeUnit -win $_nWave2 1.000000 ns
-wvSetWindowTimeUnit -win $_nWave2 10.000000 ns
-wvZoomAll -win $_nWave2
-wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
-wvSetWindowTimeUnit -win $_nWave2 1.000000 ns
-wvSelectGroup -win $_nWave2 {G2}
-wvCut -win $_nWave2
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 2
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 29
+wvScrollDown -win $_nWave2 6
+wvScrollUp -win $_nWave2 2
+wvSelectSignal -win $_nWave2 {( "G1" 7 )} 
 wvSetPosition -win $_nWave2 {("G1" 7)}
+wvCollapseBus -win $_nWave2
 wvSetPosition -win $_nWave2 {("G1" 7)}
-wvSelectGroup -win $_nWave2 {G2}
-wvCut -win $_nWave2
-wvSetPosition -win $_nWave2 {("G1" 7)}
-wvSetPosition -win $_nWave2 {("G1" 7)}
-wvSelectGroup -win $_nWave2 {G2}
-wvCut -win $_nWave2
-wvSetPosition -win $_nWave2 {("G1" 7)}
-wvSetPosition -win $_nWave2 {("G1" 7)}
-wvScrollDown -win $_nWave2 0
-wvScrollDown -win $_nWave2 0
-wvScrollDown -win $_nWave2 0
-wvSetCursor -win $_nWave2 30.440278 -snap {("G1" 6)}
-wvSetCursor -win $_nWave2 30.054514 -snap {("G1" 6)}
-wvScrollDown -win $_nWave2 0
-wvScrollDown -win $_nWave2 0
-wvSetCursor -win $_nWave2 23.040625 -snap {("G1" 0)}
+srcHBSelect "minisoc_top_tb.mem_vif" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "minisoc_top_tb.dut.u_memory" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvSetPosition -win $_nWave2 {("G1" 1)}
+wvSetPosition -win $_nWave2 {("G1" 2)}
+wvSetPosition -win $_nWave2 {("G1" 3)}
+wvSetPosition -win $_nWave2 {("G1" 4)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 6)}
+wvSetPosition -win $_nWave2 {("G1" 6)}
+wvSetPosition -win $_nWave2 {("G1/u_memory" 0)}
+wvAddSubGroup -win $_nWave2 -holdpost {u_memory}
+wvAddSignal -win $_nWave2 "/minisoc_top_tb/dut/u_memory/clk" \
+           "/minisoc_top_tb/dut/u_memory/i_sel_aes" \
+           "/minisoc_top_tb/dut/u_memory/i_user_data\[31:0\]" \
+           "/minisoc_top_tb/dut/u_memory/i_user_wr_en" \
+           "/minisoc_top_tb/dut/u_memory/i_user_addr\[9:0\]" \
+           "/minisoc_top_tb/dut/u_memory/o_user_data\[31:0\]" \
+           "/minisoc_top_tb/dut/u_memory/i_aes_data\[31:0\]" \
+           "/minisoc_top_tb/dut/u_memory/i_aes_wr_en" \
+           "/minisoc_top_tb/dut/u_memory/i_aes_addr\[9:0\]" \
+           "/minisoc_top_tb/dut/u_memory/o_aes_data\[31:0\]"
+wvSetPosition -win $_nWave2 {("G1/u_memory" 0)}
+wvSetPosition -win $_nWave2 {("G1/u_memory" 10)}
+wvScrollDown -win $_nWave2 3
+wvScrollUp -win $_nWave2 6
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 2
+wvScrollDown -win $_nWave2 2
+wvScrollUp -win $_nWave2 3
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1

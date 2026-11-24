@@ -13,7 +13,11 @@ verdiSetActWin -dock widgetDock_<CovDetail>
 gui_covtable_show -show  { Function Groups } -id  CoverageTable.1  -test  MergedTest
 verdiSetActWin -dock widgetDock_<Summary>
 gui_list_expand -id  CoverageTable.1   -list {covtblFGroupsList} /minisoc_coverage_pkg::minisoc_coverage::mem_cov
-gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::mem_cov.address_cov   }
-gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::mem_cov.address_cov  minisoc_coverage_pkg::minisoc_coverage::mem_cov.read_data_cov   }
+gui_list_expand -id  CoverageTable.1   -list {covtblFGroupsList} /minisoc_coverage_pkg::minisoc_coverage::rst_cov
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::mem_cov.write_data_cov   }
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::mem_cov.write_data_cov  minisoc_coverage_pkg::minisoc_coverage::mem_cov.read_data_cov   }
 gui_list_action -id  CoverageTable.1 -list {covtblFGroupsList} minisoc_coverage_pkg::minisoc_coverage::mem_cov.read_data_cov  -column {Group} 
 gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::mem_cov.read_data_cov  minisoc_coverage_pkg::minisoc_coverage::mem_cov.write_data_cov   }
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::mem_cov.write_data_cov  minisoc_coverage_pkg::minisoc_coverage::mem_cov.address_cov   }
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { minisoc_coverage_pkg::minisoc_coverage::mem_cov.address_cov   }
+vdCovExit -noprompt

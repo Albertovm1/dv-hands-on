@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_X-2025.06-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 11 1536 323 305 65
+viewPort 0 11 1534 345 305 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,16 +16,16 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 22187.500000
-cursor 0.000000
+zoom 0.000000 134100000.000000
+cursor 20000.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 0
+top 2
 ; marker line index
-markerPos 2
+markerPos 7
 
 ; event list
 ; addEvent event_name event_expression
@@ -47,8 +47,13 @@ curSTATUS ByChange
 
 addGroup "G1"
 activeDirFile "" "/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/dump.fsdb"
-addSignal -h 16 /minisoc_top_tb/clk_vif/clk
-addSignal -h 16 /minisoc_top_tb/rst_vif/rst_n
+addSignal -h 23 /minisoc_top_tb/clk_vif/clk
+addSignal -h 23 /minisoc_top_tb/rst_vif/rst_n
+addSignal -h 23 /minisoc_top_tb/mem_vif/mem_clk
+addSignal -h 23 -UNSIGNED -HEX -holdScope mem_i_data[31:0]
+addSignal -h 23 -holdScope mem_i_wr_en
+addSignal -h 23 -UNSIGNED -HEX -holdScope mem_i_addr[9:0]
+addSignal -h 23 -UNSIGNED -HEX -holdScope mem_o_data[31:0]
 addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status
