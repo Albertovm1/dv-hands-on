@@ -42,6 +42,11 @@ class spi_sequence_basic extends uvm_sequence #(spi_seq_item);
 
         finish_item(req);
 
+        if (req.rdata != 32'h12345678)
+            `uvm_error("SPI_SEQUENCE", "SPI READ data mismatch")
+        else
+            `uvm_info("SPI_SEQUENCE", "SPI READ PASS", UVM_LOW)
+
     endtask
 
 endclass

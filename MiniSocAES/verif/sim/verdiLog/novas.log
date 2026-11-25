@@ -8,6 +8,4 @@ This software may only be used in accordance with the terms and conditions of a 
 All other use, reproduction, or distribution of this software is strictly prohibited.
 
 
-Falling back to using screens root_visual.
-Falling back to using screens root_visual.
-failed to create compose table
+The X11 connection broke: I/O error (code 1)

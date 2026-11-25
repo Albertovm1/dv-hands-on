@@ -32,24 +32,116 @@
     wvAddSignal -win $_nWave2 "/minisoc_top_tb/mem_vif/mem_o_data"
 
     # ==========================================
+    # SPI VIP
+    # ==========================================
+
+    wvAddSignal -win $_nWave2 "/minisoc_top_tb/spi_vif/spi_sclk"
+    wvAddSignal -win $_nWave2 "/minisoc_top_tb/spi_vif/spi_cs_n"
+    wvAddSignal -win $_nWave2 "/minisoc_top_tb/spi_vif/spi_mosi"
+    wvAddSignal -win $_nWave2 "/minisoc_top_tb/spi_vif/spi_miso"
+
+    # ==========================================
     # DUT INPUTS
     # ==========================================
 
     wvZoomAll -win $_nWave2
+wvSetCursor -win $_nWave2 268336800.000000 -snap {("G1" 9)}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
 wvScrollDown -win $_nWave2 1
-wvSetCursor -win $_nWave2 1904267.135325 -snap {("G1" 3)}
+wvScrollDown -win $_nWave2 0
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 268579200.000000 -snap {("G1" 9)}
+srcActiveTrace "minisoc_top_tb.spi_vif.spi_cs_n" -TraceByDConWave -TraceTime 0 \
+           -TraceValue 1 -win $_nTrace1
+wvSetCursor -win $_nWave2 271488000.000000 -snap {("G1" 8)}
+srcActiveTrace "minisoc_top_tb.spi_vif.spi_sclk" -TraceByDConWave -TraceTime \
+           271000000 -TraceValue 1 -win $_nTrace1
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 268237500.000000 -snap {("G1" 8)}
+wvSetCursor -win $_nWave2 268259550.000000 -snap {("G1" 8)}
+wvSetCursor -win $_nWave2 268284750.000000 -snap {("G1" 8)}
+wvSetCursor -win $_nWave2 268398150.000000 -snap {("G1" 9)}
 wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 273117000.000000 -snap {("G1" 8)}
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 267958800.000000 -snap {("G1" 9)}
+wvSetCursor -win $_nWave2 270235080.000000 -snap {("G1" 7)}
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
 wvScrollDown -win $_nWave2 0
 wvZoomIn -win $_nWave2
 wvZoomIn -win $_nWave2
 wvZoomIn -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
 wvZoomIn -win $_nWave2
+wvScrollDown -win $_nWave2 0
+wvZoomOut -win $_nWave2
 wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
 wvZoomIn -win $_nWave2
 wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
-wvSetCursor -win $_nWave2 3888664.323374 -snap {("G1" 4)}
-debExit

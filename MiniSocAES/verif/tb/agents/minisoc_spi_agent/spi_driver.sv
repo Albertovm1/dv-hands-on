@@ -51,8 +51,9 @@ class spi_driver extends uvm_driver #(spi_seq_item);
 
                 #(half_period);
 
+
                 for (int i = 39; i >= 0; i--) begin
-                    
+
                     // Set MOSI
                     vif.spi_mosi = frame[i];
 
@@ -66,6 +67,7 @@ class spi_driver extends uvm_driver #(spi_seq_item);
                 #(half_period);
                 vif.spi_cs_n = 1;
                 vif.spi_mosi = 0;
+                #(half_period);
             
             end
 
@@ -76,6 +78,7 @@ class spi_driver extends uvm_driver #(spi_seq_item);
                 vif.spi_sclk = 0;
                 vif.spi_cs_n = 0;
                 #(half_period);
+
 
                 for (int i = 39; i >= 0; i--) begin
                     
@@ -92,6 +95,7 @@ class spi_driver extends uvm_driver #(spi_seq_item);
                 #(half_period);
                 vif.spi_cs_n = 1;
                 vif.spi_mosi = 0;
+                #(half_period);
 
                 // enviando o NOP
                 frame = {1'b0, 6'h3F, 1'b0, 32'b0};
@@ -101,7 +105,7 @@ class spi_driver extends uvm_driver #(spi_seq_item);
                 vif.spi_sclk = 0;
                 vif.spi_cs_n = 0;
                 #(half_period);
-                
+
                 for (int i = 39; i >= 0; i--) begin
                     vif.spi_mosi = frame[i];
 
@@ -124,6 +128,7 @@ class spi_driver extends uvm_driver #(spi_seq_item);
                 #(half_period);
                 vif.spi_cs_n = 1;
                 vif.spi_mosi = 0;
+                #(half_period);
 
             end
 
