@@ -1049,7 +1049,7 @@ XDG_DATA_DIRS=/home/alberto.mamede/.local/share/flatpak/exports/share:/var/lib/f
 XA_HOMEDIR=/Tools/synopsys/xa/X-2025.06-SP2
 WV_HOMEDIR=/Tools/synopsys/wv/X-2025.06-SP2
 VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
-VSCODE_IPC_HOOK_CLI=/run/user/1029/vscode-ipc-9eefc537-55c0-4d9a-b9c1-ef395164de22.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1029/vscode-ipc-71dd4c62-c0c6-40e4-8d0e-dbef136c423d.sock
 VSCODE_GIT_IPC_HANDLE=/run/user/1029/vscode-git-8382a83002.sock
 VSCODE_GIT_ASKPASS_NODE=/home/alberto.mamede/.vscode-server/cli/servers/Stable-8a14f0cc1b08d531eb83255ea3764ae22aa932b5/server/node
 VSCODE_GIT_ASKPASS_MAIN=/home/alberto.mamede/.vscode-server/cli/servers/Stable-8a14f0cc1b08d531eb83255ea3764ae22aa932b5/server/extensions/git/dist/askpass-main.js
@@ -1110,8 +1110,8 @@ MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/sha
 MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
 MILK_HOME=/Tools/synopsys/mw/X-2025.06
 MFLAGS=
-MAKE_TERMOUT=/dev/pts/22
-MAKE_TERMERR=/dev/pts/22
+MAKE_TERMOUT=/dev/pts/32
+MAKE_TERMERR=/dev/pts/32
 MAKELEVEL=1
 MAKEFLAGS=
 LOADEDMODULES=
@@ -1144,7 +1144,7 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 0
 0
 229
-1795613700 ../tb/tests/minisoc_smoke_test.sv
+1795628655 ../tb/tests/minisoc_smoke_test.sv
 1795575081 ../tb/env/minisoc_env.sv
 1795575479 ../tb/env/coverage/minisoc_coverage.sv
 1795574988 ../tb/env/scoreboard/minisoc_scoreboard.sv
@@ -1382,5 +1382,5 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 1764576997 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/liberrorinf.so
 1764576990 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libsnpsmalloc.so
 1764576977 /Tools/synopsys/vcs/X-2025.06-SP2/linux64/lib/libvfs.so
-1795623881 build/vcs/minisoc_top_sim.daidir
+1795628680 build/vcs/minisoc_top_sim.daidir
 -1 partitionlib

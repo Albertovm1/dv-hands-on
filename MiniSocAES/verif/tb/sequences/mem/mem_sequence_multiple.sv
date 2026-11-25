@@ -1,6 +1,8 @@
 `ifndef MEM_SEQUENCE_MULTIPLE_SV
 `define MEM_SEQUENCE_MULTIPLE_SV
 
+// Escrita e leitura em múltiplos endereços da memória. 
+
 class mem_sequence_multiple extends uvm_sequence #(mem_seq_item);
 
     `uvm_object_utils(mem_sequence_multiple)

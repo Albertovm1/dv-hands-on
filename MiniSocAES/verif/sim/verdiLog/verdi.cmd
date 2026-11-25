@@ -45,20 +45,84 @@
     # ==========================================
 
     wvZoomAll -win $_nWave2
-wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 3
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 10)}
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 9)}
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 8)}
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 6)}
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 4)}
 wvScrollDown -win $_nWave2 0
 wvScrollDown -win $_nWave2 0
-wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
-wvScrollDown -win $_nWave2 1
-wvScrollDown -win $_nWave2 1
-wvScrollDown -win $_nWave2 1
-wvSetCursor -win $_nWave2 1352053.333333 -snap {("G1" 10)}
-wvScrollDown -win $_nWave2 0
-wvScrollDown -win $_nWave2 0
-wvScrollDown -win $_nWave2 0
-wvScrollDown -win $_nWave2 0
-wvScrollDown -win $_nWave2 0
-wvSetCursor -win $_nWave2 1673956.845754 -snap {("G1" 9)}
+wvSetCursor -win $_nWave2 2800983.831283 -snap {("G1" 2)}
 wvZoomIn -win $_nWave2
+wvSetWindowTimeUnit -win $_nWave2 1.000000 ns
+wvSetCursor -win $_nWave2 1336.729167 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 1376.703125 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 1416.677083 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 1448.656250 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 1608.552083 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 1667.180556 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 1715.149306 -snap {("G1" 3)}
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 4349.593056 -snap {("G1" 4)}
+wvSetCursor -win $_nWave2 4306.527778 -snap {("G2" 0)}
+wvSetCursor -win $_nWave2 4457.256250 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 4893.292187 -snap {("G2" 0)}
+wvSetCursor -win $_nWave2 4764.096354 -snap {("G1" 3)}
+debExit

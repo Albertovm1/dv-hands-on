@@ -1,6 +1,8 @@
 `ifndef MEM_SEQUENCE_OVERWRITE_SV
 `define MEM_SEQUENCE_OVERWRITE_SV
 
+// Sobrescrever um dado já armazenado em um endereço.
+
 class mem_sequence_overwrite extends uvm_sequence #(mem_seq_item);
 
     `uvm_object_utils(mem_sequence_overwrite)

@@ -207,7 +207,7 @@ which_declare=declare -f
 HOME=/home/alberto.mamede
 VCS_HOME=/Tools/synopsys/vcs/X-2025.06-SP2
 PWD=/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim
-VSCODE_IPC_HOOK_CLI=/run/user/1029/vscode-ipc-9eefc537-55c0-4d9a-b9c1-ef395164de22.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1029/vscode-ipc-71dd4c62-c0c6-40e4-8d0e-dbef136c423d.sock
 TESTMAX_HOMEDIR=/Tools/synopsys/testmax/X-2025.06-SP2
 VERDI_HOME=/Tools/synopsys/verdi/X-2025.06-SP2
 MANPATH=:
@@ -275,7 +275,7 @@ LOADEDMODULES=
 SPYGLASS_HOME=/Tools/synopsys/spyglass/X-2025.06-SP2/SPYGLASS_HOME
 SAED90_PDK=/Tools/PDK/SAED90/PDK_Analog
 ICVALIDATOR_HOME=/Tools/synopsys/icvalidator/X-2025.06-SP2
-MAKE_TERMOUT=/dev/pts/22
+MAKE_TERMOUT=/dev/pts/32
 BROWSER=/home/alberto.mamede/.vscode-server/cli/servers/Stable-8a14f0cc1b08d531eb83255ea3764ae22aa932b5/server/bin/helpers/browser.sh
 BASH_FUNC_which%%=() {  ( alias;
  eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
@@ -290,7 +290,7 @@ HSP_HOME=/Tools/synopsys/hspice/X-2025.06-SP2-2/hspice
 SELINUX_ROLE_REQUESTED=
 HISTSIZE=1000
 SAED32_28_PDK=/Tools/PDK/SAED32/PDK_Analog
-MAKE_TERMERR=/dev/pts/22
+MAKE_TERMERR=/dev/pts/32
 FUSION_HOMEDIR=/Tools/synopsys/fusioncompiler/X-2025.06-SP3
 LANG=pt_BR.UTF-8
 TERM=xterm-256color
@@ -364,8 +364,8 @@ argv[3]=-l
 argv[4]=build/vcs/logs/vcs_run.log
 **********Message Rewind**************
 281 profile - 100
-          CPU/Mem usage: 0.100 sys,  0.430 user,  470.99M mem
-282 Elapsed time:    0:00:00    Wed Nov 25 13:24:41 2026
+          CPU/Mem usage: 0.090 sys,  0.420 user,  470.99M mem
+282 Elapsed time:    0:00:00    Wed Nov 25 14:44:41 2026
 283 User CPU time used: 0 seconds
 284 System CPU time used: 0 seconds
 285 pliAppInit
@@ -400,23 +400,23 @@ argv[4]=build/vcs/logs/vcs_run.log
 314 *Verdi* : Begin traversing the scope (minisoc_top_tb), layer (0).
 315 *Verdi* : End of traversing.
 316 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.120 sys,  0.450 user,  572.98M mem
-                   incr: 0.010 sys,  0.010 user,  11.73M mem
-                   accu: 0.010 sys,  0.010 user,  11.73M mem
-              accu incr: 0.010 sys,  0.010 user,  11.73M mem
+          CPU/Mem usage: 0.100 sys,  0.440 user,  572.98M mem
+                   incr: 0.000 sys,  0.010 user,  11.73M mem
+                   accu: 0.000 sys,  0.010 user,  11.73M mem
+              accu incr: 0.000 sys,  0.010 user,  11.73M mem
 
           Count usage: 214 var,  192 idcode,  90 callback
                  incr: 214 var,  192 idcode,  90 callback
                  accu: 214 var,  192 idcode,  90 callback
             accu incr: 214 var,  192 idcode,  90 callback
 317 Idcode  0 - bc1:0  mda:0
-318 Elapsed time:    0:00:00    Wed Nov 25 13:24:41 2026
+318 Elapsed time:    0:00:00    Wed Nov 25 14:44:41 2026
 319 User CPU time used: 0 seconds
 320 System CPU time used: 0 seconds
 321 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.120 sys,  0.450 user,  572.98M mem
+          CPU/Mem usage: 0.100 sys,  0.440 user,  572.98M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.010 sys,  0.010 user,  11.73M mem
+                   accu: 0.000 sys,  0.010 user,  11.73M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
           Count usage: 214 var,  192 idcode,  90 callback
@@ -424,7 +424,7 @@ argv[4]=build/vcs/logs/vcs_run.log
                  accu: 214 var,  192 idcode,  90 callback
             accu incr: 0 var,  0 idcode,  0 callback
 322 Idcode  0 - bc1:0  mda:0
-323 Elapsed time:    0:00:00    Wed Nov 25 13:24:41 2026
+323 Elapsed time:    0:00:00    Wed Nov 25 14:44:41 2026
 324 User CPU time used: 0 seconds
 325 System CPU time used: 0 seconds
 326 sps_call_fsdbDumpMDA_vd_main at 0 : ../tb/minisoc_top_tb.sv(129)
@@ -432,23 +432,23 @@ argv[4]=build/vcs/logs/vcs_run.log
 328 *Verdi* : Enable +mda and +packedmda dumping.
 329 *Verdi* : End of traversing the MDAs.
 330 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.120 sys,  0.530 user,  572.98M mem
-                   incr: 0.000 sys,  0.080 user,  0.00M mem
-                   accu: 0.000 sys,  0.080 user,  0.00M mem
-              accu incr: 0.000 sys,  0.080 user,  0.00M mem
+          CPU/Mem usage: 0.100 sys,  0.510 user,  572.98M mem
+                   incr: 0.000 sys,  0.070 user,  0.00M mem
+                   accu: 0.000 sys,  0.070 user,  0.00M mem
+              accu incr: 0.000 sys,  0.070 user,  0.00M mem
 
           Count usage: 1714 var,  192 idcode,  97 callback
                  incr: 1500 var,  0 idcode,  7 callback
                  accu: 1500 var,  0 idcode,  7 callback
             accu incr: 1500 var,  0 idcode,  7 callback
 331 Idcode  0 - bc1:0  mda:1507
-332 Elapsed time:    0:00:01    Wed Nov 25 13:24:42 2026
+332 Elapsed time:    0:00:01    Wed Nov 25 14:44:42 2026
 333 User CPU time used: 0 seconds
 334 System CPU time used: 0 seconds
 335 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.120 sys,  0.530 user,  572.98M mem
+          CPU/Mem usage: 0.100 sys,  0.510 user,  572.98M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.080 user,  0.00M mem
+                   accu: 0.000 sys,  0.070 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
           Count usage: 1714 var,  192 idcode,  97 callback
@@ -456,33 +456,33 @@ argv[4]=build/vcs/logs/vcs_run.log
                  accu: 1500 var,  0 idcode,  7 callback
             accu incr: 0 var,  0 idcode,  0 callback
 336 Idcode  0 - bc1:0  mda:1507
-337 Elapsed time:    0:00:01    Wed Nov 25 13:24:42 2026
+337 Elapsed time:    0:00:01    Wed Nov 25 14:44:42 2026
 338 User CPU time used: 0 seconds
 339 System CPU time used: 0 seconds
-340 End of simulation at 5020000
+340 End of simulation at 6140000
 341 Memory usage: 606.536 M
-342 Maximum resident set size: 243 MB
+342 Maximum resident set size: 245 MB
 343 Hard page faults: 0
-344 Soft page faults: 22011
-345 Elapsed time:    0:00:01    Wed Nov 25 13:24:42 2026
+344 Soft page faults: 22031
+345 Elapsed time:    0:00:01    Wed Nov 25 14:44:42 2026
 346 User CPU time used: 0 seconds
 347 System CPU time used: 0 seconds
 348 Begin FSDB profile info:
-349 FSDB Writer : bc1(20447) bcn(11157) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.030373) io wait(0.000000) theadpool wait(0.000000)
+349 FSDB Writer : bc1(24955) bcn(11211) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(1.043737) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 350 End FSDB profile info
-351 FSDB closed. Name: dump.fsdb Size: 48549
+351 FSDB closed. Name: dump.fsdb Size: 48711
 352 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-353                      - BlockUsed:1 Acquire:0 BufferUsed:737250
+353                      - BlockUsed:1 Acquire:0 BufferUsed:859408
 354                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:0
-355                      - MainProducerTime:0.919971163 TotalConsumerTime:0.000000000
-356                      - ElapsedTime:0.438911000
-357 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:737250
+355                      - MainProducerTime:0.934361323 TotalConsumerTime:0.000000000
+356                      - ElapsedTime:2.297380000
+357 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:859408
 358 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
-359                      - BlockUsed:2 Acquire:0 BufferUsed:737250
+359                      - BlockUsed:2 Acquire:0 BufferUsed:859408
 360 SimExit
-361 Elapsed time:    0:00:01    Wed Nov 25 13:24:42 2026
+361 Elapsed time:    0:00:02    Wed Nov 25 14:44:43 2026
 362 User CPU time used: 0 seconds
 363 System CPU time used: 0 seconds
 364 Sim process exit

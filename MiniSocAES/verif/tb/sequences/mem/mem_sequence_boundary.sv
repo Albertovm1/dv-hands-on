@@ -1,6 +1,8 @@
 `ifndef MEM_SEQUENCE_BOUNDARY_SV
 `define MEM_SEQUENCE_BOUNDARY_SV
 
+// sequence boundary testando o endereço 0 e o 1023 (extremos da memória).
+
 class mem_sequence_boundary extends uvm_sequence #(mem_seq_item);
 
     `uvm_object_utils(mem_sequence_boundary)

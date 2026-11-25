@@ -1,6 +1,10 @@
 `ifndef MEM_SEQUENCE_DATA_PATTERNS_SV
 `define MEM_SEQUENCE_DATA_PATTERNS_SV
 
+// memória utilizando quatro padrões de dados: todos os bits em 0, todos em 1 e dois padrões alternados. 
+//Para cada padrão, realiza uma escrita e depois uma leitura no endereço 15. 
+//Assim, verificamos se a memória armazena e recupera corretamente diferentes combinações de bits.
+
 class mem_sequence_data_patterns extends uvm_sequence #(mem_seq_item);
 
     `uvm_object_utils(mem_sequence_data_patterns)
@@ -9,7 +13,7 @@ class mem_sequence_data_patterns extends uvm_sequence #(mem_seq_item);
         super.new(name);
     endfunction
 
-    task body();
+    task body();    
 
         mem_seq_item req;
 

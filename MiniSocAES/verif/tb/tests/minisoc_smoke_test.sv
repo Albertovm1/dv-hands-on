@@ -7,10 +7,10 @@ class minisoc_smoke_test extends uvm_test;
 
     minisoc_env env;
 
-    clk_sequence clk_seq;
-    rst_sequence_short rst_seq;
-    mem_sequence_basic mem_seq;
-    spi_sequence_basic spi_seq;
+    clk_sequence          clk_seq;
+    rst_sequence_multiple rst_seq;
+    mem_sequence_basic    mem_seq;
+    spi_sequence_basic    spi_seq;
 
     function new(string name = "minisoc_smoke_test", uvm_component parent = null);
         super.new(name, parent);
@@ -70,7 +70,7 @@ class minisoc_smoke_test extends uvm_test;
             clk_seq.start(env.m_clk_agent.sequencer);
         join_none
 
-        rst_seq = rst_sequence_short::type_id::create("rst_seq");
+        rst_seq = rst_sequence_multiple::type_id::create("rst_seq");
         rst_seq.start(env.m_rst_agent.sequencer);
 
         mem_seq = mem_sequence_basic::type_id::create("mem_seq");

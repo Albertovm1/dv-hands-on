@@ -5,10 +5,8 @@
 
 #define SPI_NUM_REGS 64
 
-/* Banco de registradores */
 static uint32_t registers[SPI_NUM_REGS];
 
-/* Inicialização do Reference Model */
 void spi_ref_init(void)
 {
     memset(registers, 0, sizeof(registers));
@@ -16,7 +14,6 @@ void spi_ref_init(void)
     printf("[SPI REFMOD] Initialized\n");
 }
 
-/* Reset do Reference Model */
 void spi_ref_reset(void)
 {
     memset(registers, 0, sizeof(registers));
@@ -24,7 +21,6 @@ void spi_ref_reset(void)
     printf("[SPI REFMOD] Reset\n");
 }
 
-/* Escrita em registrador */
 void spi_ref_write(uint8_t addr, uint32_t data)
 {
     if (addr >= SPI_NUM_REGS)
@@ -40,7 +36,6 @@ void spi_ref_write(uint8_t addr, uint32_t data)
            addr, data);
 }
 
-/* Leitura de registrador */
 uint32_t spi_ref_read(uint8_t addr)
 {
     if (addr >= SPI_NUM_REGS)
@@ -56,7 +51,6 @@ uint32_t spi_ref_read(uint8_t addr)
     return registers[addr];
 }
 
-/* Consulta do valor esperado */
 uint32_t spi_ref_get_expected(uint8_t addr)
 {
     if (addr >= SPI_NUM_REGS)
