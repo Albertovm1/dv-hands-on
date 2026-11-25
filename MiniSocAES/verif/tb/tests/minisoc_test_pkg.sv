@@ -7,6 +7,7 @@ package minisoc_test_pkg;
     import clk_agent_pkg::*;
     import rst_agent_pkg::*;
     import mem_agent_pkg::*;
+    import spi_agent_pkg::*;
 
     import minisoc_env_pkg::*;
 

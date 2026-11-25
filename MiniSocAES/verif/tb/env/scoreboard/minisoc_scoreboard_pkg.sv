@@ -10,10 +10,13 @@ package minisoc_scoreboard_pkg;
     `include "uvm_macros.svh"
     
     import mem_refmod_dpi_pkg::*;
+    import spi_refmod_dpi_pkg::*;
+
 
     import clk_agent_pkg::*;
     import rst_agent_pkg::*;
     import mem_agent_pkg::*;
+    import spi_agent_pkg::*;
 
     `include "minisoc_scoreboard.sv"
 

@@ -12,6 +12,7 @@ package minisoc_env_pkg;
     import clk_agent_pkg::*;
     import rst_agent_pkg::*;
     import mem_agent_pkg::*;
+    import spi_agent_pkg::*;
 
     import minisoc_scoreboard_pkg::*;
     import minisoc_coverage_pkg::*;

@@ -610,11 +610,11 @@ ToolbarIconSize = Medium
 recent_commands_Verdi = verdiInvokeCoverage
 recent_commands_nWave = zoomIn,windowTimeUnit,windowTimeUnit_2,editCut,zoomOut,zoomAll,deltaMenu_delta,getSignal,getAllSignals
 verdiAppFontModern = "DejaVu Sans,-1,18,5,50,0,0,0,0,0", ""
-ColorThemeModern = bright
-verdiMonoQFontModern = "DejaVu Sans Mono,-1,18,5,50,0,0,0,0,0", ""
 version = Verdi_X-2025.06-SP2
-prevColorThemeModern = bright
 SignalCaseInSensitive = FALSE
+ColorThemeModern = bright
+prevColorThemeModern = bright
+verdiMonoQFontModern = "DejaVu Sans Mono,-1,18,5,50,0,0,0,0,0", ""
 [GlobalProp]
 ErrWindow_Font = Helvetica_M_R_12
 [Globals]
@@ -1066,9 +1066,9 @@ Button1 = "Dump All Signals" "$fsdbDumpvars;\n"
 [VIA]
 viaLogViewerDefaultRuleOneSearchForm = "share/VIA/Apps/PredefinedRules/Misc/Onesearch_rule.rc"
 [VIA.oneSearch.preference]
+isOneSearchVisible = TRUE
 DefaultDisplayTimeUnit = "1.000000ns"
 DefaultLogTimeUnit = "1.000000ns"
-isOneSearchVisible = TRUE
 [VIA.oneSearch.preference.vgifColumnSettingRC]
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
@@ -1769,7 +1769,7 @@ StopAfterCompileOption = -tcl
 [turboSchema_Printer_Options]
 Orientation = Landscape
 [turbo_library]
-bdb_load_scope
+bdb_load_scope = 
 [vdCovFilteringSearchesStrings]
 keepLastUsedFiltersMaxNum = 10
 [verisity]

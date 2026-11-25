@@ -7,6 +7,7 @@ module minisoc_top_tb;
     import clk_agent_pkg::*;
     import rst_agent_pkg::*;
     import mem_agent_pkg::*;
+    import spi_agent_pkg::*;
 
     import minisoc_scoreboard_pkg::*;
     import minisoc_env_pkg::*;
@@ -20,27 +21,18 @@ module minisoc_top_tb;
     //Memory Interface
     mem_if mem_vif();
 
-    // Temporary signals for DUT inputs
-    logic spi_sclk;
-    logic spi_cs_n;
-    logic spi_mosi;
-    logic mem_clk;
-    logic [31:0] mem_i_data;
-    logic mem_i_wr_en;
-    logic [9:0] mem_i_addr;
-
-    logic spi_miso;
-    logic [31:0] mem_o_data;
+    // SPI Interface
+    spi_if spi_vif();
 
     // DUT
     minisoc_top dut (
         .clk        (clk_vif.clk),
         .rst_n      (rst_vif.rst_n),
 
-        .spi_sclk   (spi_sclk),
-        .spi_cs_n   (spi_cs_n),
-        .spi_mosi   (spi_mosi),
-        .spi_miso   (spi_miso),
+        .spi_sclk   (spi_vif.spi_sclk),
+        .spi_cs_n   (spi_vif.spi_cs_n),
+        .spi_mosi   (spi_vif.spi_mosi),
+        .spi_miso   (spi_vif.spi_miso),
 
         .mem_clk     (mem_vif.mem_clk),
         .mem_i_data  (mem_vif.mem_i_data),
@@ -53,14 +45,15 @@ module minisoc_top_tb;
     initial begin
 
         // Initial values
-        spi_sclk    = 0;
-        spi_cs_n    = 1;
-        spi_mosi    = 0;
-        mem_clk     = 0;
-        mem_i_data  = '0;
-        mem_i_wr_en = 0;
-        mem_i_addr  = '0;
+        spi_vif.spi_sclk = 0;
+        spi_vif.spi_cs_n = 1;
+        spi_vif.spi_mosi = 0;
 
+        mem_vif.mem_clk     = 0;
+        mem_vif.mem_i_data  = '0;
+        mem_vif.mem_i_wr_en = 0;
+        mem_vif.mem_i_addr  = '0;
+        
         // Configure Clock Driver Virtual Interface
         uvm_config_db #(virtual clk_if.driver)::set(
             null,
@@ -107,6 +100,22 @@ module minisoc_top_tb;
             "uvm_test_top.env.mem_agent.monitor",
             "vif",
             mem_vif
+        );
+
+        // Configure SPI Driver Virtual Interface
+        uvm_config_db #(virtual spi_if.driver)::set(
+            null,
+            "uvm_test_top.env.spi_agent.driver",
+            "vif",
+            spi_vif
+        );
+
+        // Configure SPI Monitor Virtual Interface
+        uvm_config_db #(virtual spi_if.monitor)::set(
+            null,
+            "uvm_test_top.env.spi_agent.monitor",
+            "vif",
+            spi_vif
         );
 
         // Start UVM Test

@@ -191,11 +191,19 @@
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_monitor.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_seq_item.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_rst_agent/rst_sequencer.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_spi_agent/spi_agent.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_spi_agent/spi_agent_pkg.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_spi_agent/spi_driver.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_spi_agent/spi_if.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_spi_agent/spi_monitor.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_spi_agent/spi_seq_item.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/agents/minisoc_spi_agent/spi_sequencer.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/env/coverage/minisoc_coverage.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/env/coverage/minisoc_coverage_pkg.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/env/minisoc_env.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/env/minisoc_env_pkg.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/env/refmods/mem_refmod/mem_refmod_dpi.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/env/refmods/spi_refmod/spi_refmod_dpi.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/env/scoreboard/minisoc_scoreboard.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/env/scoreboard/minisoc_scoreboard_pkg.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/minisoc_top_tb.sv
@@ -211,6 +219,7 @@
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_medium.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_multiple.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/rst/rst_sequence_short.sv
+/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/sequences/spi/spi_sequence_basic.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/tests/minisoc_smoke_test.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/tests/minisoc_test_pkg.sv
 /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/top_assertions.sv

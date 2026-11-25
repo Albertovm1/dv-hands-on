@@ -1687,6 +1687,113 @@ __attribute__((weak)) int mem_refmod_read(/* INPUT */unsigned int A_1, /* OUTPUT
 }
 #endif /* __VCS_IMPORT_DPI_STUB_mem_refmod_read */
 
+#ifndef __VCS_IMPORT_DPI_STUB_spi_ref_init
+#define __VCS_IMPORT_DPI_STUB_spi_ref_init
+__attribute__((weak)) void spi_ref_init()
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static void (*_vcs_dpi_fp_)() = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (void (*)()) dlsym(RTLD_NEXT, "spi_ref_init");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        _vcs_dpi_fp_();
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "spi_ref_init");
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_spi_ref_init */
+
+#ifndef __VCS_IMPORT_DPI_STUB_spi_ref_reset
+#define __VCS_IMPORT_DPI_STUB_spi_ref_reset
+__attribute__((weak)) void spi_ref_reset()
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static void (*_vcs_dpi_fp_)() = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (void (*)()) dlsym(RTLD_NEXT, "spi_ref_reset");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        _vcs_dpi_fp_();
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "spi_ref_reset");
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_spi_ref_reset */
+
+#ifndef __VCS_IMPORT_DPI_STUB_spi_ref_write
+#define __VCS_IMPORT_DPI_STUB_spi_ref_write
+__attribute__((weak)) void spi_ref_write(/* INPUT */unsigned char A_1, /* INPUT */unsigned int A_2)
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static void (*_vcs_dpi_fp_)(/* INPUT */unsigned char A_1, /* INPUT */unsigned int A_2) = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (void (*)(unsigned char A_1, unsigned int A_2)) dlsym(RTLD_NEXT, "spi_ref_write");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        _vcs_dpi_fp_(A_1, A_2);
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "spi_ref_write");
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_spi_ref_write */
+
+#ifndef __VCS_IMPORT_DPI_STUB_spi_ref_read
+#define __VCS_IMPORT_DPI_STUB_spi_ref_read
+__attribute__((weak)) unsigned int spi_ref_read(/* INPUT */unsigned char A_1)
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static unsigned int (*_vcs_dpi_fp_)(/* INPUT */unsigned char A_1) = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (unsigned int (*)(unsigned char A_1)) dlsym(RTLD_NEXT, "spi_ref_read");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        return _vcs_dpi_fp_(A_1);
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "spi_ref_read");
+        return 0;
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_spi_ref_read */
+
+#ifndef __VCS_IMPORT_DPI_STUB_spi_ref_get_expected
+#define __VCS_IMPORT_DPI_STUB_spi_ref_get_expected
+__attribute__((weak)) unsigned int spi_ref_get_expected(/* INPUT */unsigned char A_1)
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static unsigned int (*_vcs_dpi_fp_)(/* INPUT */unsigned char A_1) = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (unsigned int (*)(unsigned char A_1)) dlsym(RTLD_NEXT, "spi_ref_get_expected");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        return _vcs_dpi_fp_(A_1);
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "spi_ref_get_expected");
+        return 0;
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_spi_ref_get_expected */
+
 #ifndef __VCS_EXPORT_DPI_DUMMY_REFERENCES__
 #define __VCS_EXPORT_DPI_DUMMY_REFERENCES__
 /* Dummy references to those export DPI routines.

@@ -162,3 +162,13 @@ struct	_vcs_dpi_rsrc_msg_struct	{
  extern void mem_refmod_write(/* INPUT */unsigned int addr, /* INPUT */unsigned int data);
 
  extern int mem_refmod_read(/* INPUT */unsigned int addr, /* OUTPUT */unsigned int *expected_data);
+
+ extern void spi_ref_init();
+
+ extern void spi_ref_reset();
+
+ extern void spi_ref_write(/* INPUT */unsigned char addr, /* INPUT */unsigned int data);
+
+ extern unsigned int spi_ref_read(/* INPUT */unsigned char addr);
+
+ extern unsigned int spi_ref_get_expected(/* INPUT */unsigned char addr);

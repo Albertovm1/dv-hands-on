@@ -18,9 +18,17 @@ DUT_FILES := $(RTL_DIR)/minisoc_aes/minisoc_aes_key_exp.sv \
 #
 TB_DIR = ../tb
 
-REFMOD_DIR = $(TB_DIR)/env/refmods/mem_refmod
-DPI_SV_FILE = $(REFMOD_DIR)/mem_refmod_dpi.sv
-C_FILES     = $(REFMOD_DIR)/mem_refmod.c
+# Memory Reference Model
+MEM_REFMOD_DIR = $(TB_DIR)/env/refmods/mem_refmod
+MEM_DPI_SV_FILE = $(MEM_REFMOD_DIR)/mem_refmod_dpi.sv
+MEM_C_FILE      = $(MEM_REFMOD_DIR)/mem_refmod.c
+
+# SPI Reference Model
+SPI_REFMOD_DIR = $(TB_DIR)/env/refmods/spi_refmod
+SPI_DPI_SV_FILE = $(SPI_REFMOD_DIR)/spi_refmod_dpi.sv
+SPI_C_FILE      = $(SPI_REFMOD_DIR)/spi_refmod.c
+
+C_FILES = $(MEM_C_FILE) $(SPI_C_FILE)
 
 TB_TOP_FILE = $(TB_DIR)/minisoc_top_tb.sv
 SVA_FILE    = $(TB_DIR)/top_assertions.sv
@@ -28,9 +36,11 @@ SVA_FILE    = $(TB_DIR)/top_assertions.sv
 INC_DIRS = +incdir+$(TB_DIR)/agents/minisoc_clk_agent \
            +incdir+$(TB_DIR)/agents/minisoc_rst_agent \
            +incdir+$(TB_DIR)/agents/minisoc_mem_agent \
+           +incdir+$(TB_DIR)/agents/minisoc_spi_agent \
            +incdir+$(TB_DIR)/sequences/clk \
            +incdir+$(TB_DIR)/sequences/rst \
            +incdir+$(TB_DIR)/sequences/mem \
+           +incdir+$(TB_DIR)/sequences/spi \
            +incdir+$(TB_DIR)/env \
            +incdir+$(TB_DIR)/env/scoreboard \
            +incdir+$(TB_DIR)/env/coverage \
@@ -51,10 +61,13 @@ TB_FILES = \
     $(TB_DIR)/agents/minisoc_clk_agent/clk_if.sv \
     $(TB_DIR)/agents/minisoc_rst_agent/rst_if.sv \
     $(TB_DIR)/agents/minisoc_mem_agent/mem_if.sv \
+    $(TB_DIR)/agents/minisoc_spi_agent/spi_if.sv \
     $(TB_DIR)/agents/minisoc_clk_agent/clk_agent_pkg.sv \
     $(TB_DIR)/agents/minisoc_rst_agent/rst_agent_pkg.sv \
     $(TB_DIR)/agents/minisoc_mem_agent/mem_agent_pkg.sv \
-    $(DPI_SV_FILE) \
+    $(TB_DIR)/agents/minisoc_spi_agent/spi_agent_pkg.sv \
+    $(MEM_DPI_SV_FILE) \
+    $(SPI_DPI_SV_FILE) \
     $(TB_DIR)/env/scoreboard/minisoc_scoreboard_pkg.sv \
     $(TB_DIR)/env/coverage/minisoc_coverage_pkg.sv \
     $(TB_DIR)/env/minisoc_env_pkg.sv \

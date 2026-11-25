@@ -8,6 +8,7 @@ class minisoc_env extends uvm_env;
     clk_agent m_clk_agent;
     rst_agent m_rst_agent;
     mem_agent m_mem_agent;
+    spi_agent m_spi_agent;
 
     minisoc_scoreboard scoreboard;
     minisoc_coverage coverage;
@@ -22,6 +23,7 @@ class minisoc_env extends uvm_env;
         m_clk_agent = clk_agent::type_id::create("clk_agent", this);
         m_rst_agent = rst_agent::type_id::create("rst_agent", this);
         m_mem_agent = mem_agent::type_id::create("mem_agent",this);
+        m_spi_agent = spi_agent::type_id::create("spi_agent",this);
 
         scoreboard = minisoc_scoreboard::type_id::create("scoreboard", this);
         coverage = minisoc_coverage::type_id::create("coverage", this);
@@ -40,6 +42,9 @@ class minisoc_env extends uvm_env;
 
         m_mem_agent.monitor.analysis_port.connect(scoreboard.mem_monitor_export);
         m_mem_agent.monitor.analysis_port.connect(coverage.mem_analysis_export);
+
+        m_spi_agent.monitor.analysis_port.connect(scoreboard.spi_monitor_export);
+        m_spi_agent.monitor.analysis_port.connect(coverage.spi_analysis_export);
 
 
     endfunction

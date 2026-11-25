@@ -44,7 +44,7 @@ class spi_driver extends uvm_driver #(spi_seq_item);
 
             if (req.op == spi_seq_item::SPI_WRITE)begin
 
-                frame = {0, req.addr,0,req.wdata};
+                frame = {1'b0, req.addr, 1'b0, req.wdata};
 
                 vif.spi_sclk = 0;
                 vif.spi_cs_n = 0;
@@ -71,7 +71,7 @@ class spi_driver extends uvm_driver #(spi_seq_item);
 
             else if (req.op == spi_seq_item::SPI_READ)begin
 
-                frame = {1, req.addr,0,0};
+                frame = {1'b1, req.addr, 1'b0, 32'b0};
 
                 vif.spi_sclk = 0;
                 vif.spi_cs_n = 0;

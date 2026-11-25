@@ -12,9 +12,10 @@ package minisoc_coverage_pkg;
     import clk_agent_pkg::*;
     import rst_agent_pkg::*;
     import mem_agent_pkg::*;
+    import spi_agent_pkg::*;
 
     `include "minisoc_coverage.sv"
 
-endpackage : minisoc_coverage_pkg
+endpackage
 
 `endif

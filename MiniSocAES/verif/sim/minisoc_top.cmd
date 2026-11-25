@@ -32,6 +32,15 @@
     wvAddSignal -win $_nWave2 "/minisoc_top_tb/mem_vif/mem_o_data"
 
     # ==========================================
+    # SPI VIP
+    # ==========================================
+
+    wvAddSignal -win $_nWave2 "/minisoc_top_tb/spi_vif/spi_sclk"
+    wvAddSignal -win $_nWave2 "/minisoc_top_tb/spi_vif/spi_cs_n"
+    wvAddSignal -win $_nWave2 "/minisoc_top_tb/spi_vif/spi_mosi"
+    wvAddSignal -win $_nWave2 "/minisoc_top_tb/spi_vif/spi_miso"
+
+    # ==========================================
     # DUT INPUTS
     # ==========================================
 

@@ -27,11 +27,19 @@
 ../tb/agents/minisoc_rst_agent/rst_monitor.sv
 ../tb/agents/minisoc_rst_agent/rst_seq_item.sv
 ../tb/agents/minisoc_rst_agent/rst_sequencer.sv
+../tb/agents/minisoc_spi_agent/spi_agent.sv
+../tb/agents/minisoc_spi_agent/spi_agent_pkg.sv
+../tb/agents/minisoc_spi_agent/spi_driver.sv
+../tb/agents/minisoc_spi_agent/spi_if.sv
+../tb/agents/minisoc_spi_agent/spi_monitor.sv
+../tb/agents/minisoc_spi_agent/spi_seq_item.sv
+../tb/agents/minisoc_spi_agent/spi_sequencer.sv
 ../tb/env/coverage/minisoc_coverage.sv
 ../tb/env/coverage/minisoc_coverage_pkg.sv
 ../tb/env/minisoc_env.sv
 ../tb/env/minisoc_env_pkg.sv
 ../tb/env/refmods/mem_refmod/mem_refmod_dpi.sv
+../tb/env/refmods/spi_refmod/spi_refmod_dpi.sv
 ../tb/env/scoreboard/minisoc_scoreboard.sv
 ../tb/env/scoreboard/minisoc_scoreboard_pkg.sv
 ../tb/minisoc_top_tb.sv
@@ -47,6 +55,7 @@
 ../tb/sequences/rst/rst_sequence_medium.sv
 ../tb/sequences/rst/rst_sequence_multiple.sv
 ../tb/sequences/rst/rst_sequence_short.sv
+../tb/sequences/spi/spi_sequence_basic.sv
 ../tb/tests/minisoc_smoke_test.sv
 ../tb/tests/minisoc_test_pkg.sv
 /Tools/synopsys/vcs/X-2025.06-SP2/etc/uvm-1.2/base/uvm_barrier.svh

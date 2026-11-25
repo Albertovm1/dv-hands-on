@@ -84,4 +84,9 @@ import_DPI getenv uvm_custom_install_verdi_recording
 import_DPI mem_refmod_init mem_refmod_dpi_pkg
 import_DPI mem_refmod_write mem_refmod_dpi_pkg
 import_DPI mem_refmod_read mem_refmod_dpi_pkg
+import_DPI spi_ref_init spi_refmod_dpi_pkg
+import_DPI spi_ref_reset spi_refmod_dpi_pkg
+import_DPI spi_ref_write spi_refmod_dpi_pkg
+import_DPI spi_ref_read spi_refmod_dpi_pkg
+import_DPI spi_ref_get_expected spi_refmod_dpi_pkg
 DirectC SdisableFork 
