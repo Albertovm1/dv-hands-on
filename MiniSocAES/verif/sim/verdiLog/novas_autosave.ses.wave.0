@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_X-2025.06-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 11 1534 329 305 65
+viewPort 0 11 1534 499 305 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -15,19 +15,17 @@ openDirFile -d / "" "/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSoc
 signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
-windowTimeUnit 1ns
-
 ; waveform viewport range
-zoom 0.000000 6201.400000 1n
-cursor 4780.000000
+zoom 0.000000 6201400.000000
+cursor 2762000.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 0
+top 15
 ; marker line index
-markerPos 4
+markerPos 34
 
 ; event list
 ; addEvent event_name event_expression
@@ -49,12 +47,57 @@ curSTATUS ByChange
 
 addGroup "G1"
 activeDirFile "" "/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/dump.fsdb"
+addSignal -h 18 /minisoc_top_tb/clk_vif/clk
+addSignal -h 18 /minisoc_top_tb/rst_vif/rst_n
+addSignal -h 18 /minisoc_top_tb/mem_vif/mem_clk
+addSignal -h 18 -UNSIGNED -HEX -holdScope mem_i_data[31:0]
+addSignal -h 18 -holdScope mem_i_wr_en
+addSignal -h 18 -UNSIGNED -HEX -holdScope mem_i_addr[9:0]
+addSignal -h 18 -UNSIGNED -HEX -holdScope mem_o_data[31:0]
 addSignal -h 18 /minisoc_top_tb/spi_vif/spi_sclk
 addSignal -h 18 -holdScope spi_cs_n
 addSignal -h 18 -holdScope spi_mosi
 addSignal -h 18 -holdScope spi_miso
-addGroup "G2"
+addGroup "u_spi"
+addSignal -h 18 /minisoc_top_tb/dut/u_spi/sclk
+addSignal -h 18 -holdScope cs_n
+addSignal -h 18 -holdScope mosi
+addSignal -h 18 -holdScope miso
+addSignal -h 18 -holdScope sys_clk
+addSignal -h 18 -holdScope rstn
+addSignal -h 18 -holdScope cfg_start
+addSignal -h 18 -holdScope cfg_decrypt
+addSignal -h 18 -UNSIGNED -HEX -holdScope cfg_mode[2:0]
+addSignal -h 18 -UNSIGNED -HEX -holdScope cfg_num_blocks[8:0]
+addSignal -h 18 -UNSIGNED -HEX -holdScope cfg_key[127:0]
+addSignal -h 18 -UNSIGNED -HEX -holdScope cfg_iv[127:0]
+addSignal -h 18 -UNSIGNED -HEX -holdScope cfg_counter[63:0]
+addSignal -h 18 -holdScope aes_busy
+addSignal -h 18 -holdScope aes_done
+addSignal -h 18 -holdScope aes_error
+addSignal -h 18 -UNSIGNED -HEX -holdScope aes_blocks_done[8:0]
+addSignal -h 18 -holdScope cfg_mem_sel_aes
+addSignal -h 18 -holdScope cfg_pll_enable
+addSignal -h 18 -UNSIGNED -HEX -holdScope cfg_pll_div_sel[1:0]
+addSignal -h 18 -holdScope pll_locked
+addSignal -h 18 -UNSIGNED -HEX -holdScope leds[7:0]
+addGroup "G3"
 
 ; getSignalForm Scope Hierarchy Status
 ; active file of getSignalForm
+activeDirFile "" "/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/dump.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/_vcs_msglog"
+"/minisoc_top_tb"
+"/minisoc_top_tb/spi_vif"
+
+SCOPE_LIST_BEGIN
+"/_vcs_msglog"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
 

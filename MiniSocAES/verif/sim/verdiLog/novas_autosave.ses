@@ -27,15 +27,15 @@ fdb_campaign =
 fdb_tool = 
 [hb]
 postSimFile = /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/dump.fsdb
-syncTime = 4780
+syncTime = 2762000
 viewport = 0 29 1534 706 0 0 300 1532
-activeNode = "minisoc_top_tb"
-activeScope = "minisoc_top_tb"
-activeFile = "../tb/minisoc_top_tb.sv"
+activeNode = "minisoc_top_tb.dut.u_spi"
+activeScope = "minisoc_top_tb.dut.u_spi"
+activeFile = "../../rtl/rtl/minisoc_spi/minisoc_spi.sv"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 2
+sourceBeginLine = 275
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -52,23 +52,24 @@ DnDtraceCrossHierOnly = True
 leadingZero = False
 signalPane = False
 SourceVerticalScrollLines = 5
-Scope1 = "minisoc_top_tb"
-multipleSelection = 1 2 2 0 0
+Scope1 = "minisoc_top_tb.dut.u_spi"
+Scope2 = "minisoc_top_tb"
+multipleSelection = 1 277 4 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
 importCmd = "-dbdir" "build/vcs/minisoc_top_sim.daidir" 
 invokeDir = /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim
 [hb.sourceTab.1]
-scope = minisoc_top_tb
-File = /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/tb/minisoc_top_tb.sv
-Line = 3
+scope = minisoc_top_tb.dut.u_spi
+File = /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/rtl/rtl/minisoc_spi/minisoc_spi.sv
+Line = 276
 [nMemoryManager]
 WaveformFile = /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/dump.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 11 1534 329 305 65
+viewPort = 0 11 1534 499 305 65
 primaryWindow = TRUE
 SessionFile = /home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

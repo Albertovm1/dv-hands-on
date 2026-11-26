@@ -1,6 +1,8 @@
 `ifndef MINISOC_SCOREBOARD_SV
 `define MINISOC_SCOREBOARD_SV
 
+// Use uvm_tlm_analysis_fifo
+
 `uvm_analysis_imp_decl(_clk)
 `uvm_analysis_imp_decl(_rst)
 `uvm_analysis_imp_decl(_mem)

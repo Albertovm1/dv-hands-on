@@ -28,8 +28,8 @@ openCnt: (2)
 fid(3): fd(0) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/build/vcs/minisoc_top_sim.daidir/kdb.elab++/work.lib++/uvm_custom_install_verdi_recorder.sv.tdc)
 	size(16415) lastModTime(1795628666) curModTime(1795628666)
 	mode(rb)	hot(0) cool(0) pos(0)
-fid(2): fd(25) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/verdiLog/_swap_0001#950448663#415581)
-	size(0) lastModTime(0) curModTime(1795629751)
+fid(2): fd(25) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/verdiLog/_swap_0001#950448663#1563370)
+	size(0) lastModTime(0) curModTime(1795649963)
 	mode(w+b)	hot(0) cool(1) pos(0)
 fid(1): fd(1073741824) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/build/vcs/minisoc_top_sim.daidir/kdb.elab++/work.lib++/minisoc_top_tb.sv.tdc)
 	size(3883) lastModTime(1795628666) curModTime(1795628666)
@@ -37,7 +37,7 @@ fid(1): fd(1073741824) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 ==================================================
-mySelf(0x210032c0) pre(0x249df700) next((nil))
+mySelf(0x21dc2c40) pre(0x25aad700) next((nil))
 version(200506)
 date(Dec  1 2025 00:17:44)
 version: (200506)
@@ -77,7 +77,7 @@ fid(1): fd(1073741824) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 ==================================================
-mySelf(0x210032c0) pre(0x249df700) next((nil))
+mySelf(0x21dc2c40) pre(0x25aad700) next((nil))
 version(200506)
 date(Dec  1 2025 00:17:44)
 version: (200506)
@@ -113,45 +113,48 @@ fid(2): fd(0) fileName(NULL)
 	mode(w+b)	hot(1) cool(3) pos(0)
 fid(1): fd(1073741824) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/build/vcs/minisoc_top_sim.daidir/kdb.elab++/work.lib++/minisoc_top_tb.sv.tdc)
 	size(3883) lastModTime(1795628666) curModTime(1795628666)
-	mode(rb)	hot(2) cool(2) pos(0)version: (200506)
+	mode(rb)	hot(2) cool(2) pos(0version: (200506)
 
 available memory: 64M bytes
-used memory: 73728 bytes [need 72K bytes if disable swap]
+used memory: 188416 bytes [need 184K bytes if disable swap]
 
-used block: 2 [memory(2) file(0)]
-                 [ 8K(1) 64K(1) { total 72K bytes } ]
-overhead: (9514) bytes for (2) blocks [Average: (4757) bytes/block]
+used block: 9 [memory(9) file(0)]
+                 [ 8K(7) 64K(2) { total 184K bytes } ]
+overhead: (9514) bytes for (9) blocks [Average: (1057) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 1(times) 12K(bytes) [1K bytes compressed data from file]
-access => 18861(times) 149M(bytes)
-          [hit ratio: 99.9947%]
+read   => 2(times) 54K(bytes) [8K bytes compressed data from file]
+access => 26589(times) 225M(bytes)
+          [hit ratio: 99.9925%]
 
 time: write(0) read(0)  unit: second
 
 swap file directory: (/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/verdiLog)
-used swap file number: (1)
+used swap file number: (4)
 
 
 
 swap file manager:
 arrSize: (256)
-idxCnt: (4)
+idxCnt: (5)
 closeHead: (1)
-closeTail: (2)
-openCnt: (2)
+closeTail: (4)
+openCnt: (3)
+fid(4): fd(1073741825) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/build/vcs/minisoc_top_sim.daidir/kdb.elab++/work.lib++/minisoc_spi.sv.tdc)
+	size(11946) lastModTime(1795628666) curModTime(1795628666)
+	mode(rb)	hot(0) cool(2) pos(0)
 fid(3): fd(0) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/build/vcs/minisoc_top_sim.daidir/kdb.elab++/work.lib++/uvm_custom_install_verdi_recorder.sv.tdc)
 	size(16415) lastModTime(1795628666) curModTime(1795628666)
 	mode(rb)	hot(0) cool(0) pos(0)
-fid(2): fd(25) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/verdiLog/_swap_0001#950448663#415581)
+fid(2): fd(25) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/verdiLog/_swap_0001#950448663#1563370)
 	size(-1) lastModTime(0) curModTime(-1)
-	mode(w+b)	hot(0) cool(1) pos(0)
+	mode(w+b)	hot(4) cool(1) pos(0)
 fid(1): fd(1073741824) fileName(/home/alberto.mamede/ci_expert/Hands_on/dv-hands-on/MiniSocAES/verif/sim/build/vcs/minisoc_top_sim.daidir/kdb.elab++/work.lib++/minisoc_top_tb.sv.tdc)
 	size(3883) lastModTime(1795628666) curModTime(1795628666)
 	mode(rb)	hot(2) cool(0) pos(0)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 ==================================================
-mySelf(0x210032c0) pre(0x249df700) next((nil))
+mySelf(0x21dc2c40) pre(0x25aad700) next((nil))
 version(200506)
 date(Dec  1 2025 00:17:44)
